@@ -2,19 +2,22 @@
 	"name": "yumma-css-intellisense",
 	"displayName": "Yumma CSS Intellisense",
 	"description": "Yumma CSS Intellisense for VS Code",
-	"version": "0.0.1",
 	"publisher": "yumma-css",
+	"version": "0.0.1",
+	"main": "./out/extension.js",
+	"icon": "icon.png",
 	"private": true,
-	"license": "MIT",
+	"license": "MIT",	
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-extension-samples"
-	},
-	"engines": {
-		"vscode": "^1.73.0"
+		"url": "https://github.com/rrenildopereiraa/yumma-css-helper"
 	},
 	"categories": [
-		"Other"
+		"Linters"
+	],
+	"keywords": [
+		"yumma-css",
+		"intellisense"
 	],
 	"activationEvents": [
 		"onLanguage:django-html",
@@ -29,7 +32,9 @@
 		"onLanguage:vue-html",
 		"onLanguage:vue"
 	],
-	"main": "./out/extension.js",
+	"engines": {
+		"vscode": "^1.73.0"
+	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
