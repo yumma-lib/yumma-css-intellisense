@@ -47,6 +47,7 @@ Inspect the CSS behind the Yumma CSS classes by simply hovering over them.
 
 Identify design issues in advance with the highlight error.
 
+## Community
 
 If you have questions or want to stay updated on our projects, here are some ways to connect with us:
 
