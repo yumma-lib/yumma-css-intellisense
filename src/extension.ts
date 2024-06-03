@@ -1,7 +1,8 @@
 import * as vscode from 'vscode';
+
+import { colorUtils } from './utils/colorUtilities';
 import { colors } from './yumma-css/colors';
 import { utilities } from './yumma-css/utilities';
-import { colorUtils } from './utils/colorUtilities';
 
 const completionItems: vscode.CompletionItem[] = [];
 
@@ -34,6 +35,31 @@ export function activate(context: vscode.ExtensionContext) {
             return completionItems;
         }
     });
+    
+    const hoverProvider = vscode.languages.registerHoverProvider(['css', 'html', 'javascript', 'jsx', 'tsx', 'typescript'], {
+        provideHover(document: vscode.TextDocument, position: vscode.Position) {
+            const range = document.getWordRangeAtPosition(position, /[\w-]+/);
+            if (!range) {
+                return null;
+            }
+            const word = document.getText(range);
 
-    context.subscriptions.push(provider);
+            const utility = utilities.find(utilClass =>
+                utilClass.values.some(value => `${utilClass.prefix}${value.name}` === word)
+            );
+
+            if (utility) {
+                const value = utility.values.find(value => `${utility.prefix}${value.name}` === word);
+                if (value) {
+                    const markdownString = new vscode.MarkdownString();
+                    markdownString.appendCodeblock(`${word} {\n    ${value.property || ''};\n}`, 'css');
+                    return new vscode.Hover(markdownString);
+                }
+            }
+
+            return null;
+        }
+    });
+
+    context.subscriptions.push(provider, hoverProvider);
 }
