@@ -10,10 +10,12 @@ colorUtils.forEach(colorClass => {
     colors.forEach(color => {
         const className = `${colorClass.prefix}${color.name}`;
         const item = new vscode.CompletionItem(className, vscode.CompletionItemKind.Color);
-        item.documentation = new vscode.MarkdownString(`Color class: ${colorClass.description} (${color.name})`);
         item.insertText = className;
-        item.detail = color.color;
+        item.detail = `${colorClass.description}: ${color.color}`;
         (item as any).color = { id: 'yumma-color', color: color.color };
+
+        item.documentation = new vscode.MarkdownString(`${color.color}`);
+
         completionItems.push(item);
     });
 });
