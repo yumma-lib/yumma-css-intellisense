@@ -434,24 +434,6 @@ export const utilities = [
 
     // flexbox & grid
     {
-        'prefix': 'f-',
-        'description': 'flex',
-        'values': [
-            { 'name': '0', 'property': '0' },
-            { 'name': '1', 'property': '1' },
-            { 'name': '2', 'property': '2' },
-            { 'name': '3', 'property': '3' },
-            { 'name': '4', 'property': '4' },
-            { 'name': '5', 'property': '5' },
-            { 'name': '6', 'property': '6' },
-            { 'name': '7', 'property': '7' },
-            { 'name': '8', 'property': '8' },
-            { 'name': 'auto', 'property': 'auto' },
-            { 'name': 'full', 'property': '100%' },
-            { 'name': 'half', 'property': '50%' }
-        ]
-    },
-    {
         prefix: 'fb-',
         description: 'flex-basis',
         values: [
@@ -506,6 +488,24 @@ export const utilities = [
             { 'name': 'nw', 'property': 'nowrap' },
             { 'name': 'w', 'property': 'wrap' },
             { 'name': 'wr', 'property': 'wrap-reverse' }
+        ]
+    },
+    {
+        'prefix': 'f-',
+        'description': 'flex',
+        'values': [
+            { 'name': '0', 'property': '0' },
+            { 'name': '1', 'property': '1' },
+            { 'name': '2', 'property': '2' },
+            { 'name': '3', 'property': '3' },
+            { 'name': '4', 'property': '4' },
+            { 'name': '5', 'property': '5' },
+            { 'name': '6', 'property': '6' },
+            { 'name': '7', 'property': '7' },
+            { 'name': '8', 'property': '8' },
+            { 'name': 'auto', 'property': 'auto' },
+            { 'name': 'full', 'property': '100%' },
+            { 'name': 'half', 'property': '50%' }
         ]
     },
     {
