@@ -10,9 +10,9 @@
   <a href="https://yummacss.com"><strong>Explore Yumma CSS Docs ↝</strong></a>
   <br>
   <br>
-  <a href="https://yummacss.com/blog/installationducing-yummacss-intellisense">Yumma CSS IntelliSense</a>
-  •
   <a href="https://yummacss.com/blog">Blog</a>
+  •
+  <a href="https://yummacss.com/blog/introducing-yummacss-intellisense">Yumma CSS IntelliSense</a>
   •
   <a href="https://github.com/yumma-lib/yumma-css/issues">Issues</a>
 </p>
