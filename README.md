@@ -5,7 +5,7 @@
 <h3 align="center">Yumma CSS</h3>
 
 <p align="center">
-  Quickly build applications with less code in your markup
+  Quickly build applications with less code in your markup.
   <br>
   <a href="https://yummacss.com"><strong>Explore Yumma CSS Docs ↝</strong></a>
   <br>
