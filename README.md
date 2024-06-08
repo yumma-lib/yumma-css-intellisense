@@ -31,7 +31,7 @@
 
 ## Get started
 
-Yumma CSS Intellisense is designed to make your Visual Studio Code development experience more enjoyable by providing advanced features such as completion and hover information. The extension is available from the [Visual Studio Code Marketplace](/).
+Yumma CSS Intellisense is designed to make your Visual Studio Code development experience more enjoyable by providing advanced features such as completion and hover information. The extension is available from the Visual Studio Code Marketplace.
 
 ## Features
 
@@ -42,10 +42,6 @@ Have helpful suggestions while you do your typing.
 ### Hover Information
 
 Inspect the CSS behind the Yumma CSS classes by simply hovering over them.
-
-### Highlits
-
-Identify design issues in advance with the highlight error.
 
 ## Community
 
