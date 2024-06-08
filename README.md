@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://yummacss.com/img/yummacss.png" width="64" alt="Yumma CSS Logo">
+  <img src="https://yummacss.com/img/favicon/favicon.ico" alt="Yumma CSS Logo">
 </p>
 
 <h3 align="center">Yumma CSS</h3>
@@ -35,13 +35,13 @@ Yumma CSS Intellisense is designed to make your Visual Studio Code development e
 
 ## Features
 
-### Autocomplete
+### Completions
 
-Have helpful suggestions while you do your typing.
+Helpful completions while you do your typing.
 
-### Hover Information
+### Hoverings
 
-Inspect the CSS behind the Yumma CSS classes by simply hovering over them.
+Inspect the CSS behind the Yumma CSS classes.
 
 ## Community
 
