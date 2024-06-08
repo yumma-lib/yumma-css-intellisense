@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://yummacss.com/img/yummacss.svg" width="64" alt="Yumma CSS Logo">
+  <img src="https://yummacss.com/img/yummacss.png" width="64" alt="Yumma CSS Logo">
 </p>
 
 <h3 align="center">Yumma CSS</h3>
