@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
-import { colorUtils } from './utils/colorUtilities';
-import { isYummaInstalled } from './utils/workspaceUtilities';
+import { colorUtils } from './utils/colorUtil';
+import { isYummaInstalled } from './utils/workspaceUtil';
 import { colors } from './yumma-css/colors';
 import { utilities } from './yumma-css/utilities';
 
@@ -55,16 +55,16 @@ export async function activate(context: vscode.ExtensionContext) {
                     return null;
                 }
                 const word = document.getText(range);
-
+                
                 const utility = utilities.find(utilClass =>
                     utilClass.values.some(value => `${utilClass.prefix}${value.name}` === word)
                 );
-
+                
                 if (utility) {
                     const value = utility.values.find(value => `${utility.prefix}${value.name}` === word);
                     if (value) {
                         const markdownString = new vscode.MarkdownString();
-                        markdownString.appendCodeblock(`${word} {\n ${utility.description}: ${value.property || ''};\n}`, 'css');
+                        markdownString.appendCodeblock(`.${word} {\n ${utility.description}: ${value.property || ''};\n}`, 'css');
                         return new vscode.Hover(markdownString);
                     }
                 }

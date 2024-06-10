@@ -1,4 +1,4 @@
-import { generateUtilities } from '../utils/dynamicUtilities';
+import { generateUtils } from '../utils/classUtil';
 
 export const utilities = [
     // backgrounds & borders
@@ -176,7 +176,7 @@ export const utilities = [
         prefix: 'dim-',
         description: 'dimension',
         values: [
-            ...generateUtilities('dim-', '', ['height', 'width'], 100, 0.25, 'rem'),
+            ...generateUtils('dim-', '', ['height', 'width'], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' },
             { name: 'full', property: '100%' },
             { name: 'half', property: '50%' },
@@ -189,7 +189,7 @@ export const utilities = [
         prefix: 'max-dim-',
         description: 'dimension',
         values: [
-            ...generateUtilities('max-dim-', '', ['max-height', 'min-width'], 100, 0.25, 'rem'),
+            ...generateUtils('max-dim-', '', ['max-height', 'min-width'], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' },
             { name: 'full', property: '100%' },
             { name: 'half', property: '50%' },
@@ -202,7 +202,7 @@ export const utilities = [
         prefix: 'min-dim-',
         description: 'max-height',
         values: [
-            ...generateUtilities('min-dim-', '', ['min-height', 'min-width'], 100, 0.25, 'rem'),
+            ...generateUtils('min-dim-', '', ['min-height', 'min-width'], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' },
             { name: 'full', property: '100%' },
             { name: 'half', property: '50%' },
@@ -215,7 +215,7 @@ export const utilities = [
         prefix: 'h-',
         description: 'height',
         values: [
-            ...generateUtilities('h-', 'height', [], 100, 0.25, 'rem'),
+            ...generateUtils('h-', 'height', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' },
             { name: 'full', property: '100%' },
             { name: 'half', property: '50%' },
@@ -228,7 +228,7 @@ export const utilities = [
         prefix: 'max-h-',
         description: 'max-height',
         values: [
-            ...generateUtilities('max-h-', 'max-height', [], 100, 0.25, 'rem'),
+            ...generateUtils('max-h-', 'max-height', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' },
             { name: 'full', property: '100%' },
             { name: 'half', property: '50%' },
@@ -241,7 +241,7 @@ export const utilities = [
         prefix: 'min-h-',
         description: 'max-height',
         values: [
-            ...generateUtilities('min-h-', 'min-height', [], 100, 0.25, 'rem'),
+            ...generateUtils('min-h-', 'min-height', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' },
             { name: 'full', property: '100%' },
             { name: 'half', property: '50%' },
@@ -254,7 +254,7 @@ export const utilities = [
         prefix: 'm-',
         description: 'margin',
         values: [
-            ...generateUtilities('m-', 'margin', [], 100, 0.25, 'rem'),
+            ...generateUtils('m-', 'margin', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
@@ -262,7 +262,7 @@ export const utilities = [
         prefix: 'mb-',
         description: 'margin-bottom',
         values: [
-            ...generateUtilities('pb-', 'margin-bottom', [], 100, 0.25, 'rem'),
+            ...generateUtils('mb-', 'margin-bottom', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
@@ -270,7 +270,7 @@ export const utilities = [
         prefix: 'ml-',
         description: 'margin-left',
         values: [
-            ...generateUtilities('pl-', 'margin-left', [], 100, 0.25, 'rem'),
+            ...generateUtils('ml-', 'margin-left', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
@@ -278,7 +278,7 @@ export const utilities = [
         prefix: 'mr-',
         description: 'margin-right',
         values: [
-            ...generateUtilities('pr-', 'margin-right', [], 100, 0.25, 'rem'),
+            ...generateUtils('mr-', 'margin-right', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
@@ -286,23 +286,23 @@ export const utilities = [
         prefix: 'mt-',
         description: 'margin-top',
         values: [
-            ...generateUtilities('pt-', 'margin-top', [], 100, 0.25, 'rem'),
+            ...generateUtils('mt-', 'margin-top', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
     {
         prefix: 'mx-',
-        description: 'margin x',
+        description: 'margin',
         values: [
-            ...generateUtilities('px-', 'margin', ['margin-left', 'margin-right'], 100, 0.25, 'rem'),
+            ...generateUtils('mx-', 'margin', ['margin-left', 'margin-right'], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
     {
         prefix: 'my-',
-        description: 'margin y',
+        description: 'margin',
         values: [
-            ...generateUtilities('py-', 'margin', ['margin-bottom', 'margin-top'], 100, 0.25, 'rem'),
+            ...generateUtils('my-', 'margin', ['margin-bottom', 'margin-top'], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
@@ -310,7 +310,7 @@ export const utilities = [
         prefix: 'p-',
         description: 'padding',
         values: [
-            ...generateUtilities('p-', 'padding', [], 100, 0.25, 'rem'),
+            ...generateUtils('p-', 'padding', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
@@ -318,7 +318,7 @@ export const utilities = [
         prefix: 'pb-',
         description: 'padding-bottom',
         values: [
-            ...generateUtilities('pb-', 'padding-bottom', [], 100, 0.25, 'rem'),
+            ...generateUtils('pb-', 'padding-bottom', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
@@ -326,7 +326,7 @@ export const utilities = [
         prefix: 'pl-',
         description: 'padding-left',
         values: [
-            ...generateUtilities('pl-', 'padding-left', [], 100, 0.25, 'rem'),
+            ...generateUtils('pl-', 'padding-left', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
@@ -334,7 +334,7 @@ export const utilities = [
         prefix: 'pr-',
         description: 'padding-right',
         values: [
-            ...generateUtilities('pr-', 'padding-right', [], 100, 0.25, 'rem'),
+            ...generateUtils('pr-', 'padding-right', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
@@ -342,23 +342,23 @@ export const utilities = [
         prefix: 'pt-',
         description: 'padding-top',
         values: [
-            ...generateUtilities('pt-', 'padding-top', [], 100, 0.25, 'rem'),
+            ...generateUtils('pt-', 'padding-top', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
     {
         prefix: 'px-',
-        description: 'padding x',
+        description: 'padding',
         values: [
-            ...generateUtilities('px-', 'padding', ['padding-left', 'padding-right'], 100, 0.25, 'rem'),
+            ...generateUtils('px-', 'padding', ['padding-left', 'padding-right'], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
     {
         prefix: 'py-',
-        description: 'padding y',
+        description: 'padding',
         values: [
-            ...generateUtilities('py-', 'padding', ['padding-bottom', 'padding-top'], 100, 0.25, 'rem'),
+            ...generateUtils('py-', 'padding', ['padding-bottom', 'padding-top'], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
@@ -366,7 +366,7 @@ export const utilities = [
         prefix: 'max-w-',
         description: 'max-width',
         values: [
-            ...generateUtilities('max-w-', 'max-width', [], 100, 0.25, 'rem'),
+            ...generateUtils('max-w-', 'max-width', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' },
             { name: 'full', property: '100%' },
             { name: 'half', property: '50%' },
@@ -379,7 +379,7 @@ export const utilities = [
         prefix: 'min-w-',
         description: 'min-width',
         values: [
-            ...generateUtilities('min-w-', 'min-width', [], 100, 0.25, 'rem'),
+            ...generateUtils('min-w-', 'min-width', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' },
             { name: 'full', property: '100%' },
             { name: 'half', property: '50%' },
@@ -392,7 +392,7 @@ export const utilities = [
         prefix: 'w-',
         description: 'width',
         values: [
-            ...generateUtilities('w-', 'width', [], 100, 0.25, 'rem'),
+            ...generateUtils('w-', 'width', [], 100, 0.25, 'rem'),
             { name: 'auto', property: 'auto' },
             { name: 'full', property: '100%' },
             { name: 'half', property: '50%' },
@@ -437,7 +437,7 @@ export const utilities = [
         prefix: 'fb-',
         description: 'flex-basis',
         values: [
-            ...generateUtilities('fb-', 'flex-basis', [], 100, 1, 'rem'),
+            ...generateUtils('fb-', 'flex-basis', [], 100, 1, 'rem'),
             { name: 'auto', property: 'auto' }
         ]
     },
