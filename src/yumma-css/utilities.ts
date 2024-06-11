@@ -3,1076 +3,996 @@ import { generateClass } from '../utils/classUtil';
 export const utilities = [
     // borders
     {
-        'prefix': 'rad-',
-        'description': 'border-radius',
-        'values': [
-            { 'name': '0', 'property': '0px' },
-            { 'name': '1', 'property': '4px' },
-            { 'name': '2', 'property': '8px' },
-            { 'name': '3', 'property': '16px' },
-            { 'name': '4', 'property': '24px' },
-            { 'name': '5', 'property': '32px' },
-            { 'name': '6', 'property': '40px' },
-            { 'name': '7', 'property': '48px' },
-            { 'name': '8', 'property': '56px' },
-            { 'name': 'full', 'property': '100%' },
-            { 'name': 'half', 'property': '50%' }
+        classPrefix: 'rad-',
+        values: [
+            { classSuffix: '0', classValue: ['border-radius: 0px;'] },
+            { classSuffix: '1', classValue: ['border-radius: 4px;'] },
+            { classSuffix: '2', classValue: ['border-radius: 8px;'] },
+            { classSuffix: '3', classValue: ['border-radius: 16px;'] },
+            { classSuffix: '4', classValue: ['border-radius: 24px;'] },
+            { classSuffix: '5', classValue: ['border-radius: 32px;'] },
+            { classSuffix: '6', classValue: ['border-radius: 40px;'] },
+            { classSuffix: '7', classValue: ['border-radius: 48px;'] },
+            { classSuffix: '8', classValue: ['border-radius: 56px;'] },
+            { classSuffix: 'full', classValue: ['border-radius: 100%;'] },
+            { classSuffix: 'half', classValue: ['border-radius: 50%;'] }
         ]
     },
     {
-        'prefix': 'rad-bl-',
-        'description': 'border-bottom-left-radius',
-        'values': [
-            { 'name': '0', 'property': '0px' },
-            { 'name': '1', 'property': '4px' },
-            { 'name': '2', 'property': '8px' },
-            { 'name': '3', 'property': '16px' },
-            { 'name': '4', 'property': '24px' },
-            { 'name': '5', 'property': '32px' },
-            { 'name': '6', 'property': '40px' },
-            { 'name': '7', 'property': '48px' },
-            { 'name': '8', 'property': '56px' },
-            { 'name': 'full', 'property': '100%' },
-            { 'name': 'half', 'property': '50%' }
+        classPrefix: 'rad-bl-',
+        values: [
+            { classSuffix: '0', classValue: ['border-bottom-left-radius: 0px;'] },
+            { classSuffix: '1', classValue: ['border-bottom-left-radius: 4px;'] },
+            { classSuffix: '2', classValue: ['border-bottom-left-radius: 8px;'] },
+            { classSuffix: '3', classValue: ['border-bottom-left-radius: 16px;'] },
+            { classSuffix: '4', classValue: ['border-bottom-left-radius: 24px;'] },
+            { classSuffix: '5', classValue: ['border-bottom-left-radius: 32px;'] },
+            { classSuffix: '6', classValue: ['border-bottom-left-radius: 40px;'] },
+            { classSuffix: '7', classValue: ['border-bottom-left-radius: 48px;'] },
+            { classSuffix: '8', classValue: ['border-bottom-left-radius: 56px;'] },
+            { classSuffix: 'full', classValue: ['border-bottom-left-radius: 100%;'] },
+            { classSuffix: 'half', classValue: ['border-bottom-left-radius: 50%;'] }
         ]
     },
     {
-        'prefix': 'rad-br-',
-        'description': 'border-bottom-right-radius',
-        'values': [
-            { 'name': '0', 'property': '0px' },
-            { 'name': '1', 'property': '4px' },
-            { 'name': '2', 'property': '8px' },
-            { 'name': '3', 'property': '16px' },
-            { 'name': '4', 'property': '24px' },
-            { 'name': '5', 'property': '32px' },
-            { 'name': '6', 'property': '40px' },
-            { 'name': '7', 'property': '48px' },
-            { 'name': '8', 'property': '56px' },
-            { 'name': 'full', 'property': '100%' },
-            { 'name': 'half', 'property': '50%' }
+        classPrefix: 'rad-br-',
+        values: [
+            { classSuffix: '0', classValue: ['border-bottom-right-radius: 0px;'] },
+            { classSuffix: '1', classValue: ['border-bottom-right-radius: 4px;'] },
+            { classSuffix: '2', classValue: ['border-bottom-right-radius: 8px;'] },
+            { classSuffix: '3', classValue: ['border-bottom-right-radius: 16px;'] },
+            { classSuffix: '4', classValue: ['border-bottom-right-radius: 24px;'] },
+            { classSuffix: '5', classValue: ['border-bottom-right-radius: 32px;'] },
+            { classSuffix: '6', classValue: ['border-bottom-right-radius: 40px;'] },
+            { classSuffix: '7', classValue: ['border-bottom-right-radius: 48px;'] },
+            { classSuffix: '8', classValue: ['border-bottom-right-radius: 56px;'] },
+            { classSuffix: 'full', classValue: ['border-bottom-right-radius: 100%;'] },
+            { classSuffix: 'half', classValue: ['border-bottom-right-radius: 50%;'] }
         ]
     },
     {
-        'prefix': 'rad-tl-',
-        'description': 'border-top-left-radius',
-        'values': [
-            { 'name': '0', 'property': '0px' },
-            { 'name': '1', 'property': '4px' },
-            { 'name': '2', 'property': '8px' },
-            { 'name': '3', 'property': '16px' },
-            { 'name': '4', 'property': '24px' },
-            { 'name': '5', 'property': '32px' },
-            { 'name': '6', 'property': '40px' },
-            { 'name': '7', 'property': '48px' },
-            { 'name': '8', 'property': '56px' },
-            { 'name': 'full', 'property': '100%' },
-            { 'name': 'half', 'property': '50%' }
+        classPrefix: 'rad-tl-',
+        values: [
+            { classSuffix: '0', classValue: ['border-top-left-radius: 0px;'] },
+            { classSuffix: '1', classValue: ['border-top-left-radius: 4px;'] },
+            { classSuffix: '2', classValue: ['border-top-left-radius: 8px;'] },
+            { classSuffix: '3', classValue: ['border-top-left-radius: 16px;'] },
+            { classSuffix: '4', classValue: ['border-top-left-radius: 24px;'] },
+            { classSuffix: '5', classValue: ['border-top-left-radius: 32px;'] },
+            { classSuffix: '6', classValue: ['border-top-left-radius: 40px;'] },
+            { classSuffix: '7', classValue: ['border-top-left-radius: 48px;'] },
+            { classSuffix: '8', classValue: ['border-top-left-radius: 56px;'] },
+            { classSuffix: 'full', classValue: ['border-top-left-radius: 100%;'] },
+            { classSuffix: 'half', classValue: ['border-top-left-radius: 50%;'] }
         ]
     },
     {
-        'prefix': 'rad-tr-',
-        'description': 'border-top-right-radius',
-        'values': [
-            { 'name': '0', 'property': '0px' },
-            { 'name': '1', 'property': '4px' },
-            { 'name': '2', 'property': '8px' },
-            { 'name': '3', 'property': '16px' },
-            { 'name': '4', 'property': '24px' },
-            { 'name': '5', 'property': '32px' },
-            { 'name': '6', 'property': '40px' },
-            { 'name': '7', 'property': '48px' },
-            { 'name': '8', 'property': '56px' },
-            { 'name': 'full', 'property': '100%' },
-            { 'name': 'half', 'property': '50%' }
+        classPrefix: 'rad-tr-',
+        values: [
+            { classSuffix: '0', classValue: ['border-top-right-radius: 0px;'] },
+            { classSuffix: '1', classValue: ['border-top-right-radius: 4px;'] },
+            { classSuffix: '2', classValue: ['border-top-right-radius: 8px;'] },
+            { classSuffix: '3', classValue: ['border-top-right-radius: 16px;'] },
+            { classSuffix: '4', classValue: ['border-top-right-radius: 24px;'] },
+            { classSuffix: '5', classValue: ['border-top-right-radius: 32px;'] },
+            { classSuffix: '6', classValue: ['border-top-right-radius: 40px;'] },
+            { classSuffix: '7', classValue: ['border-top-right-radius: 48px;'] },
+            { classSuffix: '8', classValue: ['border-top-right-radius: 56px;'] },
+            { classSuffix: 'full', classValue: ['border-top-right-radius: 100%;'] },
+            { classSuffix: 'half', classValue: ['border-top-right-radius: 50%;'] }
         ]
     },
     {
-        'prefix': 'b-',
-        'description': 'border-width',
-        'values': [
-            { 'name': '0', 'property': '0px' },
-            { 'name': '1', 'property': '1px' },
-            { 'name': '2', 'property': '2px' },
-            { 'name': '3', 'property': '4px' },
-            { 'name': '4', 'property': '6px' },
-            { 'name': '5', 'property': '8px' },
-            { 'name': '6', 'property': '10px' },
-            { 'name': '7', 'property': '12px' },
-            { 'name': '8', 'property': '14px' }
+        classPrefix: 'b-',
+        values: [
+            { classSuffix: '0', classValue: ['border-width: 0px;'] },
+            { classSuffix: '1', classValue: ['border-width: 1px;'] },
+            { classSuffix: '2', classValue: ['border-width: 2px;'] },
+            { classSuffix: '3', classValue: ['border-width: 4px;'] },
+            { classSuffix: '4', classValue: ['border-width: 6px;'] },
+            { classSuffix: '5', classValue: ['border-width: 8px;'] },
+            { classSuffix: '6', classValue: ['border-width: 10px;'] },
+            { classSuffix: '7', classValue: ['border-width: 12px;'] },
+            { classSuffix: '8', classValue: ['border-width: 14px;'] }
         ]
     },
     {
-        'prefix': 'bb-',
-        'description': 'border-bottom-width',
-        'values': [
-            { 'name': '0', 'property': '0px' },
-            { 'name': '1', 'property': '1px' },
-            { 'name': '2', 'property': '2px' },
-            { 'name': '3', 'property': '4px' },
-            { 'name': '4', 'property': '6px' },
-            { 'name': '5', 'property': '8px' },
-            { 'name': '6', 'property': '10px' },
-            { 'name': '7', 'property': '12px' },
-            { 'name': '8', 'property': '14px' }
+        classPrefix: 'bb-',
+        values: [
+            { classSuffix: '0', classValue: ['border-bottom-width: 0px;'] },
+            { classSuffix: '1', classValue: ['border-bottom-width: 1px;'] },
+            { classSuffix: '2', classValue: ['border-bottom-width: 2px;'] },
+            { classSuffix: '3', classValue: ['border-bottom-width: 4px;'] },
+            { classSuffix: '4', classValue: ['border-bottom-width: 6px;'] },
+            { classSuffix: '5', classValue: ['border-bottom-width: 8px;'] },
+            { classSuffix: '6', classValue: ['border-bottom-width: 10px;'] },
+            { classSuffix: '7', classValue: ['border-bottom-width: 12px;'] },
+            { classSuffix: '8', classValue: ['border-bottom-width: 14px;'] }
         ]
     },
     {
-        'prefix': 'bl-',
-        'description': 'border-left-width',
-        'values': [
-            { 'name': '0', 'property': '0px' },
-            { 'name': '1', 'property': '1px' },
-            { 'name': '2', 'property': '2px' },
-            { 'name': '3', 'property': '4px' },
-            { 'name': '4', 'property': '6px' },
-            { 'name': '5', 'property': '8px' },
-            { 'name': '6', 'property': '10px' },
-            { 'name': '7', 'property': '12px' },
-            { 'name': '8', 'property': '14px' }
+        classPrefix: 'bl-',
+        values: [
+            { classSuffix: '0', classValue: ['border-left-width: 0px;'] },
+            { classSuffix: '1', classValue: ['border-left-width: 1px;'] },
+            { classSuffix: '2', classValue: ['border-left-width: 2px;'] },
+            { classSuffix: '3', classValue: ['border-left-width: 4px;'] },
+            { classSuffix: '4', classValue: ['border-left-width: 6px;'] },
+            { classSuffix: '5', classValue: ['border-left-width: 8px;'] },
+            { classSuffix: '6', classValue: ['border-left-width: 10px;'] },
+            { classSuffix: '7', classValue: ['border-left-width: 12px;'] },
+            { classSuffix: '8', classValue: ['border-left-width: 14px;'] }
         ]
     },
     {
-        'prefix': 'br-',
-        'description': 'border-right-width',
-        'values': [
-            { 'name': '0', 'property': '0px' },
-            { 'name': '1', 'property': '1px' },
-            { 'name': '2', 'property': '2px' },
-            { 'name': '3', 'property': '4px' },
-            { 'name': '4', 'property': '6px' },
-            { 'name': '5', 'property': '8px' },
-            { 'name': '6', 'property': '10px' },
-            { 'name': '7', 'property': '12px' },
-            { 'name': '8', 'property': '14px' }
+        classPrefix: 'br-',
+        values: [
+            { classSuffix: '0', classValue: ['border-right-width: 0px;'] },
+            { classSuffix: '1', classValue: ['border-right-width: 1px;'] },
+            { classSuffix: '2', classValue: ['border-right-width: 2px;'] },
+            { classSuffix: '3', classValue: ['border-right-width: 4px;'] },
+            { classSuffix: '4', classValue: ['border-right-width: 6px;'] },
+            { classSuffix: '5', classValue: ['border-right-width: 8px;'] },
+            { classSuffix: '6', classValue: ['border-right-width: 10px;'] },
+            { classSuffix: '7', classValue: ['border-right-width: 12px;'] },
+            { classSuffix: '8', classValue: ['border-right-right-width: 14px;'] }
         ]
     },
     {
-        'prefix': 'bt-',
-        'description': 'border-top-width',
-        'values': [
-            { 'name': '0', 'property': '0px' },
-            { 'name': '1', 'property': '1px' },
-            { 'name': '2', 'property': '2px' },
-            { 'name': '3', 'property': '4px' },
-            { 'name': '4', 'property': '6px' },
-            { 'name': '5', 'property': '8px' },
-            { 'name': '6', 'property': '10px' },
-            { 'name': '7', 'property': '12px' },
-            { 'name': '8', 'property': '14px' }
+        classPrefix: 'bt-',
+        values: [
+            { classSuffix: '0', classValue: ['border-top-width: 0px;'] },
+            { classSuffix: '1', classValue: ['border-top-width: 1px;'] },
+            { classSuffix: '2', classValue: ['border-top-width: 2px;'] },
+            { classSuffix: '3', classValue: ['border-top-width: 4px;'] },
+            { classSuffix: '4', classValue: ['border-top-width: 6px;'] },
+            { classSuffix: '5', classValue: ['border-top-width: 8px;'] },
+            { classSuffix: '6', classValue: ['border-top-width: 10px;'] },
+            { classSuffix: '7', classValue: ['border-top-width: 12px;'] },
+            { classSuffix: '8', classValue: ['border-top-width: 14px;'] }
         ]
     },
 
     // box model
     {
-        'prefix': 'bs-',
-        'description': 'box-sizing',
-        'values': [
-            { 'name': 'bb', 'property': 'border-box' },
-            { 'name': 'cb', 'property': 'content-box' }
+        classPrefix: 'bs-',
+        values: [
+            { classSuffix: 'bb', classValue: ['box-sizing: border-box;'] },
+            { classSuffix: 'cb', classValue: ['box-sizing: content-box;'] }
         ]
     },
     {
-        prefix: 'dim-',
-        description: 'dimension',
+        classPrefix: 'dim-',
         values: [
-            ...generateClass('dim-', '', ['height', 'width'], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' },
-            { name: 'full', property: '100%' },
-            { name: 'half', property: '50%' },
-            { name: 'fc', property: 'fit-content' },
-            { name: '1/1', property: '100dvh' },
-            { name: '1/2', property: '50dvh' }
+            ...generateClass(['height', 'width'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['height: auto;', 'width: auto;'] },
+            { classSuffix: 'full', classValue: ['height: 100%;', 'width: 100%;'] },
+            { classSuffix: 'half', classValue: ['height: 50%;', 'width: 50%;'] },
+            { classSuffix: 'fc', classValue: ['height: fit-content;', 'width: fit-content;'] },
+            { classSuffix: '1/1', classValue: ['height: 100dvh;', 'width: 100dvh;'] },
+            { classSuffix: '1/2', classValue: ['height: 50dvh;', 'width: 50dvh;'] }
         ]
     },
     {
-        prefix: 'max-dim-',
-        description: 'dimension',
+        classPrefix: 'max-dim-',
         values: [
-            ...generateClass('max-dim-', '', ['max-height', 'min-width'], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' },
-            { name: 'full', property: '100%' },
-            { name: 'half', property: '50%' },
-            { name: 'fc', property: 'fit-content' },
-            { name: '1/1', property: '100dvh' },
-            { name: '1/2', property: '50dvh' }
+            ...generateClass(['max-height', 'min-width'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['max-height: auto;', 'min-width: auto;'] },
+            { classSuffix: 'full', classValue: ['max-height: 100%;', 'min-width: 100%;'] },
+            { classSuffix: 'half', classValue: ['max-height: 50%;', 'min-width: 50%;'] },
+            { classSuffix: 'fc', classValue: ['max-height: fit-content;', 'min-width: fit-content;'] },
+            { classSuffix: '1/1', classValue: ['max-height: 100dvh;', 'min-width: 100dvh;'] },
+            { classSuffix: '1/2', classValue: ['max-height: 50dvh;', 'min-width: 50dvh;'] }
         ]
     },
     {
-        prefix: 'min-dim-',
-        description: 'max-height',
+        classPrefix: 'min-dim-',
         values: [
-            ...generateClass('min-dim-', '', ['min-height', 'min-width'], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' },
-            { name: 'full', property: '100%' },
-            { name: 'half', property: '50%' },
-            { name: 'fc', property: 'fit-content' },
-            { name: '1/1', property: '100dvh' },
-            { name: '1/2', property: '50dvh' }
+            ...generateClass(['min-height', 'min-width'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['min-height: auto;', 'min-width: auto;'] },
+            { classSuffix: 'full', classValue: ['min-height: 100%;', 'min-width: 100%;'] },
+            { classSuffix: 'half', classValue: ['min-height: 50%;', 'min-width: 50%;'] },
+            { classSuffix: 'fc', classValue: ['min-height: fit-content;', 'min-width: fit-content;'] },
+            { classSuffix: '1/1', classValue: ['min-height: 100dvh;', 'min-width: 100dvh;'] },
+            { classSuffix: '1/2', classValue: ['min-height: 50dvh;', 'min-width: 50dvh;'] }
         ]
     },
     {
-        prefix: 'h-',
-        description: 'height',
+        classPrefix: 'h-',
         values: [
-            ...generateClass('h-', 'height', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' },
-            { name: 'full', property: '100%' },
-            { name: 'half', property: '50%' },
-            { name: 'fc', property: 'fit-content' },
-            { name: '1/1', property: '100dvh' },
-            { name: '1/2', property: '50dvh' }
+            ...generateClass(['height'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['height: auto;'] },
+            { classSuffix: 'full', classValue: ['height: 100%;'] },
+            { classSuffix: 'half', classValue: ['height: 50%;'] },
+            { classSuffix: 'fc', classValue: ['height: fit-content;'] },
+            { classSuffix: '1/1', classValue: ['height: 100dvh;'] },
+            { classSuffix: '1/2', classValue: ['height: 50dvh;'] }
         ]
     },
     {
-        prefix: 'max-h-',
-        description: 'max-height',
+        classPrefix: 'max-h-',
         values: [
-            ...generateClass('max-h-', 'max-height', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' },
-            { name: 'full', property: '100%' },
-            { name: 'half', property: '50%' },
-            { name: 'fc', property: 'fit-content' },
-            { name: '1/1', property: '100dvh' },
-            { name: '1/2', property: '50dvh' }
+            ...generateClass(['max-height'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['max-height: auto;'] },
+            { classSuffix: 'full', classValue: ['max-height: 100%;'] },
+            { classSuffix: 'half', classValue: ['max-height: 50%;'] },
+            { classSuffix: 'fc', classValue: ['max-height: fit-content;'] },
+            { classSuffix: '1/1', classValue: ['max-height: 100dvh;'] },
+            { classSuffix: '1/2', classValue: ['max-height: 50dvh;'] }
         ]
     },
     {
-        prefix: 'min-h-',
-        description: 'max-height',
+        classPrefix: 'min-h-',
         values: [
-            ...generateClass('min-h-', 'min-height', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' },
-            { name: 'full', property: '100%' },
-            { name: 'half', property: '50%' },
-            { name: 'fc', property: 'fit-content' },
-            { name: '1/1', property: '100dvh' },
-            { name: '1/2', property: '50dvh' }
+            ...generateClass(['min-height'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['min-height: auto;'] },
+            { classSuffix: 'full', classValue: ['min-height: 100%;'] },
+            { classSuffix: 'half', classValue: ['min-height: 50%;'] },
+            { classSuffix: 'fc', classValue: ['min-height: fit-content;'] },
+            { classSuffix: '1/1', classValue: ['min-height: 100dvh;'] },
+            { classSuffix: '1/2', classValue: ['min-height: 50dvh;'] }
         ]
     },
     {
-        prefix: 'm-',
-        description: 'margin',
+        classPrefix: 'm-',
         values: [
-            ...generateClass('m-', 'margin', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['margin'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['margin: auto;'] }
         ]
     },
     {
-        prefix: 'mb-',
-        description: 'margin-bottom',
+        classPrefix: 'mb-',
         values: [
-            ...generateClass('mb-', 'margin-bottom', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['margin-bottom'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['margin-bottom: auto;'] }
         ]
     },
     {
-        prefix: 'ml-',
-        description: 'margin-left',
+        classPrefix: 'ml-',
         values: [
-            ...generateClass('ml-', 'margin-left', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['margin-left'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['margin-left: auto;'] }
         ]
     },
     {
-        prefix: 'mr-',
-        description: 'margin-right',
+        classPrefix: 'mr-',
         values: [
-            ...generateClass('mr-', 'margin-right', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['margin-right'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['margin-right: auto;'] }
         ]
     },
     {
-        prefix: 'mt-',
-        description: 'margin-top',
+        classPrefix: 'mt-',
         values: [
-            ...generateClass('mt-', 'margin-top', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['margin-top'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['margin-top: auto;'] }
         ]
     },
     {
-        prefix: 'mx-',
-        description: 'margin',
+        classPrefix: 'mx-',
         values: [
-            ...generateClass('mx-', 'margin', ['margin-left', 'margin-right'], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['margin-left', 'margin-right'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['margin-left: auto;', 'margin-right: auto;'] }
         ]
     },
     {
-        prefix: 'my-',
-        description: 'margin',
+        classPrefix: 'my-',
         values: [
-            ...generateClass('my-', 'margin', ['margin-bottom', 'margin-top'], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['margin-bottom', 'margin-top'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['margin-bottom: auto;', 'margin-top: auto;'] }
         ]
     },
     {
-        prefix: 'p-',
-        description: 'padding',
+        classPrefix: 'p-',
         values: [
-            ...generateClass('p-', 'padding', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['padding'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['padding: auto;'] }
         ]
     },
     {
-        prefix: 'pb-',
-        description: 'padding-bottom',
+        classPrefix: 'pb-',
         values: [
-            ...generateClass('pb-', 'padding-bottom', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['padding-bottom'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['padding-bottom: auto;'] }
         ]
     },
     {
-        prefix: 'pl-',
-        description: 'padding-left',
+        classPrefix: 'pl-',
         values: [
-            ...generateClass('pl-', 'padding-left', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['padding-left'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['padding-left: auto;'] }
         ]
     },
     {
-        prefix: 'pr-',
-        description: 'padding-right',
+        classPrefix: 'pr-',
         values: [
-            ...generateClass('pr-', 'padding-right', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['padding-right'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['padding-right: auto;'] }
         ]
     },
     {
-        prefix: 'pt-',
-        description: 'padding-top',
+        classPrefix: 'pt-',
         values: [
-            ...generateClass('pt-', 'padding-top', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['padding-top'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['padding-top: auto;'] }
         ]
     },
     {
-        prefix: 'px-',
-        description: 'padding',
+        classPrefix: 'px-',
         values: [
-            ...generateClass('px-', 'padding', ['padding-left', 'padding-right'], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['padding-left', 'padding-right'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['padding-left: auto;', 'padding-right: auto;'] }
         ]
     },
     {
-        prefix: 'py-',
-        description: 'padding',
+        classPrefix: 'py-',
         values: [
-            ...generateClass('py-', 'padding', ['padding-bottom', 'padding-top'], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['padding-bottom', 'padding-top'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['padding-bottom: auto;', 'padding-top: auto;'] }
         ]
     },
     {
-        prefix: 'max-w-',
-        description: 'max-width',
+        classPrefix: 'max-w-',
         values: [
-            ...generateClass('max-w-', 'max-width', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' },
-            { name: 'full', property: '100%' },
-            { name: 'half', property: '50%' },
-            { name: 'fc', property: 'fit-content' },
-            { name: '1/1', property: '100dvh' },
-            { name: '1/2', property: '50dvh' }
+            ...generateClass(['max-width'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['max-width: auto;'] },
+            { classSuffix: 'full', classValue: ['max-width: 100%;'] },
+            { classSuffix: 'half', classValue: ['max-width: 50%;'] },
+            { classSuffix: 'fc', classValue: ['max-width: fit-content;'] },
+            { classSuffix: '1/1', classValue: ['max-width: 100dvh;'] },
+            { classSuffix: '1/2', classValue: ['max-width: 50dvh;'] }
         ]
     },
     {
-        prefix: 'min-w-',
-        description: 'min-width',
+        classPrefix: 'min-w-',
         values: [
-            ...generateClass('min-w-', 'min-width', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' },
-            { name: 'full', property: '100%' },
-            { name: 'half', property: '50%' },
-            { name: 'fc', property: 'fit-content' },
-            { name: '1/1', property: '100dvh' },
-            { name: '1/2', property: '50dvh' }
+            ...generateClass(['min-width'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['min-width: auto;'] },
+            { classSuffix: 'full', classValue: ['min-width: 100%;'] },
+            { classSuffix: 'half', classValue: ['min-width: 50%;'] },
+            { classSuffix: 'fc', classValue: ['min-width: fit-content;'] },
+            { classSuffix: '1/1', classValue: ['min-width: 100dvh;'] },
+            { classSuffix: '1/2', classValue: ['min-width: 50dvh;'] }
         ]
     },
     {
-        prefix: 'w-',
-        description: 'width',
+        classPrefix: 'w-',
         values: [
-            ...generateClass('w-', 'width', [], 100, 0.25, 'rem'),
-            { name: 'auto', property: 'auto' },
-            { name: 'full', property: '100%' },
-            { name: 'half', property: '50%' },
-            { name: 'fc', property: 'fit-content' },
-            { name: '1/1', property: '100dvh' },
-            { name: '1/2', property: '50dvh' }
+            ...generateClass(['width'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['width: auto;'] },
+            { classSuffix: 'full', classValue: ['width: 100%;'] },
+            { classSuffix: 'half', classValue: ['width: 50%;'] },
+            { classSuffix: 'fc', classValue: ['width: fit-content;'] },
+            { classSuffix: '1/1', classValue: ['width: 100dvh;'] },
+            { classSuffix: '1/2', classValue: ['width: 50dvh;'] }
         ]
     },
 
     // effects & filters
     {
-        'prefix': 'bs-',
-        'description': 'box-shadow',
-        'values': [
-            { 'name': 'none', 'property': 'none' },
-            { 'name': 'xs', 'property': '1px 3px 5px -3px rgba(0,0,0,0.1)' },
-            { 'name': 'sm', 'property': '1px 3px 5px -2px rgba(0,0,0,0.1)' },
-            { 'name': 'md', 'property': '1px 3px 5px -1px rgba(0,0,0,0.1)' },
-            { 'name': 'lg', 'property': '1px 3px 5px 1px rgba(0,0,0,0.1)' },
-            { 'name': 'xl', 'property': '1px 3px 5px 2px rgba(0,0,0,0.1)' }
+        classPrefix: 'bs-',
+        values: [
+            { classSuffix: 'none', classValue: ['box-shadow: none;'] },
+            { classSuffix: 'xs', classValue: ['box-shadow: 1px 3px 5px -3px rgba(0,0,0,0.1);'] },
+            { classSuffix: 'sm', classValue: ['box-shadow: 1px 3px 5px -2px rgba(0,0,0,0.1);'] },
+            { classSuffix: 'md', classValue: ['box-shadow: 1px 3px 5px -1px rgba(0,0,0,0.1);'] },
+            { classSuffix: 'lg', classValue: ['box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.1);'] },
+            { classSuffix: 'xl', classValue: ['box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.1);'] }
         ]
     },
     {
-        'prefix': 'o-',
-        'description': 'opacity',
-        'values': [
-            { 'name': '10', 'property': '0.1' },
-            { 'name': '20', 'property': '0.2' },
-            { 'name': '30', 'property': '0.3' },
-            { 'name': '40', 'property': '0.4' },
-            { 'name': '50', 'property': '0.5' },
-            { 'name': '6', 'property': '0.6' },
-            { 'name': '70', 'property': '0.7' },
-            { 'name': '80', 'property': '0.8' },
-            { 'name': '90', 'property': '0.9' },
-            { 'name': '100', 'property': '1' }
+        classPrefix: 'o-',
+        values: [
+            { classSuffix: '10', classValue: ['opacity: 0.1;'] },
+            { classSuffix: '20', classValue: ['opacity: 0.2;'] },
+            { classSuffix: '30', classValue: ['opacity: 0.3;'] },
+            { classSuffix: '40', classValue: ['opacity: 0.4;'] },
+            { classSuffix: '50', classValue: ['opacity: 0.5;'] },
+            { classSuffix: '6', classValue: ['opacity: 0.6;'] },
+            { classSuffix: '70', classValue: ['opacity: 0.7;'] },
+            { classSuffix: '80', classValue: ['opacity: 0.8;'] },
+            { classSuffix: '90', classValue: ['opacity: 0.9;'] },
+            { classSuffix: '100', classValue: ['opacity: 1;'] }
         ]
     },
 
     // flexbox & grid
     {
-        prefix: 'fb-',
-        description: 'flex-basis',
+        classPrefix: 'fb-',
         values: [
-            ...generateClass('fb-', 'flex-basis', [], 100, 1, 'rem'),
-            { name: 'auto', property: 'auto' }
+            ...generateClass(['flex-basis'], 100, 1, 'rem'),
+            { classSuffix: 'auto', classValue: ['flex-basis: auto;'] }
         ]
     },
     {
-        'prefix': 'fd-',
-        'description': 'flex-direction',
-        'values': [
-            { 'name': 'c', 'property': 'column' },
-            { 'name': 'cr', 'property': 'column-reverse' },
-            { 'name': 'r', 'property': 'row' },
-            { 'name': 'rr', 'property': 'row-reverse' }
+        classPrefix: 'fd-',
+        values: [
+            { classSuffix: 'c', classValue: ['flex-direction: column;'] },
+            { classSuffix: 'cr', classValue: ['flex-direction: column-reverse;'] },
+            { classSuffix: 'r', classValue: ['flex-direction: row;'] },
+            { classSuffix: 'rr', classValue: ['flex-direction: row-reverse;'] }
         ]
     },
     {
-        'prefix': 'fg-',
-        'description': 'flex-grow',
-        'values': [
-            { 'name': '0', 'property': '0' },
-            { 'name': '1', 'property': '1' },
-            { 'name': '2', 'property': '2' },
-            { 'name': '3', 'property': '3' },
-            { 'name': '4', 'property': '4' },
-            { 'name': '5', 'property': '5' },
-            { 'name': '6', 'property': '6' },
-            { 'name': '7', 'property': '7' },
-            { 'name': '8', 'property': '8' }
+        classPrefix: 'fg-',
+        values: [
+            { classSuffix: '0', classValue: ['flex-grow: 0;'] },
+            { classSuffix: '1', classValue: ['flex-grow: 1;'] },
+            { classSuffix: '2', classValue: ['flex-grow: 2;'] },
+            { classSuffix: '3', classValue: ['flex-grow: 3;'] },
+            { classSuffix: '4', classValue: ['flex-grow: 4;'] },
+            { classSuffix: '5', classValue: ['flex-grow: 5;'] },
+            { classSuffix: '6', classValue: ['flex-grow: 6;'] },
+            { classSuffix: '7', classValue: ['flex-grow: 7;'] },
+            { classSuffix: '8', classValue: ['flex-grow: 8;'] }
         ]
     },
     {
-        'prefix': 'fs-',
-        'description': 'flex-shrink',
-        'values': [
-            { 'name': '0', 'property': '0' },
-            { 'name': '1', 'property': '1' },
-            { 'name': '2', 'property': '2' },
-            { 'name': '3', 'property': '3' },
-            { 'name': '4', 'property': '4' },
-            { 'name': '5', 'property': '5' },
-            { 'name': '6', 'property': '6' },
-            { 'name': '7', 'property': '7' },
-            { 'name': '8', 'property': '8' }
+        classPrefix: 'fs-',
+        values: [
+            { classSuffix: '0', classValue: ['flex-shrink: 0;'] },
+            { classSuffix: '1', classValue: ['flex-shrink: 1;'] },
+            { classSuffix: '2', classValue: ['flex-shrink: 2;'] },
+            { classSuffix: '3', classValue: ['flex-shrink: 3;'] },
+            { classSuffix: '4', classValue: ['flex-shrink: 4;'] },
+            { classSuffix: '5', classValue: ['flex-shrink: 5;'] },
+            { classSuffix: '6', classValue: ['flex-shrink: 6;'] },
+            { classSuffix: '7', classValue: ['flex-shrink: 7;'] },
+            { classSuffix: '8', classValue: ['flex-shrink: 8;'] }
         ]
     },
     {
-        'prefix': 'fw-',
-        'description': 'flex-wrap',
-        'values': [
-            { 'name': 'nw', 'property': 'nowrap' },
-            { 'name': 'w', 'property': 'wrap' },
-            { 'name': 'wr', 'property': 'wrap-reverse' }
+        classPrefix: 'fw-',
+        values: [
+            { classSuffix: 'nw', classValue: ['flex-wrap: nowrap;'] },
+            { classSuffix: 'w', classValue: ['flex-wrap: wrap;'] },
+            { classSuffix: 'wr', classValue: ['flex-wrap: wrap-reverse;'] }
         ]
     },
     {
-        'prefix': 'f-',
-        'description': 'flex',
-        'values': [
-            { 'name': '0', 'property': '0' },
-            { 'name': '1', 'property': '1' },
-            { 'name': '2', 'property': '2' },
-            { 'name': '3', 'property': '3' },
-            { 'name': '4', 'property': '4' },
-            { 'name': '5', 'property': '5' },
-            { 'name': '6', 'property': '6' },
-            { 'name': '7', 'property': '7' },
-            { 'name': '8', 'property': '8' },
-            { 'name': 'auto', 'property': 'auto' },
-            { 'name': 'full', 'property': '100%' },
-            { 'name': 'half', 'property': '50%' }
+        classPrefix: 'f-',
+        values: [
+            { classSuffix: '0', classValue: ['flex: 0;'] },
+            { classSuffix: '1', classValue: ['flex: 1;'] },
+            { classSuffix: '2', classValue: ['flex: 2;'] },
+            { classSuffix: '3', classValue: ['flex: 3;'] },
+            { classSuffix: '4', classValue: ['flex: 4;'] },
+            { classSuffix: '5', classValue: ['flex: 5;'] },
+            { classSuffix: '6', classValue: ['flex: 6;'] },
+            { classSuffix: '7', classValue: ['flex: 7;'] },
+            { classSuffix: '8', classValue: ['flex: 8;'] },
+            { classSuffix: 'auto', classValue: ['flex: auto;'] },
+            { classSuffix: 'full', classValue: ['flex: 100%;'] },
+            { classSuffix: 'half', classValue: ['flex: 50%;'] }
         ]
     },
     {
-        'prefix': 'gac-',
-        'description': 'grid-auto-columns',
-        'values': [
-            { 'name': 'min', 'property': 'min-content' },
-            { 'name': 'max', 'property': 'max-content' },
-            { 'name': 'auto', 'property': 'auto' }
+        classPrefix: 'gac-',
+        values: [
+            { classSuffix: 'min', classValue: ['grid-auto-columns: min-content;'] },
+            { classSuffix: 'max', classValue: ['grid-auto-columns: max-content;'] },
+            { classSuffix: 'auto', classValue: ['grid-auto-columns: auto;'] }
         ]
     },
     {
-        'prefix': 'gaf-',
-        'description': 'grid-auto-flow',
-        'values': [
-            { 'name': 'r', 'property': 'row' },
-            { 'name': 'c', 'property': 'column' },
-            { 'name': 'd', 'property': 'dense' }
+        classPrefix: 'gaf-',
+        values: [
+            { classSuffix: 'r', classValue: ['grid-auto-flow: row;'] },
+            { classSuffix: 'c', classValue: ['grid-auto-flow: column;'] },
+            { classSuffix: 'd', classValue: ['grid-auto-flow: dense;'] }
         ]
     },
     {
-        'prefix': 'gar-',
-        'description': 'grid-auto-rows',
-        'values': [
-            { 'name': 'min', 'property': 'min-content' },
-            { 'name': 'max', 'property': 'max-content' },
-            { 'name': 'auto', 'property': 'auto' }
+        classPrefix: 'gar-',
+        values: [
+            { classSuffix: 'min', classValue: ['grid-auto-rows: min-content;'] },
+            { classSuffix: 'max', classValue: ['grid-auto-rows: max-content;'] },
+            { classSuffix: 'auto', classValue: ['grid-auto-rows: auto;'] }
         ]
     },
     {
-        'prefix': 'gtc-',
-        'description': 'grid-template-columns',
-        'values': [
-            { 'name': '1', 'property': 'repeat(1, minmax(0, 1fr))' },
-            { 'name': '2', 'property': 'repeat(2, minmax(0, 1fr))' },
-            { 'name': '3', 'property': 'repeat(3, minmax(0, 1fr))' },
-            { 'name': '4', 'property': 'repeat(4, minmax(0, 1fr))' },
-            { 'name': '5', 'property': 'repeat(5, minmax(0, 1fr))' },
-            { 'name': '6', 'property': 'repeat(6, minmax(0, 1fr))' },
-            { 'name': '7', 'property': 'repeat(7, minmax(0, 1fr))' },
-            { 'name': '8', 'property': 'repeat(8, minmax(0, 1fr))' },
-            { 'name': '9', 'property': 'repeat(9, minmax(0, 1fr))' },
-            { 'name': '10', 'property': 'repeat(10, minmax(0, 1fr))' },
-            { 'name': '11', 'property': 'repeat(11, minmax(0, 1fr))' }
+        classPrefix: 'gtc-',
+        values: [
+            { classSuffix: '1', classValue: ['grid-template-columns: repeat(1, minmax(0, 1fr));'] },
+            { classSuffix: '2', classValue: ['grid-template-columns: repeat(2, minmax(0, 1fr));'] },
+            { classSuffix: '3', classValue: ['grid-template-columns: repeat(3, minmax(0, 1fr));'] },
+            { classSuffix: '4', classValue: ['grid-template-columns: repeat(4, minmax(0, 1fr));'] },
+            { classSuffix: '5', classValue: ['grid-template-columns: repeat(5, minmax(0, 1fr));'] },
+            { classSuffix: '6', classValue: ['grid-template-columns: repeat(6, minmax(0, 1fr));'] },
+            { classSuffix: '7', classValue: ['grid-template-columns: repeat(7, minmax(0, 1fr));'] },
+            { classSuffix: '8', classValue: ['grid-template-columns: repeat(8, minmax(0, 1fr));'] },
+            { classSuffix: '9', classValue: ['grid-template-columns: repeat(9, minmax(0, 1fr));'] },
+            { classSuffix: '10', classValue: ['grid-template-columns: repeat(10, minmax(0, 1fr));'] },
+            { classSuffix: '11', classValue: ['grid-template-columns: repeat(11, minmax(0, 1fr));'] }
         ]
     },
     {
-        'prefix': 'gtr-',
-        'description': 'grid-template-rows',
-        'values': [
-            { 'name': '1', 'property': 'repeat(1, minmax(0, 1fr))' },
-            { 'name': '2', 'property': 'repeat(2, minmax(0, 1fr))' },
-            { 'name': '3', 'property': 'repeat(3, minmax(0, 1fr))' },
-            { 'name': '4', 'property': 'repeat(4, minmax(0, 1fr))' },
-            { 'name': '5', 'property': 'repeat(5, minmax(0, 1fr))' },
-            { 'name': '6', 'property': 'repeat(6, minmax(0, 1fr))' },
-            { 'name': '7', 'property': 'repeat(7, minmax(0, 1fr))' },
-            { 'name': '8', 'property': 'repeat(8, minmax(0, 1fr))' },
-            { 'name': '9', 'property': 'repeat(9, minmax(0, 1fr))' },
-            { 'name': '10', 'property': 'repeat(10, minmax(0, 1fr))' },
-            { 'name': '11', 'property': 'repeat(11, minmax(0, 1fr))' },
-            { 'name': '12', 'property': 'repeat(12, minmax(0, 1fr))' },
-            { 'name': '13', 'property': 'repeat(13, minmax(0, 1fr))' },
-            { 'name': '14', 'property': 'repeat(14, minmax(0, 1fr))' },
-            { 'name': '15', 'property': 'repeat(15, minmax(0, 1fr))' },
-            { 'name': '16', 'property': 'repeat(16, minmax(0, 1fr))' }
+        classPrefix: 'gtr-',
+        values: [
+            { classSuffix: '1', classValue: ['grid-template-rows: repeat(1, minmax(0, 1fr));'] },
+            { classSuffix: '2', classValue: ['grid-template-rows: repeat(2, minmax(0, 1fr));'] },
+            { classSuffix: '3', classValue: ['grid-template-rows: repeat(3, minmax(0, 1fr));'] },
+            { classSuffix: '4', classValue: ['grid-template-rows: repeat(4, minmax(0, 1fr));'] },
+            { classSuffix: '5', classValue: ['grid-template-rows: repeat(5, minmax(0, 1fr));'] },
+            { classSuffix: '6', classValue: ['grid-template-rows: repeat(6, minmax(0, 1fr));'] },
+            { classSuffix: '7', classValue: ['grid-template-rows: repeat(7, minmax(0, 1fr));'] },
+            { classSuffix: '8', classValue: ['grid-template-rows: repeat(8, minmax(0, 1fr));'] },
+            { classSuffix: '9', classValue: ['grid-template-rows: repeat(9, minmax(0, 1fr));'] },
+            { classSuffix: '10', classValue: ['grid-template-rows: repeat(10, minmax(0, 1fr));'] },
+            { classSuffix: '11', classValue: ['grid-template-rows: repeat(11, minmax(0, 1fr));'] },
+            { classSuffix: '12', classValue: ['grid-template-rows: repeat(12, minmax(0, 1fr));'] },
+            { classSuffix: '13', classValue: ['grid-template-rows: repeat(13, minmax(0, 1fr));'] },
+            { classSuffix: '14', classValue: ['grid-template-rows: repeat(14, minmax(0, 1fr));'] },
+            { classSuffix: '15', classValue: ['grid-template-rows: repeat(15, minmax(0, 1fr));'] },
+            { classSuffix: '16', classValue: ['grid-template-rows: repeat(16, minmax(0, 1fr));'] }
         ]
     },
     {
-        'prefix': 'ac-',
-        'description': 'align-content',
-        'values': [
-            { 'name': 'c', 'property': 'center' },
-            { 'name': 's', 'property': 'start' },
-            { 'name': 'e', 'property': 'end' },
-            { 'name': 'fs', 'property': 'flex-start' },
-            { 'name': 'fe', 'property': 'flex-end' },
-            { 'name': 'n', 'property': 'normal' },
-            { 'name': 'sb', 'property': 'space-between' },
-            { 'name': 'sa', 'property': 'space-around' },
-            { 'name': 'se', 'property': 'space-evenly' },
-            { 'name': 'stretch', 'property': 'stretch' }
+        classPrefix: 'ac-',
+        values: [
+            { classSuffix: 'c', classValue: ['align-content: center;'] },
+            { classSuffix: 's', classValue: ['align-content: start;'] },
+            { classSuffix: 'e', classValue: ['align-content: end;'] },
+            { classSuffix: 'fs', classValue: ['align-content: flex-start;'] },
+            { classSuffix: 'fe', classValue: ['align-content: flex-end;'] },
+            { classSuffix: 'n', classValue: ['align-content: normal;'] },
+            { classSuffix: 'sb', classValue: ['align-content: space-between;'] },
+            { classSuffix: 'sa', classValue: ['align-content: space-around;'] },
+            { classSuffix: 'se', classValue: ['align-content: space-evenly;'] },
+            { classSuffix: 'stretch', classValue: ['align-content: stretch;'] }
         ]
     },
     {
-        'prefix': 'ai-',
-        'description': 'align-items',
-        'values': [
-            { 'name': 'n', 'property': 'normal' },
-            { 'name': 'stretch', 'property': 'stretch' },
-            { 'name': 'c', 'property': 'center' },
-            { 'name': 'start', 'property': 'start' },
-            { 'name': 'e', 'property': 'end' },
-            { 'name': 'fs', 'property': 'flex-start' },
-            { 'name': 'fe', 'property': 'flex-end' }
+        classPrefix: 'ai-',
+        values: [
+            { classSuffix: 'n', classValue: ['align-items: normal;'] },
+            { classSuffix: 'stretch', classValue: ['align-items: stretch;'] },
+            { classSuffix: 'c', classValue: ['align-items: center;'] },
+            { classSuffix: 'start', classValue: ['align-items: start;'] },
+            { classSuffix: 'e', classValue: ['align-items: end;'] },
+            { classSuffix: 'fs', classValue: ['align-items: flex-start;'] },
+            { classSuffix: 'fe', classValue: ['align-items: flex-end;'] }
         ]
     },
     {
-        'prefix': 'as-',
-        'description': 'align-self',
-        'values': [
-            { 'name': 'auto', 'property': 'auto' },
-            { 'name': 'n', 'property': 'normal' },
-            { 'name': 'c', 'property': 'center' },
-            { 'name': 'start', 'property': 'start' },
-            { 'name': 'e', 'property': 'end' },
-            { 'name': 'fs', 'property': 'flex-start' },
-            { 'name': 'fe', 'property': 'flex-end' },
-            { 'name': 'stretch', 'property': 'stretch' }
+        classPrefix: 'as-',
+        values: [
+            { classSuffix: 'auto', classValue: ['align-self: auto;'] },
+            { classSuffix: 'n', classValue: ['align-self: normal;'] },
+            { classSuffix: 'c', classValue: ['align-self: center;'] },
+            { classSuffix: 'start', classValue: ['align-self: start;'] },
+            { classSuffix: 'e', classValue: ['align-self: end;'] },
+            { classSuffix: 'fs', classValue: ['align-self: flex-start;'] },
+            { classSuffix: 'fe', classValue: ['align-self: flex-end;'] },
+            { classSuffix: 'stretch', classValue: ['align-self: stretch;'] }
         ]
     },
     {
-        'prefix': 'cg-',
-        'description': 'column-gap',
-        'values': [
-            { 'name': '1', 'property': '0.25rem' },
-            { 'name': '2', 'property': '0.5rem' },
-            { 'name': '3', 'property': '0.75rem' },
-            { 'name': '4', 'property': '1rem' },
-            { 'name': '5', 'property': '1.25rem' },
-            { 'name': '6', 'property': '1.5rem' },
-            { 'name': '7', 'property': '1.75rem' },
-            { 'name': '8', 'property': '2rem' },
-            { 'name': '9', 'property': '2.25rem' },
-            { 'name': '10', 'property': '2.5rem' },
-            { 'name': '11', 'property': '2.75rem' },
-            { 'name': '12', 'property': '3rem' },
-            { 'name': '13', 'property': '3.25rem' },
-            { 'name': '14', 'property': '3.5rem' },
-            { 'name': '15', 'property': '3.75rem' },
-            { 'name': '16', 'property': '4rem' }
+        classPrefix: 'cg-',
+        values: [
+            { classSuffix: '1', classValue: ['column-gap: 0.25rem;'] },
+            { classSuffix: '2', classValue: ['column-gap: 0.5rem;'] },
+            { classSuffix: '3', classValue: ['column-gap: 0.75rem;'] },
+            { classSuffix: '4', classValue: ['column-gap: 1rem;'] },
+            { classSuffix: '5', classValue: ['column-gap: 1.25rem;'] },
+            { classSuffix: '6', classValue: ['column-gap: 1.5rem;'] },
+            { classSuffix: '7', classValue: ['column-gap: 1.75rem;'] },
+            { classSuffix: '8', classValue: ['column-gap: 2rem;'] },
+            { classSuffix: '9', classValue: ['column-gap: 2.25rem;'] },
+            { classSuffix: '10', classValue: ['column-gap: 2.5rem;'] },
+            { classSuffix: '11', classValue: ['column-gap: 2.75rem;'] },
+            { classSuffix: '12', classValue: ['column-gap: 3rem;'] },
+            { classSuffix: '13', classValue: ['column-gap: 3.25rem;'] },
+            { classSuffix: '14', classValue: ['column-gap: 3.5rem;'] },
+            { classSuffix: '15', classValue: ['column-gap: 3.75rem;'] },
+            { classSuffix: '16', classValue: ['column-gap: 4rem;'] }
         ]
     },
     {
-        'prefix': 'jc-',
-        'description': 'justify-content',
-        'values': [
-            { 'name': 'c', 'property': 'center' },
-            { 'name': 's', 'property': 'start' },
-            { 'name': 'e', 'property': 'end' },
-            { 'name': 'fs', 'property': 'flex-start' },
-            { 'name': 'fe', 'property': 'flex-end' },
-            { 'name': 'l', 'property': 'left' },
-            { 'name': 'r', 'property': 'right' },
-            { 'name': 'n', 'property': 'normal' },
-            { 'name': 'sb', 'property': 'space-between' },
-            { 'name': 'sa', 'property': 'space-around' },
-            { 'name': 'se', 'property': 'space-evenly' },
-            { 'name': 'stretch', 'property': 'stretch' }
+        classPrefix: 'jc-',
+        values: [
+            { classSuffix: 'c', classValue: ['justify-content: center;'] },
+            { classSuffix: 's', classValue: ['justify-content: start;'] },
+            { classSuffix: 'e', classValue: ['justify-content: end;'] },
+            { classSuffix: 'fs', classValue: ['justify-content: flex-start;'] },
+            { classSuffix: 'fe', classValue: ['justify-content: flex-end;'] },
+            { classSuffix: 'l', classValue: ['justify-content: left;'] },
+            { classSuffix: 'r', classValue: ['justify-content: right;'] },
+            { classSuffix: 'n', classValue: ['justify-content: normal;'] },
+            { classSuffix: 'sb', classValue: ['justify-content: space-between;'] },
+            { classSuffix: 'sa', classValue: ['justify-content: space-around;'] },
+            { classSuffix: 'se', classValue: ['justify-content: space-evenly;'] },
+            { classSuffix: 'stretch', classValue: ['justify-content: stretch;'] }
         ]
     },
     {
-        'prefix': 'ji-',
-        'description': 'justify-items',
-        'values': [
-            { 'name': 'c', 'property': 'center' },
-            { 'name': 's', 'property': 'start' },
-            { 'name': 'e', 'property': 'end' },
-            { 'name': 'fs', 'property': 'flex-start' },
-            { 'name': 'fe', 'property': 'flex-end' },
-            { 'name': 'l', 'property': 'left' },
-            { 'name': 'r', 'property': 'right' },
-            { 'name': 'n', 'property': 'normal' },
-            { 'name': 'sb', 'property': 'space-between' },
-            { 'name': 'sa', 'property': 'space-around' },
-            { 'name': 'se', 'property': 'space-evenly' },
-            { 'name': 'stretch', 'property': 'stretch' }
+        classPrefix: 'ji-',
+        values: [
+            { classSuffix: 'c', classValue: ['justify-items: center;'] },
+            { classSuffix: 's', classValue: ['justify-items: start;'] },
+            { classSuffix: 'e', classValue: ['justify-items: end;'] },
+            { classSuffix: 'fs', classValue: ['justify-items: flex-start;'] },
+            { classSuffix: 'fe', classValue: ['justify-items: flex-end;'] },
+            { classSuffix: 'l', classValue: ['justify-items: left;'] },
+            { classSuffix: 'r', classValue: ['justify-items: right;'] },
+            { classSuffix: 'n', classValue: ['justify-items: normal;'] },
+            { classSuffix: 'sb', classValue: ['justify-items: space-between;'] },
+            { classSuffix: 'sa', classValue: ['justify-items: space-around;'] },
+            { classSuffix: 'se', classValue: ['justify-items: space-evenly;'] },
+            { classSuffix: 'stretch', classValue: ['justify-items: stretch;'] }
         ]
     },
     {
-        'prefix': 'js-',
-        'description': 'justify-self',
-        'values': [
-            { 'name': 'auto', 'property': 'auto' },
-            { 'name': 'n', 'property': 'normal' },
-            { 'name': 'stretch', 'property': 'stretch' },
-            { 'name': 'c', 'property': 'center' },
-            { 'name': 's', 'property': 'start' },
-            { 'name': 'e', 'property': 'end' },
-            { 'name': 'fs', 'property': 'flex-start' },
-            { 'name': 'fe', 'property': 'flex-end' },
-            { 'name': 'l', 'property': 'left' },
-            { 'name': 'r', 'property': 'right' }
+        classPrefix: 'js-',
+        values: [
+            { classSuffix: 'auto', classValue: ['justify-self: auto;'] },
+            { classSuffix: 'n', classValue: ['justify-self: normal;'] },
+            { classSuffix: 'stretch', classValue: ['justify-self: stretch;'] },
+            { classSuffix: 'c', classValue: ['justify-self: center;'] },
+            { classSuffix: 's', classValue: ['justify-self: start;'] },
+            { classSuffix: 'e', classValue: ['justify-self: end;'] },
+            { classSuffix: 'fs', classValue: ['justify-self: flex-start;'] },
+            { classSuffix: 'fe', classValue: ['justify-self: flex-end;'] },
+            { classSuffix: 'l', classValue: ['justify-self: left;'] },
+            { classSuffix: 'r', classValue: ['justify-self: right;'] }
         ]
     },
     {
-        'prefix': 'rg-',
-        'description': 'row-gap',
-        'values': [
-            { 'name': '1', 'property': '0.25rem' },
-            { 'name': '2', 'property': '0.5rem' },
-            { 'name': '3', 'property': '0.75rem' },
-            { 'name': '4', 'property': '1rem' },
-            { 'name': '5', 'property': '1.25rem' },
-            { 'name': '6', 'property': '1.5rem' },
-            { 'name': '7', 'property': '1.75rem' },
-            { 'name': '8', 'property': '2rem' },
-            { 'name': '9', 'property': '2.25rem' },
-            { 'name': '10', 'property': '2.5rem' },
-            { 'name': '11', 'property': '2.75rem' },
-            { 'name': '12', 'property': '3rem' },
-            { 'name': '13', 'property': '3.25rem' },
-            { 'name': '14', 'property': '3.5rem' },
-            { 'name': '15', 'property': '3.75rem' },
-            { 'name': '16', 'property': '4rem' }
+        classPrefix: 'rg-',
+        values: [
+            { classSuffix: '1', classValue: ['row-gap: 0.25rem;'] },
+            { classSuffix: '2', classValue: ['row-gap: 0.5rem;'] },
+            { classSuffix: '3', classValue: ['row-gap: 0.75rem;'] },
+            { classSuffix: '4', classValue: ['row-gap: 1rem;'] },
+            { classSuffix: '5', classValue: ['row-gap: 1.25rem;'] },
+            { classSuffix: '6', classValue: ['row-gap: 1.5rem;'] },
+            { classSuffix: '7', classValue: ['row-gap: 1.75rem;'] },
+            { classSuffix: '8', classValue: ['row-gap: 2rem;'] },
+            { classSuffix: '9', classValue: ['row-gap: 2.25rem;'] },
+            { classSuffix: '10', classValue: ['row-gap: 2.5rem;'] },
+            { classSuffix: '11', classValue: ['row-gap: 2.75rem;'] },
+            { classSuffix: '12', classValue: ['row-gap: 3rem;'] },
+            { classSuffix: '13', classValue: ['row-gap: 3.25rem;'] },
+            { classSuffix: '14', classValue: ['row-gap: 3.5rem;'] },
+            { classSuffix: '15', classValue: ['row-gap: 3.75rem;'] },
+            { classSuffix: '16', classValue: ['row-gap: 4rem;'] }
         ]
     },
 
     // miscellaneous
     {
-        'prefix': 'a-',
-        'description': 'appearance',
-        'values': [
-            { 'name': 'none', 'property': 'none' },
-            { 'name': 'auto', 'property': 'auto' }
+        classPrefix: 'a-',
+        values: [
+            { classSuffix: 'none', classValue: ['appearance: none;'] },
+            { classSuffix: 'auto', classValue: ['appearance: auto;'] }
         ]
     },
     {
-        'prefix': 'c-',
-        'description': 'cursor',
-        'values': [
-            { 'name': 'auto', 'property': 'auto' },
-            { 'name': 'p', 'property': 'pointer' },
-            { 'name': 't', 'property': 'text' },
-            { 'name': 'm', 'property': 'move' },
-            { 'name': 'na', 'property': 'not-allowed' },
-            { 'name': 'c', 'property': 'crosshair' },
-            { 'name': 'h', 'property': 'help' },
-            { 'name': 'er', 'property': 'e-resize' },
-            { 'name': 'nr', 'property': 'n-resize' },
-            { 'name': 'w', 'property': 'wait' }
+        classPrefix: 'c-',
+        values: [
+            { classSuffix: 'auto', classValue: ['cursor: auto;'] },
+            { classSuffix: 'p', classValue: ['cursor: pointer;'] },
+            { classSuffix: 't', classValue: ['cursor: text;'] },
+            { classSuffix: 'm', classValue: ['cursor: move;'] },
+            { classSuffix: 'na', classValue: ['cursor: not-allowed;'] },
+            { classSuffix: 'c', classValue: ['cursor: crosshair;'] },
+            { classSuffix: 'h', classValue: ['cursor: help;'] },
+            { classSuffix: 'er', classValue: ['cursor: e-resize;'] },
+            { classSuffix: 'nr', classValue: ['cursor: n-resize;'] },
+            { classSuffix: 'w', classValue: ['cursor: wait;'] }
         ]
     },
     {
-        'prefix': 'pe-',
-        'description': 'pointer-events',
-        'values': [
-            { 'name': 'auto', 'property': 'auto' },
-            { 'name': 'none', 'property': 'none' }
+        classPrefix: 'pe-',
+        values: [
+            { classSuffix: 'auto', classValue: ['pointer-events: auto;'] },
+            { classSuffix: 'none', classValue: ['pointer-events: none;'] }
         ]
     },
     {
-        'prefix': 'r-',
-        'description': 'resize',
-        'values': [
-            { 'name': 'b', 'property': 'both' },
-            { 'name': 'h', 'property': 'horizontal' },
-            { 'name': 'none', 'property': 'none' },
-            { 'name': 'v', 'property': 'vertical' }
+        classPrefix: 'r-',
+        values: [
+            { classSuffix: 'b', classValue: ['resize: both;'] },
+            { classSuffix: 'h', classValue: ['resize: horizontal;'] },
+            { classSuffix: 'none', classValue: ['resize: none;'] },
+            { classSuffix: 'v', classValue: ['resize: vertical;'] }
         ]
     },
     {
-        'prefix': 'us-',
-        'description': 'user-select',
-        'values': [
-            { 'name': 'auto', 'property': 'auto' },
-            { 'name': 'none', 'property': 'none' }
+        classPrefix: 'us-',
+        values: [
+            { classSuffix: 'auto', classValue: ['user-select: auto;'] },
+            { classSuffix: 'none', classValue: ['user-select: none;'] }
         ]
     },
 
     // positioning
     {
-        'prefix': 'cols-',
-        'description': 'columns',
-        'values': [
-            { 'name': '1', 'property': '1' },
-            { 'name': '2', 'property': '2' },
-            { 'name': '3', 'property': '3' },
-            { 'name': '4', 'property': '4' },
-            { 'name': '5', 'property': '5' },
-            { 'name': '6', 'property': '6' },
-            { 'name': '7', 'property': '7' },
-            { 'name': '8', 'property': '8' },
-            { 'name': '9', 'property': '9' },
-            { 'name': '10', 'property': '10' },
-            { 'name': '11', 'property': '11' },
-            { 'name': '12', 'property': '12' },
-            { 'name': '13', 'property': '13' },
-            { 'name': '14', 'property': '14' },
-            { 'name': '15', 'property': '15' },
-            { 'name': '16', 'property': '16' }
+        classPrefix: 'cols-',
+        values: [
+            { classSuffix: '1', classValue: ['columns: 1;'] },
+            { classSuffix: '2', classValue: ['columns: 2;'] },
+            { classSuffix: '3', classValue: ['columns: 3;'] },
+            { classSuffix: '4', classValue: ['columns: 4;'] },
+            { classSuffix: '5', classValue: ['columns: 5;'] },
+            { classSuffix: '6', classValue: ['columns: 6;'] },
+            { classSuffix: '7', classValue: ['columns: 7;'] },
+            { classSuffix: '8', classValue: ['columns: 8;'] },
+            { classSuffix: '9', classValue: ['columns: 9;'] },
+            { classSuffix: '10', classValue: ['columns: 10;'] },
+            { classSuffix: '11', classValue: ['columns: 11;'] },
+            { classSuffix: '12', classValue: ['columns: 12;'] },
+            { classSuffix: '13', classValue: ['columns: 13;'] },
+            { classSuffix: '14', classValue: ['columns: 14;'] },
+            { classSuffix: '15', classValue: ['columns: 15;'] },
+            { classSuffix: '16', classValue: ['columns: 16;'] }
         ]
     },
     {
-        'prefix': 'dir-b-',
-        'description': 'bottom',
-        'values': [
-            { 'name': '0', 'property': '0rem' },
-            { 'name': '1', 'property': '1rem' },
-            { 'name': '2', 'property': '2rem' },
-            { 'name': '3', 'property': '4rem' },
-            { 'name': '4', 'property': '6rem' },
-            { 'name': '5', 'property': '8rem' },
-            { 'name': '6', 'property': '10rem' },
-            { 'name': '7', 'property': '12rem' },
-            { 'name': '8', 'property': '14rem' },
-            { 'name': '9', 'property': '16rem' },
-            { 'name': '10', 'property': '18rem' },
-            { 'name': '11', 'property': '20rem' },
-            { 'name': '12', 'property': '22rem' },
-            { 'name': '13', 'property': '24rem' },
-            { 'name': '14', 'property': '26rem' },
-            { 'name': '15', 'property': '28rem' },
-            { 'name': '16', 'property': '30rem' },
-            { 'name': 'none', 'property': 'none' }
+        classPrefix: 'dir-b-',
+        values: [
+            { classSuffix: '0', classValue: ['bottom: 0rem;'] },
+            { classSuffix: '1', classValue: ['bottom: 1rem;'] },
+            { classSuffix: '2', classValue: ['bottom: 2rem;'] },
+            { classSuffix: '3', classValue: ['bottom: 4rem;'] },
+            { classSuffix: '4', classValue: ['bottom: 6rem;'] },
+            { classSuffix: '5', classValue: ['bottom: 8rem;'] },
+            { classSuffix: '6', classValue: ['bottom: 10rem;'] },
+            { classSuffix: '7', classValue: ['bottom: 12rem;'] },
+            { classSuffix: '8', classValue: ['bottom: 14rem;'] },
+            { classSuffix: '9', classValue: ['bottom: 16rem;'] },
+            { classSuffix: '10', classValue: ['bottom: 18rem;'] },
+            { classSuffix: '11', classValue: ['bottom: 20rem;'] },
+            { classSuffix: '12', classValue: ['bottom: 22rem;'] },
+            { classSuffix: '13', classValue: ['bottom: 24rem;'] },
+            { classSuffix: '14', classValue: ['bottom: 26rem;'] },
+            { classSuffix: '15', classValue: ['bottom: 28rem;'] },
+            { classSuffix: '16', classValue: ['bottom: 30rem;'] },
+            { classSuffix: 'none', classValue: ['bottom: none;'] }
         ]
     },
     {
-        'prefix': 'dir-i-',
-        'description': 'inset',
-        'values': [
-            { 'name': '0', 'property': '0rem' },
-            { 'name': '1', 'property': '1rem' },
-            { 'name': '2', 'property': '2rem' },
-            { 'name': '3', 'property': '4rem' },
-            { 'name': '4', 'property': '6rem' },
-            { 'name': '5', 'property': '8rem' },
-            { 'name': '6', 'property': '10rem' },
-            { 'name': '7', 'property': '12rem' },
-            { 'name': '8', 'property': '14rem' },
-            { 'name': '9', 'property': '16rem' },
-            { 'name': '10', 'property': '18rem' },
-            { 'name': '11', 'property': '20rem' },
-            { 'name': '12', 'property': '22rem' },
-            { 'name': '13', 'property': '24rem' },
-            { 'name': '14', 'property': '26rem' },
-            { 'name': '15', 'property': '28rem' },
-            { 'name': '16', 'property': '30rem' },
-            { 'name': 'none', 'property': 'none' }
+        classPrefix: 'dir-i-',
+        values: [
+            { classSuffix: '0', classValue: ['inset: 0rem;'] },
+            { classSuffix: '1', classValue: ['inset: 1rem;'] },
+            { classSuffix: '2', classValue: ['inset: 2rem;'] },
+            { classSuffix: '3', classValue: ['inset: 4rem;'] },
+            { classSuffix: '4', classValue: ['inset: 6rem;'] },
+            { classSuffix: '5', classValue: ['inset: 8rem;'] },
+            { classSuffix: '6', classValue: ['inset: 10rem;'] },
+            { classSuffix: '7', classValue: ['inset: 12rem;'] },
+            { classSuffix: '8', classValue: ['inset: 14rem;'] },
+            { classSuffix: '9', classValue: ['inset: 16rem;'] },
+            { classSuffix: '10', classValue: ['inset: 18rem;'] },
+            { classSuffix: '11', classValue: ['inset: 20rem;'] },
+            { classSuffix: '12', classValue: ['inset: 22rem;'] },
+            { classSuffix: '13', classValue: ['inset: 24rem;'] },
+            { classSuffix: '14', classValue: ['inset: 26rem;'] },
+            { classSuffix: '15', classValue: ['inset: 28rem;'] },
+            { classSuffix: '16', classValue: ['inset: 30rem;'] },
+            { classSuffix: 'none', classValue: ['inset: none;'] }
         ]
     },
     {
-        'prefix': 'dir-l-',
-        'description': 'left',
-        'values': [
-            { 'name': '0', 'property': '0rem' },
-            { 'name': '1', 'property': '1rem' },
-            { 'name': '2', 'property': '2rem' },
-            { 'name': '3', 'property': '4rem' },
-            { 'name': '4', 'property': '6rem' },
-            { 'name': '5', 'property': '8rem' },
-            { 'name': '6', 'property': '10rem' },
-            { 'name': '7', 'property': '12rem' },
-            { 'name': '8', 'property': '14rem' },
-            { 'name': '9', 'property': '16rem' },
-            { 'name': '10', 'property': '18rem' },
-            { 'name': '11', 'property': '20rem' },
-            { 'name': '12', 'property': '22rem' },
-            { 'name': '13', 'property': '24rem' },
-            { 'name': '14', 'property': '26rem' },
-            { 'name': '15', 'property': '28rem' },
-            { 'name': '16', 'property': '30rem' },
-            { 'name': 'none', 'property': 'none' }
+        classPrefix: 'dir-l-',
+        values: [
+            { classSuffix: '0', classValue: ['left: 0rem;'] },
+            { classSuffix: '1', classValue: ['left: 1rem;'] },
+            { classSuffix: '2', classValue: ['left: 2rem;'] },
+            { classSuffix: '3', classValue: ['left: 4rem;'] },
+            { classSuffix: '4', classValue: ['left: 6rem;'] },
+            { classSuffix: '5', classValue: ['left: 8rem;'] },
+            { classSuffix: '6', classValue: ['left: 10rem;'] },
+            { classSuffix: '7', classValue: ['left: 12rem;'] },
+            { classSuffix: '8', classValue: ['left: 14rem;'] },
+            { classSuffix: '9', classValue: ['left: 16rem;'] },
+            { classSuffix: '10', classValue: ['left: 18rem;'] },
+            { classSuffix: '11', classValue: ['left: 20rem;'] },
+            { classSuffix: '12', classValue: ['left: 22rem;'] },
+            { classSuffix: '13', classValue: ['left: 24rem;'] },
+            { classSuffix: '14', classValue: ['left: 26rem;'] },
+            { classSuffix: '15', classValue: ['left: 28rem;'] },
+            { classSuffix: '16', classValue: ['left: 30rem;'] },
+            { classSuffix: 'none', classValue: ['left: none;'] }
         ]
     },
     {
-        'prefix': 'dir-r-',
-        'description': 'right',
-        'values': [
-            { 'name': '0', 'property': '0rem' },
-            { 'name': '1', 'property': '1rem' },
-            { 'name': '2', 'property': '2rem' },
-            { 'name': '3', 'property': '4rem' },
-            { 'name': '4', 'property': '6rem' },
-            { 'name': '5', 'property': '8rem' },
-            { 'name': '6', 'property': '10rem' },
-            { 'name': '7', 'property': '12rem' },
-            { 'name': '8', 'property': '14rem' },
-            { 'name': '9', 'property': '16rem' },
-            { 'name': '10', 'property': '18rem' },
-            { 'name': '11', 'property': '20rem' },
-            { 'name': '12', 'property': '22rem' },
-            { 'name': '13', 'property': '24rem' },
-            { 'name': '14', 'property': '26rem' },
-            { 'name': '15', 'property': '28rem' },
-            { 'name': '16', 'property': '30rem' },
-            { 'name': 'none', 'property': 'none' }
+        classPrefix: 'dir-r-',
+        values: [
+            { classSuffix: '0', classValue: ['right: 0rem;'] },
+            { classSuffix: '1', classValue: ['right: 1rem;'] },
+            { classSuffix: '2', classValue: ['right: 2rem;'] },
+            { classSuffix: '3', classValue: ['right: 4rem;'] },
+            { classSuffix: '4', classValue: ['right: 6rem;'] },
+            { classSuffix: '5', classValue: ['right: 8rem;'] },
+            { classSuffix: '6', classValue: ['right: 10rem;'] },
+            { classSuffix: '7', classValue: ['right: 12rem;'] },
+            { classSuffix: '8', classValue: ['right: 14rem;'] },
+            { classSuffix: '9', classValue: ['right: 16rem;'] },
+            { classSuffix: '10', classValue: ['right: 18rem;'] },
+            { classSuffix: '11', classValue: ['right: 20rem;'] },
+            { classSuffix: '12', classValue: ['right: 22rem;'] },
+            { classSuffix: '13', classValue: ['right: 24rem;'] },
+            { classSuffix: '14', classValue: ['right: 26rem;'] },
+            { classSuffix: '15', classValue: ['right: 28rem;'] },
+            { classSuffix: '16', classValue: ['right: 30rem;'] },
+            { classSuffix: 'none', classValue: ['right: none;'] }
         ]
     },
     {
-        'prefix': 'dir-t-',
-        'description': 'top',
-        'values': [
-            { 'name': '0', 'property': '0rem' },
-            { 'name': '1', 'property': '1rem' },
-            { 'name': '2', 'property': '2rem' },
-            { 'name': '3', 'property': '4rem' },
-            { 'name': '4', 'property': '6rem' },
-            { 'name': '5', 'property': '8rem' },
-            { 'name': '6', 'property': '10rem' },
-            { 'name': '7', 'property': '12rem' },
-            { 'name': '8', 'property': '14rem' },
-            { 'name': '9', 'property': '16rem' },
-            { 'name': '10', 'property': '18rem' },
-            { 'name': '11', 'property': '20rem' },
-            { 'name': '12', 'property': '22rem' },
-            { 'name': '13', 'property': '24rem' },
-            { 'name': '14', 'property': '26rem' },
-            { 'name': '15', 'property': '28rem' },
-            { 'name': '16', 'property': '30rem' },
-            { 'name': 'none', 'property': 'none' }
+        classPrefix: 'dir-t-',
+        values: [
+            { classSuffix: '0', classValue: ['top: 0rem;'] },
+            { classSuffix: '1', classValue: ['top: 1rem;'] },
+            { classSuffix: '2', classValue: ['top: 2rem;'] },
+            { classSuffix: '3', classValue: ['top: 4rem;'] },
+            { classSuffix: '4', classValue: ['top: 6rem;'] },
+            { classSuffix: '5', classValue: ['top: 8rem;'] },
+            { classSuffix: '6', classValue: ['top: 10rem;'] },
+            { classSuffix: '7', classValue: ['top: 12rem;'] },
+            { classSuffix: '8', classValue: ['top: 14rem;'] },
+            { classSuffix: '9', classValue: ['top: 16rem;'] },
+            { classSuffix: '10', classValue: ['top: 18rem;'] },
+            { classSuffix: '11', classValue: ['top: 20rem;'] },
+            { classSuffix: '12', classValue: ['top: 22rem;'] },
+            { classSuffix: '13', classValue: ['top: 24rem;'] },
+            { classSuffix: '14', classValue: ['top: 26rem;'] },
+            { classSuffix: '15', classValue: ['top: 28rem;'] },
+            { classSuffix: '16', classValue: ['top: 30rem;'] },
+            { classSuffix: 'none', classValue: ['top: none;'] }
         ]
     },
     {
-        'prefix': 'd-',
-        'description': 'display',
-        'values': [
-            { 'name': 'b', 'property': 'block' },
-            { 'name': 'i', 'property': 'inline' },
-            { 'name': 'ib', 'property': 'inline-block' },
-            { 'name': 'f', 'property': 'flex' },
-            { 'name': 'if', 'property': 'inline-flex' },
-            { 'name': 'g', 'property': 'grid' },
-            { 'name': 'fr', 'property': 'flow-root' },
-            { 'name': 'none', 'property': 'none' }
+        classPrefix: 'd-',
+        values: [
+            { classSuffix: 'b', classValue: ['display: block;'] },
+            { classSuffix: 'i', classValue: ['display: inline;'] },
+            { classSuffix: 'ib', classValue: ['display: inline-block;'] },
+            { classSuffix: 'f', classValue: ['display: flex;'] },
+            { classSuffix: 'if', classValue: ['display: inline-flex;'] },
+            { classSuffix: 'g', classValue: ['display: grid;'] },
+            { classSuffix: 'fr', classValue: ['display: flow-root;'] },
+            { classSuffix: 'none', classValue: ['display: none;'] }
         ]
     },
     {
-        'prefix': 'f-',
-        'description': 'float',
-        'values': [
-            { 'name': 'none', 'property': 'none' },
-            { 'name': 'l', 'property': 'left' },
-            { 'name': 'r', 'property': 'right' },
-            { 'name': 'is', 'property': 'inline-start' },
-            { 'name': 'ie', 'property': 'inline-end' }
+        classPrefix: 'f-',
+        values: [
+            { classSuffix: 'none', classValue: ['float: none;'] },
+            { classSuffix: 'l', classValue: ['float: left;'] },
+            { classSuffix: 'r', classValue: ['float: right;'] },
+            { classSuffix: 'is', classValue: ['float: inline-start;'] },
+            { classSuffix: 'ie', classValue: ['float: inline-end;'] }
         ]
     },
     {
-        'prefix': 'ovf-',
-        'description': 'overflow',
-        'values': [
-            { 'name': 'auto', 'property': 'auto' },
-            { 'name': 'c', 'property': 'clip' },
-            { 'name': 'h', 'property': 'hidden' },
-            { 'name': 's', 'property': 'scroll' },
-            { 'name': 'v', 'property': 'visible' }
+        classPrefix: 'ovf-',
+        values: [
+            { classSuffix: 'auto', classValue: ['overflow: auto;'] },
+            { classSuffix: 'c', classValue: ['overflow: clip;'] },
+            { classSuffix: 'h', classValue: ['overflow: hidden;'] },
+            { classSuffix: 's', classValue: ['overflow: scroll;'] },
+            { classSuffix: 'v', classValue: ['overflow: visible;'] }
         ]
     },
     {
-        'prefix': 'pos-',
-        'description': 'position',
-        'values': [
-            { 'name': 'a', 'property': 'absolute' },
-            { 'name': 'f', 'property': 'fixed' },
-            { 'name': 'r', 'property': 'relative' },
-            { 'name': 'static', 'property': 'static' },
-            { 'name': 'sticky', 'property': 'sticky' }
+        classPrefix: 'pos-',
+        values: [
+            { classSuffix: 'a', classValue: ['position: absolute;'] },
+            { classSuffix: 'f', classValue: ['position: fixed;'] },
+            { classSuffix: 'r', classValue: ['position: relative;'] },
+            { classSuffix: 'static', classValue: ['position: static;'] },
+            { classSuffix: 'sticky', classValue: ['position: sticky;'] }
         ]
     },
     {
-        'prefix': 'zi-',
-        'description': 'z-index',
-        'values': [
-            { 'name': '0', 'property': '0' },
-            { 'name': '10', 'property': '10' },
-            { 'name': '20', 'property': '20' },
-            { 'name': '30', 'property': '30' },
-            { 'name': '40', 'property': '40' },
-            { 'name': '50', 'property': '50' },
-            { 'name': '60', 'property': '60' },
-            { 'name': '70', 'property': '70' },
-            { 'name': '80', 'property': '80' },
-            { 'name': '90', 'property': '90' },
-            { 'name': 'auto', 'property': 'auto' }
+        classPrefix: 'zi-',
+        values: [
+            { classSuffix: '0', classValue: ['z-index: 0;'] },
+            { classSuffix: '10', classValue: ['z-index: 10;'] },
+            { classSuffix: '20', classValue: ['z-index: 20;'] },
+            { classSuffix: '30', classValue: ['z-index: 30;'] },
+            { classSuffix: '40', classValue: ['z-index: 40;'] },
+            { classSuffix: '50', classValue: ['z-index: 50;'] },
+            { classSuffix: '60', classValue: ['z-index: 60;'] },
+            { classSuffix: '70', classValue: ['z-index: 70;'] },
+            { classSuffix: '80', classValue: ['z-index: 80;'] },
+            { classSuffix: '90', classValue: ['z-index: 90;'] },
+            { classSuffix: 'auto', classValue: ['z-index: auto;'] }
         ]
     },
 
     // typography
     {
-        'prefix': 'ff-',
-        'description': 'font-family',
-        'values': [
-            { 'name': 'c', 'property': 'Charter, Cambria, serif' },
-            { 'name': 'm', 'property': 'ui-monospace, Consolas, monospace' },
-            { 'name': 's', 'property': 'system-ui, sans-serif' }
-        ]
-    },
-    {
-        'prefix': 'fs-',
-        'description': 'font-size',
-        'values': [
-            { 'name': 'xs', 'property': '12px' },
-            { 'name': 'sm', 'property': '14.4px' },
-            { 'name': 'md', 'property': '16px' },
-            { 'name': 'lg', 'property': '19.2px' },
-            { 'name': 'xl', 'property': '23.04px' },
-            { 'name': '2xl', 'property': '30.08px' },
-            { 'name': '3xl', 'property': '35.52px' },
-            { 'name': '6xl', 'property': '58.56px' }
-        ]
-    },
-    {
-        'prefix': 'fw-',
-        'description': 'font-weight',
-        'values': [
-            { 'name': '100', 'property': '100' },
-            { 'name': '200', 'property': '200' },
-            { 'name': '300', 'property': '300' },
-            { 'name': '400', 'property': '400' },
-            { 'name': '500', 'property': '500' },
-            { 'name': '600', 'property': '600' },
-            { 'name': '700', 'property': '700' },
-            { 'name': '800', 'property': '800' },
-            { 'name': '900', 'property': '900' }
-        ]
-    },
-    {
-        'prefix': 'lh-',
-        'description': 'line-height',
-        'values': [
-            { 'name': '1', 'property': '1' },
-            { 'name': '2', 'property': '1.25' },
-            { 'name': '3', 'property': '1.375' },
-            { 'name': '4', 'property': '1.5' },
-            { 'name': '5', 'property': '1.625' },
-            { 'name': '6', 'property': '2' }
-        ]
-    },
-    {
-        'prefix': 'lst-',
-        'description': 'list-style-type',
-        'values': [
-            { 'name': 'd', 'property': 'disc' },
-            { 'name': 'c', 'property': 'circle' },
-            { 'name': 's', 'property': 'square' }
-        ]
-    },
-    {
-        'prefix': 'ta-',
-        'description': 'text-align',
-        'values': [
-            { 'name': 's', 'property': 'start' },
-            { 'name': 'e', 'property': 'end' },
-            { 'name': 'l', 'property': 'left' },
-            { 'name': 'r', 'property': 'right' },
-            { 'name': 'c', 'property': 'center' },
-            { 'name': 'j', 'property': 'justify' },
-            { 'name': 'ja', 'property': 'justify-all' },
-            { 'name': 'mp', 'property': 'match-parent' }
-        ]
-    },
-    {
-        'prefix': 'tdl-',
-        'description': 'text-decoration-line',
-        'values': [
-            { 'name': 'none', 'property': 'none' },
-            { 'name': 'u', 'property': 'underline' },
-            { 'name': 'o', 'property': 'overline' },
-            { 'name': 'lt', 'property': 'line-through' }
-        ]
-    },
-    {
-        'prefix': 'td-',
-        'description': 'text-decoration',
-        'values': [
-            { 'name': 'u', 'property': 'underline' },
-            { 'name': 'none', 'property': 'none' }
-        ]
-    },
-    {
-        prefix: 'ow-',
-        description: 'word-break',
+        classPrefix: 'ff-',
         values: [
-            { name: 'ow', property: 'break-word' },
-            { name: 'ow', property: 'keep-all' },
-            { name: 'ow', property: 'normal' }
+            { classSuffix: 'c', classValue: ['font-family: Charter, Cambria, serif;'] },
+            { classSuffix: 'm', classValue: ['font-family: ui-monospace, Consolas, monospace;'] },
+            { classSuffix: 's', classValue: ['font-family: system-ui, sans-serif;'] }
+        ]
+    },
+    {
+        classPrefix: 'fs-',
+        values: [
+            { classSuffix: 'xs', classValue: ['font-size: 12px;'] },
+            { classSuffix: 'sm', classValue: ['font-size: 14.4px;'] },
+            { classSuffix: 'md', classValue: ['font-size: 16px;'] },
+            { classSuffix: 'lg', classValue: ['font-size: 19.2px;'] },
+            { classSuffix: 'xl', classValue: ['font-size: 23.04px;'] },
+            { classSuffix: '2xl', classValue: ['font-size: 30.08px;'] },
+            { classSuffix: '3xl', classValue: ['font-size: 35.52px;'] },
+            { classSuffix: '6xl', classValue: ['font-size: 58.56px;'] }
+        ]
+    },
+    {
+        classPrefix: 'fw-',
+        values: [
+            { classSuffix: '100', classValue: ['font-weight: 100;'] },
+            { classSuffix: '200', classValue: ['font-weight: 200;'] },
+            { classSuffix: '300', classValue: ['font-weight: 300;'] },
+            { classSuffix: '400', classValue: ['font-weight: 400;'] },
+            { classSuffix: '500', classValue: ['font-weight: 500;'] },
+            { classSuffix: '600', classValue: ['font-weight: 600;'] },
+            { classSuffix: '700', classValue: ['font-weight: 700;'] },
+            { classSuffix: '800', classValue: ['font-weight: 800;'] },
+            { classSuffix: '900', classValue: ['font-weight: 900;'] }
+        ]
+    },
+    {
+        classPrefix: 'lh-',
+        values: [
+            { classSuffix: '1', classValue: ['line-height: 1;'] },
+            { classSuffix: '2', classValue: ['line-height: 1.25;'] },
+            { classSuffix: '3', classValue: ['line-height: 1.375;'] },
+            { classSuffix: '4', classValue: ['line-height: 1.5;'] },
+            { classSuffix: '5', classValue: ['line-height: 1.625;'] },
+            { classSuffix: '6', classValue: ['line-height: 2;'] }
+        ]
+    },
+    {
+        classPrefix: 'lst-',
+        values: [
+            { classSuffix: 'd', classValue: ['list-style-type: disc;'] },
+            { classSuffix: 'c', classValue: ['list-style-type: circle;'] },
+            { classSuffix: 's', classValue: ['list-style-type: square;'] }
+        ]
+    },
+    {
+        classPrefix: 'ta-',
+        values: [
+            { classSuffix: 's', classValue: ['text-align: start;'] },
+            { classSuffix: 'e', classValue: ['text-align: end;'] },
+            { classSuffix: 'l', classValue: ['text-align: left;'] },
+            { classSuffix: 'r', classValue: ['text-align: right;'] },
+            { classSuffix: 'c', classValue: ['text-align: center;'] },
+            { classSuffix: 'j', classValue: ['text-align: justify;'] },
+            { classSuffix: 'ja', classValue: ['text-align: justify-all;'] },
+            { classSuffix: 'mp', classValue: ['text-align: match-parent;'] }
+        ]
+    },
+    {
+        classPrefix: 'tdl-',
+        values: [
+            { classSuffix: 'none', classValue: ['text-decoration-line: none;'] },
+            { classSuffix: 'u', classValue: ['text-decoration-line: underline;'] },
+            { classSuffix: 'o', classValue: ['text-decoration-line: overline;'] },
+            { classSuffix: 'lt', classValue: ['text-decoration-line: line-through;'] }
+        ]
+    },
+    {
+        classPrefix: 'td-',
+        values: [
+            { classSuffix: 'u', classValue: ['text-decoration: underline;'] },
+            { classSuffix: 'none', classValue: ['text-decoration: none;'] }
+        ]
+    },
+    {
+        classPrefix: 'ow-',
+        values: [
+            { classSuffix: 'ow', classValue: ['word-break: break-word;'] },
+            { classSuffix: 'ow', classValue: ['word-break: keep-all;'] },
+            { classSuffix: 'ow', classValue: ['word-break: normal;'] }
         ]
     },
 ];

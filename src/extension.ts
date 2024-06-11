@@ -1,34 +1,34 @@
 import * as vscode from 'vscode';
 
+import { colors } from './yumma-css/colors';
 import { colorUtils } from './utils/colorUtil';
 import { isYummaInstalled } from './utils/workspaceUtil';
-import { colors } from './yumma-css/colors';
 import { utilities } from './yumma-css/utilities';
 
 const completionItems: vscode.CompletionItem[] = [];
 
 colorUtils.forEach(colorClass => {
     colors.forEach(color => {
-        const className = `${colorClass.prefix}${color.name}`;
-        const item = new vscode.CompletionItem(className, vscode.CompletionItemKind.Color);
+        const classItem = `${colorClass.classPrefix}${color.className}`;
+        const item = new vscode.CompletionItem(classItem, vscode.CompletionItemKind.Color);
 
-        item.detail = `${colorClass.description}: ${color.color}`;
-        item.documentation = new vscode.MarkdownString(`**Utility class**: ${colorClass.description}: ${color.color}`);
-        item.insertText = className;
+        item.detail = `${colorClass.classValue}: ${color.classValue}`;
+        item.documentation = new vscode.MarkdownString(`**Utility class**: ${colorClass.classValue}: ${color.classValue}`);
+        item.insertText = classItem;
 
-        (item as any).color = { id: 'yumma-color', color: color.color };
+        (item as any).color = { id: 'yumma-color', color: color.classValue };
         completionItems.push(item);
     });
 });
 
 utilities.forEach(utilClass => {
     utilClass.values.forEach(value => {
-        const className = `${utilClass.prefix}${value.name}`;
-        const item = new vscode.CompletionItem(className, vscode.CompletionItemKind.Property);
+        const classItem = `${utilClass.classPrefix}${value.classSuffix}`;
+        const item = new vscode.CompletionItem(classItem, vscode.CompletionItemKind.Property);
 
-        item.detail = `${utilClass.description}: ${value.property || ''}`;
-        item.documentation = new vscode.MarkdownString(`**Utility class**: ${utilClass.description}`);
-        item.insertText = className;
+        item.detail = `${value.classValue.join(' \n ') || ''}`;
+        item.documentation = new vscode.MarkdownString(`**Utility class**: ${utilClass.classPrefix}`);
+        item.insertText = classItem;
 
         completionItems.push(item);
     });
@@ -55,16 +55,16 @@ export async function activate(context: vscode.ExtensionContext) {
                     return null;
                 }
                 const word = document.getText(range);
-                
+
                 const utility = utilities.find(utilClass =>
-                    utilClass.values.some(value => `${utilClass.prefix}${value.name}` === word)
+                    utilClass.values.some(value => `${utilClass.classPrefix}${value.classSuffix}` === word)
                 );
-                
+
                 if (utility) {
-                    const value = utility.values.find(value => `${utility.prefix}${value.name}` === word);
+                    const value = utility.values.find(value => `${utility.classPrefix}${value.classSuffix}` === word);
                     if (value) {
                         const markdownString = new vscode.MarkdownString();
-                        markdownString.appendCodeblock(`.${word} {\n ${utility.description}: ${value.property || ''};\n}`, 'css');
+                        markdownString.appendCodeblock(`.${word} {\n ${value.classValue.join(' \n ') || ''}\n}`, 'css');
                         return new vscode.Hover(markdownString);
                     }
                 }

@@ -1,10 +1,10 @@
 export const colorUtils = [
-    { prefix: 'bg-', description: 'background-color' },
-    { prefix: 'bc-', description: 'border-color' },
-    { prefix: 'bc-b-', description: 'border-bottom-color' },
-    { prefix: 'bc-l-', description: 'border-left-color' },
-    { prefix: 'bc-r-', description: 'border-right-color' },
-    { prefix: 'bc-t-', description: 'border-top-color' },
-    { prefix: 'cc-', description: 'caret-color' },
-    { prefix: 't-', description: 'text-color' }
+    { classPrefix: 'bg-', classValue: 'background-color' },
+    { classPrefix: 'bc-', classValue: 'border-color' },
+    { classPrefix: 'bc-b-', classValue: 'border-bottom-color' },
+    { classPrefix: 'bc-l-', classValue: 'border-left-color' },
+    { classPrefix: 'bc-r-', classValue: 'border-right-color' },
+    { classPrefix: 'bc-t-', classValue: 'border-top-color' },
+    { classPrefix: 'cc-', classValue: 'caret-color' },
+    { classPrefix: 't-', classValue: 'text-color' }
 ];
