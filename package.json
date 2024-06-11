@@ -10,10 +10,10 @@
 	"license": "MIT",	
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/rrenildopereiraa/yumma-css-helper"
+		"url": "https://github.com/yumma-lib/yumma-css-intellisense"
 	},
 	"categories": [
-		"Linters"
+		"Other"
 	],
 	"keywords": [
 		"yumma-css",
