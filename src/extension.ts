@@ -38,7 +38,7 @@ export async function activate(context: vscode.ExtensionContext) {
     try {
         const hasInstalled = await isYummaInstalled();
         if (!hasInstalled) {
-            vscode.window.showInformationMessage('YummaCSS is not installed in this workspace.');
+            vscode.window.showInformationMessage('Yumma CSS is not installed in this workspace.');
             return;
         }
 
