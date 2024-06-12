@@ -6,5 +6,5 @@ export const colorUtils = [
     { classPrefix: 'bc-r-', classValue: 'border-right-color' },
     { classPrefix: 'bc-t-', classValue: 'border-top-color' },
     { classPrefix: 'cc-', classValue: 'caret-color' },
-    { classPrefix: 't-', classValue: 'text-color' }
+    { classPrefix: 't-', classValue: 'color' }
 ];

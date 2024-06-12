@@ -69,6 +69,19 @@ export async function activate(context: vscode.ExtensionContext) {
                     }
                 }
 
+                const colorUtil = colorUtils.find(colorUtil =>
+                    word.startsWith(colorUtil.classPrefix)
+                );
+
+                if (colorUtil) {
+                    const color = colors.find(color => `${colorUtil.classPrefix}${color.className}` === word);
+                    if (color) {
+                        const markdownString = new vscode.MarkdownString();
+                        markdownString.appendCodeblock(`.${word} {\n ${colorUtil.classValue}: ${color.classValue};\n}`, 'css');
+                        return new vscode.Hover(markdownString);
+                    }
+                }
+
                 return null;
             }
         });
