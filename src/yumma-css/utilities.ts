@@ -589,6 +589,27 @@ export const utilities = [
         ]
     },
     {
+        classPrefix: 'g-',
+        values: [
+            { classSuffix: '1', classValue: ['gap: 0.25rem;'] },
+            { classSuffix: '2', classValue: ['gap: 0.5rem;'] },
+            { classSuffix: '3', classValue: ['gap: 0.75rem;'] },
+            { classSuffix: '4', classValue: ['gap: 1rem;'] },
+            { classSuffix: '5', classValue: ['gap: 1.25rem;'] },
+            { classSuffix: '6', classValue: ['gap: 1.5rem;'] },
+            { classSuffix: '7', classValue: ['gap: 1.75rem;'] },
+            { classSuffix: '8', classValue: ['gap: 2rem;'] },
+            { classSuffix: '9', classValue: ['gap: 2.25rem;'] },
+            { classSuffix: '10', classValue: ['gap: 2.5rem;'] },
+            { classSuffix: '11', classValue: ['gap: 2.75rem;'] },
+            { classSuffix: '12', classValue: ['gap: 3rem;'] },
+            { classSuffix: '13', classValue: ['gap: 3.25rem;'] },
+            { classSuffix: '14', classValue: ['gap: 3.5rem;'] },
+            { classSuffix: '15', classValue: ['gap: 3.75rem;'] },
+            { classSuffix: '16', classValue: ['gap: 4rem;'] }
+        ]
+    },
+    {
         classPrefix: 'jc-',
         values: [
             { classSuffix: 'c', classValue: ['justify-content: center;'] },
@@ -995,53 +1016,16 @@ export const utilities = [
             { classSuffix: 'n', classValue: ['overflow-wrap: normal;'] }
         ]
     },
-
-    // other utilities
     {
-        classPrefix: 'og-',
+        classPrefix: 'cnt',
         values: [
-            { classSuffix: '0', classValue: ['padding: 0;', 'margin-left: 0px;', 'margin-right: 0px;'] },
-            { classSuffix: '1', classValue: ['padding: 10;', 'margin-left: -10px;', 'margin-right: -10px;'] },
-            { classSuffix: '2', classValue: ['padding: 20;', 'margin-left: -20px;', 'margin-right: -20px;'] },
-            { classSuffix: '3', classValue: ['padding: 30;', 'margin-left: -30px;', 'margin-right: -30px;'] },
-            { classSuffix: '4', classValue: ['padding: 40;', 'margin-left: -40px;', 'margin-right: -40px;'] },
-            { classSuffix: '5', classValue: ['padding: 50;', 'margin-left: -50px;', 'margin-right: -50px;'] },
-            { classSuffix: '6', classValue: ['padding: 60;', 'margin-left: -60px;', 'margin-right: -60px;'] }
+            { classSuffix: '', classValue: ['width: 100%;'] }
         ]
     },
     {
-        classPrefix: 'col-',
+        classPrefix: 'ins',
         values: [
-            { classSuffix: '1', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 8.3333333333%;'] },
-            { classSuffix: '2', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 16.6666666667%;'] },
-            { classSuffix: '3', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 25%;'] },
-            { classSuffix: '4', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 33.3333333333%;'] },
-            { classSuffix: '5', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 41.6666666667%;'] },
-            { classSuffix: '6', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 50%;'] },
-            { classSuffix: '7', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 58.3333333333%;'] },
-            { classSuffix: '8', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 66.6666666667%;'] },
-            { classSuffix: '9', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 75%;'] },
-            { classSuffix: '10', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 83.3333333333%;'] },
-            { classSuffix: '11', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 91.6666666667%;'] },
-            { classSuffix: '12', classValue: ['box-sizing: border-box;', 'flex-grow: 0;', 'width: 100%;'] }
+            { classSuffix: '', classValue: ['align-items: center;', 'display: flex;', 'justify-content: center;'] }
         ]
-    },
-    // {
-    //     classPrefix: 'row',
-    //     values: [
-    //         { classSuffix: 'row', classValue: ['display: flex;', 'flex-flow: row wrap;'] }
-    //     ]
-    // },
-    // {
-    //     classPrefix: 'cnn',
-    //     values: [
-    //         { classSuffix: 'cnn', classValue: ['width: 100%;', 'max-width: 1200px;', 'margin: 0 auto;', 'padding: 0 20px;', 'box-sizing: border-box;'] }
-    //     ]
-    // },
-    // {
-    //     classPrefix: 'ins',
-    //     values: [
-    //         { classSuffix: 'ins', classValue: ['align-items: center;', 'display: flex;', 'justify-content: center;'] }
-    //     ]
-    // }
+    }
 ];
