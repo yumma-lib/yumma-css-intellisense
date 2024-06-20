@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+
 import { colorUtils } from './utils/colorUtil';
 import { isYummaInstalled } from './utils/workspaceUtil';
 import { colors } from './yumma-css/colors';
@@ -27,7 +28,7 @@ colorUtils.forEach(colorClass => {
 utilities.forEach(utilClass => {
     utilClass.values.forEach(value => {
         const classItem = `${utilClass.classPrefix}${value.classSuffix}`;
-        const item = new vscode.CompletionItem(classItem, vscode.CompletionItemKind.Property);
+        const item = new vscode.CompletionItem(classItem, vscode.CompletionItemKind.Value);
 
         item.detail = `${value.classValue.join(' \n ') || ''}`;
         item.documentation = new vscode.MarkdownString();
