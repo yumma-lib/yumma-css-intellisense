@@ -1,11 +1,12 @@
 import * as vscode from 'vscode';
-
-import { colors } from './yumma-css/colors';
 import { colorUtils } from './utils/colorUtil';
 import { isYummaInstalled } from './utils/workspaceUtil';
+import { colors } from './yumma-css/colors';
 import { utilities } from './yumma-css/utilities';
 
 const completionItems: vscode.CompletionItem[] = [];
+
+const baseUrl = 'https://yummacss.com/docs/';
 
 colorUtils.forEach(colorClass => {
     colors.forEach(color => {
@@ -13,7 +14,9 @@ colorUtils.forEach(colorClass => {
         const item = new vscode.CompletionItem(classItem, vscode.CompletionItemKind.Color);
 
         item.detail = `${colorClass.classValue}: ${color.classValue}`;
-        item.documentation = new vscode.MarkdownString(`**Utility class**: ${colorClass.classValue}: ${color.classValue}`);
+        item.documentation = new vscode.MarkdownString(`${colorClass.classValue}: ${color.classValue}`);
+        // item.documentation.appendMarkdown(`\n\nThe [${classItem}](${baseUrl}${color.classLink}) utility is covered in the documentation.`);
+        // item.documentation.isTrusted = true;
         item.insertText = classItem;
 
         (item as any).color = { id: 'yumma-color', color: color.classValue };
@@ -27,7 +30,9 @@ utilities.forEach(utilClass => {
         const item = new vscode.CompletionItem(classItem, vscode.CompletionItemKind.Property);
 
         item.detail = `${value.classValue.join(' \n ') || ''}`;
-        item.documentation = new vscode.MarkdownString(`**Utility class**: ${utilClass.classPrefix}`);
+        item.documentation = new vscode.MarkdownString();
+        item.documentation.appendMarkdown(`\n\nThe ['${classItem}'](${baseUrl}${utilClass.classLink}) utility is covered in the documentation.`);
+        item.documentation.isTrusted = true;
         item.insertText = classItem;
 
         completionItems.push(item);
@@ -56,19 +61,6 @@ export async function activate(context: vscode.ExtensionContext) {
                 }
                 const word = document.getText(range);
 
-                const utility = utilities.find(utilClass =>
-                    utilClass.values.some(value => `${utilClass.classPrefix}${value.classSuffix}` === word)
-                );
-
-                if (utility) {
-                    const value = utility.values.find(value => `${utility.classPrefix}${value.classSuffix}` === word);
-                    if (value) {
-                        const markdownString = new vscode.MarkdownString();
-                        markdownString.appendCodeblock(`.${word} {\n ${value.classValue.join(' \n ') || ''}\n}`, 'css');
-                        return new vscode.Hover(markdownString);
-                    }
-                }
-
                 const colorUtil = colorUtils.find(colorUtil =>
                     word.startsWith(colorUtil.classPrefix)
                 );
@@ -78,6 +70,23 @@ export async function activate(context: vscode.ExtensionContext) {
                     if (color) {
                         const markdownString = new vscode.MarkdownString();
                         markdownString.appendCodeblock(`.${word} {\n ${colorUtil.classValue}: ${color.classValue};\n}`, 'css');
+                        markdownString.appendMarkdown(`\n\nThe [${word}](${baseUrl}${color.classLink}) utility is covered in the documentation.`);
+                        markdownString.isTrusted = true;
+                        return new vscode.Hover(markdownString);
+                    }
+                }
+
+                const utility = utilities.find(utilClass =>
+                    utilClass.values.some(value => `${utilClass.classPrefix}${value.classSuffix}` === word)
+                );
+
+                if (utility) {
+                    const value = utility.values.find(value => `${utility.classPrefix}${value.classSuffix}` === word);
+                    if (value) {
+                        const markdownString = new vscode.MarkdownString();
+                        markdownString.appendCodeblock(`.${word} {\n ${value.classValue.join(' \n ') || ''}\n}`, 'css');
+                        markdownString.appendMarkdown(`\n\nThe [${word}](${baseUrl}${utility.classLink}) utility is covered in the documentation.`);
+                        markdownString.isTrusted = true;
                         return new vscode.Hover(markdownString);
                     }
                 }
