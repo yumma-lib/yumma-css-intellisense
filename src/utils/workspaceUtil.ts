@@ -4,6 +4,7 @@ import * as vscode from 'vscode';
  * Checks to see if Yumma CSS is installed in the workspace of the user.
  * @returns Promising true when Yumma CSS is installed, false otherwise.
  */
+
 export async function isYummaInstalled(): Promise<boolean> {
 	try {
 		const workspaceFolders = vscode.workspace.workspaceFolders;

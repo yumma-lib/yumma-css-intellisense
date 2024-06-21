@@ -43,10 +43,14 @@
 	},
 	"devDependencies": {
 		"@types/node": "^18",
+		"@types/tinycolor2": "^1.4.6",
 		"@types/vscode": "^1.73.0",
 		"@typescript-eslint/eslint-plugin": "^6.7.0",
 		"@typescript-eslint/parser": "^6.7.0",
 		"eslint": "^8.26.0",
 		"typescript": "^5.4.2"
+	},
+	"dependencies": {
+		"tinycolor2": "^1.6.0"
 	}
 }
