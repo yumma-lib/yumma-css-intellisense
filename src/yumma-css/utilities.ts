@@ -1096,5 +1096,19 @@ export const utilities = [
             { classSuffix: 'ka', classValue: ['overflow-wrap: keep-all;'] },
             { classSuffix: 'n', classValue: ['overflow-wrap: normal;'] }
         ]
+    },
+    // {
+    //     classPrefix: 'cnt',
+    //     classLink: 'container',
+    //     values: [
+    //         { classSuffix: '', classValue: ['width: 100%;', '@media (min-width: 640px) { .cnt { max-width: 640px; } }', '@media (min-width: 768px) { .cnt { max-width: 768px; } }', '@media (min-width: 1024px) { .container { max-width: 1024px; } }', '@media (min-width: 1280px) { .container { max-width: 1280px; } }'] },
+    //     ]
+    // },
+    {
+        classPrefix: 'ins',
+        classLink: 'inset',
+        values: [
+            { classSuffix: '', classValue: ['align-items: center;', 'display: flex;', 'justify-content: center;'] },
+        ]
     }
 ];
