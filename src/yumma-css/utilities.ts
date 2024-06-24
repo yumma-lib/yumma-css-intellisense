@@ -1,7 +1,16 @@
 import { generateClass } from '../utils/classUtil';
 
 export const utilities = [
-    // borders
+
+    // borders & outlines
+    {
+        classPrefix: 'bc-',
+        classLink: 'border-collapse',
+        values: [
+            { classSuffix: 'c', classValue: ['border-collapse: collapse;'] },
+            { classSuffix: 's', classValue: ['border-collapse: separate;'] }
+        ]
+    },
     {
         classPrefix: 'rad-',
         classLink: 'border-radius',
@@ -89,6 +98,16 @@ export const utilities = [
     },
     {
         classPrefix: 'b-',
+        classLink: 'border-style',
+        values: [
+            { classSuffix: 'none', classValue: ['border-style: none;'] },
+            { classSuffix: 'd', classValue: ['border-style: dashed;'] },
+            { classSuffix: 'h', classValue: ['border-style: hidden;'] },
+            { classSuffix: 's', classValue: ['border-style: solid;'] }
+        ]
+    },
+    {
+        classPrefix: 'b-',
         classLink: 'border-width',
         values: [
             { classSuffix: '0', classValue: ['border-width: 0px;'] },
@@ -163,10 +182,44 @@ export const utilities = [
         ]
     },
 
+    // outlines
+    {
+        classPrefix: 'oo-',
+        classLink: 'outline-offset',
+        values: [
+            { classSuffix: '0', classValue: ['outline-offset: 0px;'] },
+            { classSuffix: '1', classValue: ['outline-offset: 4px;'] },
+            { classSuffix: '2', classValue: ['outline-offset: 8px;'] },
+            { classSuffix: '3', classValue: ['outline-offset: 12px;'] },
+            { classSuffix: '4', classValue: ['outline-offset: 16px;'] }
+        ]
+    },
+    {
+        classPrefix: 'os-',
+        classLink: 'outline-style',
+        values: [
+            { classSuffix: 'none', classValue: ['outline-style: none;'] },
+            { classSuffix: 'd', classValue: ['outline-style: dashed;'] },
+            { classSuffix: 'h', classValue: ['outline-style: hidden;'] },
+            { classSuffix: 's', classValue: ['outline-style: solid;'] }
+        ]
+    },
+    {
+        classPrefix: 'ow-',
+        classLink: 'outline-width',
+        values: [
+            { classSuffix: '0', classValue: ['outline-width: 0px;'] },
+            { classSuffix: '1', classValue: ['outline-width: 4px;'] },
+            { classSuffix: '2', classValue: ['outline-width: 8px;'] },
+            { classSuffix: '3', classValue: ['outline-width: 12px;'] },
+            { classSuffix: '4', classValue: ['outline-width: 16px;'] }
+        ]
+    },
+
     // box model
     {
         classPrefix: 'bs-',
-        classLink: 'box-shadow',
+        classLink: 'box-sizing',
         values: [
             { classSuffix: 'bb', classValue: ['box-sizing: border-box;'] },
             { classSuffix: 'cb', classValue: ['box-sizing: content-box;'] }
@@ -363,6 +416,22 @@ export const utilities = [
         ]
     },
     {
+        classPrefix: 's-x-',
+        classLink: 'spacing#spacing-x',
+        values: [
+            ...generateClass(['margin-left', 'margin-right'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['margin-left: auto;', 'margin-right: auto;'] }
+        ]
+    },
+    {
+        classPrefix: 's-y-',
+        classLink: 'spacing#spacing-y',
+        values: [
+            ...generateClass(['margin-top', 'margin-bottom'], 100, 0.25, 'rem'),
+            { classSuffix: 'auto', classValue: ['margin-top: auto;', 'margin-bottom: auto;'] }
+        ]
+    },
+    {
         classPrefix: 'w-',
         classLink: 'width',
         values: [
@@ -403,6 +472,18 @@ export const utilities = [
     },
 
     // effects & filters
+    {
+        classPrefix: 'bf-b-',
+        classLink: 'backdrop-filter',
+        values: [
+            { classSuffix: 'none', classValue: ['backdrop-filter: blur(0px);'] },
+            { classSuffix: 'xs', classValue: ['backdrop-filter: blur(4px);'] },
+            { classSuffix: 'sm', classValue: ['backdrop-filter: blur(8px);'] },
+            { classSuffix: 'md', classValue: ['backdrop-filter: blur(16px);'] },
+            { classSuffix: 'lg', classValue: ['backdrop-filter: blur(32px);'] },
+            { classSuffix: 'xl', classValue: ['backdrop-filter: blur(64px);'] }
+        ]
+    },
     {
         classPrefix: 'bs-',
         classLink: 'box-shadow',
@@ -736,59 +817,16 @@ export const utilities = [
         ]
     },
 
-    // miscellaneous
+    // layout
     {
-        classPrefix: 'a-',
-        classLink: 'appearance',
+        classPrefix: 'ar-',
+        classLink: 'aspect-ratio',
         values: [
-            { classSuffix: 'none', classValue: ['appearance: none;'] },
-            { classSuffix: 'auto', classValue: ['appearance: auto;'] }
+            { classSuffix: 's', classValue: ['aspect-ratio: 1/1;'] },
+            { classSuffix: 'l', classValue: ['aspect-ratio: 16/9;'] },
+            { classSuffix: 'auto', classValue: ['aspect-ratio: auto;'] }
         ]
     },
-    {
-        classPrefix: 'c-',
-        classLink: 'cursor',
-        values: [
-            { classSuffix: 'auto', classValue: ['cursor: auto;'] },
-            { classSuffix: 'p', classValue: ['cursor: pointer;'] },
-            { classSuffix: 't', classValue: ['cursor: text;'] },
-            { classSuffix: 'm', classValue: ['cursor: move;'] },
-            { classSuffix: 'na', classValue: ['cursor: not-allowed;'] },
-            { classSuffix: 'c', classValue: ['cursor: crosshair;'] },
-            { classSuffix: 'h', classValue: ['cursor: help;'] },
-            { classSuffix: 'er', classValue: ['cursor: e-resize;'] },
-            { classSuffix: 'nr', classValue: ['cursor: n-resize;'] },
-            { classSuffix: 'w', classValue: ['cursor: wait;'] }
-        ]
-    },
-    {
-        classPrefix: 'pe-',
-        classLink: 'pointer-events',
-        values: [
-            { classSuffix: 'auto', classValue: ['pointer-events: auto;'] },
-            { classSuffix: 'none', classValue: ['pointer-events: none;'] }
-        ]
-    },
-    {
-        classPrefix: 'r-',
-        classLink: 'resize',
-        values: [
-            { classSuffix: 'b', classValue: ['resize: both;'] },
-            { classSuffix: 'h', classValue: ['resize: horizontal;'] },
-            { classSuffix: 'none', classValue: ['resize: none;'] },
-            { classSuffix: 'v', classValue: ['resize: vertical;'] }
-        ]
-    },
-    {
-        classPrefix: 'us-',
-        classLink: 'user-select',
-        values: [
-            { classSuffix: 'auto', classValue: ['user-select: auto;'] },
-            { classSuffix: 'none', classValue: ['user-select: none;'] }
-        ]
-    },
-
-    // positioning
     {
         classPrefix: 'cols-',
         classLink: 'columns',
@@ -809,6 +847,13 @@ export const utilities = [
             { classSuffix: '14', classValue: ['columns: 14;'] },
             { classSuffix: '15', classValue: ['columns: 15;'] },
             { classSuffix: '16', classValue: ['columns: 16;'] }
+        ]
+    },
+    {
+        classPrefix: 'cnt',
+        classLink: 'container',
+        values: [
+            { classSuffix: '', classValue: ['width: 100%;'] }
         ]
     },
     {
@@ -957,6 +1002,37 @@ export const utilities = [
         ]
     },
     {
+        classPrefix: 'ins',
+        classLink: 'inset',
+        values: [
+            { classSuffix: '', classValue: ['align-items: center;', 'display: flex;', 'justify-content: center;'] }
+        ]
+    },
+    {
+        classPrefix: 'of-',
+        classLink: 'object-fit',
+        values: [
+            { classSuffix: 'c', classValue: ['object-fit: cover;'] },
+            { classSuffix: 'f', classValue: ['object-fit: fill;'] },
+            { classSuffix: 'none', classValue: ['object-fit: none;'] },
+            { classSuffix: 'sd', classValue: ['object-fit: scale-down;'] }
+        ]
+    },
+    {
+        classPrefix: 'op-',
+        classLink: 'object-position',
+        values: [
+            { classSuffix: 'b', classValue: ['object-position: bottom;'] },
+            { classSuffix: 'c', classValue: ['object-position: center;'] },
+            { classSuffix: 'lb', classValue: ['object-position: left bottom;'] },
+            { classSuffix: 'l', classValue: ['object-position: left;'] },
+            { classSuffix: 'r', classValue: ['object-position: right;'] },
+            { classSuffix: 'rb', classValue: ['object-position: right bottom;'] },
+            { classSuffix: 'rt', classValue: ['object-position: right top;'] },
+            { classSuffix: 't', classValue: ['object-position: top;'] }
+        ]
+    },
+    {
         classPrefix: 'ovf-',
         classLink: 'overflow',
         values: [
@@ -968,14 +1044,36 @@ export const utilities = [
         ]
     },
     {
+        classPrefix: 'ovf-x-',
+        classLink: 'overflow',
+        values: [
+            { classSuffix: 'auto', classValue: ['overflow-x: auto;'] },
+            { classSuffix: 'c', classValue: ['overflow-x: clip;'] },
+            { classSuffix: 'h', classValue: ['overflow-x: hidden;'] },
+            { classSuffix: 's', classValue: ['overflow-x: scroll;'] },
+            { classSuffix: 'v', classValue: ['overflow-x: visible;'] }
+        ]
+    },
+    {
+        classPrefix: 'ovf-y-',
+        classLink: 'overflow',
+        values: [
+            { classSuffix: 'auto', classValue: ['overflow-y: auto;'] },
+            { classSuffix: 'c', classValue: ['overflow-y: clip;'] },
+            { classSuffix: 'h', classValue: ['overflow-y: hidden;'] },
+            { classSuffix: 's', classValue: ['overflow-y: scroll;'] },
+            { classSuffix: 'v', classValue: ['overflow-y: visible;'] }
+        ]
+    },
+    {
         classPrefix: 'pos-',
         classLink: 'position',
         values: [
             { classSuffix: 'a', classValue: ['position: absolute;'] },
             { classSuffix: 'f', classValue: ['position: fixed;'] },
             { classSuffix: 'r', classValue: ['position: relative;'] },
-            { classSuffix: 'static', classValue: ['position: static;'] },
-            { classSuffix: 'sticky', classValue: ['position: sticky;'] }
+            { classSuffix: 's', classValue: ['position: static;'] },
+            { classSuffix: 't', classValue: ['position: sticky;'] }
         ]
     },
     {
@@ -993,6 +1091,76 @@ export const utilities = [
             { classSuffix: '80', classValue: ['z-index: 80;'] },
             { classSuffix: '90', classValue: ['z-index: 90;'] },
             { classSuffix: 'auto', classValue: ['z-index: auto;'] }
+        ]
+    },
+
+    // miscellaneous
+    {
+        classPrefix: 'a-',
+        classLink: 'appearance',
+        values: [
+            { classSuffix: 'none', classValue: ['appearance: none;'] },
+            { classSuffix: 'auto', classValue: ['appearance: auto;'] }
+        ]
+    },
+    {
+        classPrefix: 'c-',
+        classLink: 'cursor',
+        values: [
+            { classSuffix: 'auto', classValue: ['cursor: auto;'] },
+            { classSuffix: 'p', classValue: ['cursor: pointer;'] },
+            { classSuffix: 't', classValue: ['cursor: text;'] },
+            { classSuffix: 'm', classValue: ['cursor: move;'] },
+            { classSuffix: 'na', classValue: ['cursor: not-allowed;'] },
+            { classSuffix: 'c', classValue: ['cursor: crosshair;'] },
+            { classSuffix: 'h', classValue: ['cursor: help;'] },
+            { classSuffix: 'er', classValue: ['cursor: e-resize;'] },
+            { classSuffix: 'nr', classValue: ['cursor: n-resize;'] },
+            { classSuffix: 'w', classValue: ['cursor: wait;'] }
+        ]
+    },
+    {
+        classPrefix: 'pe-',
+        classLink: 'pointer-events',
+        values: [
+            { classSuffix: 'auto', classValue: ['pointer-events: auto;'] },
+            { classSuffix: 'none', classValue: ['pointer-events: none;'] }
+        ]
+    },
+    {
+        classPrefix: 'r-',
+        classLink: 'resize',
+        values: [
+            { classSuffix: 'b', classValue: ['resize: both;'] },
+            { classSuffix: 'h', classValue: ['resize: horizontal;'] },
+            { classSuffix: 'none', classValue: ['resize: none;'] },
+            { classSuffix: 'v', classValue: ['resize: vertical;'] }
+        ]
+    },
+    {
+        classPrefix: 'us-',
+        classLink: 'user-select',
+        values: [
+            { classSuffix: 'auto', classValue: ['user-select: auto;'] },
+            { classSuffix: 'none', classValue: ['user-select: none;'] }
+        ]
+    },
+
+    // tables
+    {
+        classPrefix: 'cs-',
+        classLink: 'caption-side',
+        values: [
+            { classSuffix: 'bottom', classValue: ['caption-side: bottom'] },
+            { classSuffix: 'top', classValue: ['caption-side: top;'] }
+        ]
+    },
+    {
+        classPrefix: 'tl-',
+        classLink: 'table-layout',
+        values: [
+            { classSuffix: 'auto', classValue: ['table-layout: auto;'] },
+            { classSuffix: 'f', classValue: ['table-layout: fixed;'] }
         ]
     },
 
@@ -1018,6 +1186,14 @@ export const utilities = [
             { classSuffix: '2xl', classValue: ['font-size: 30.08px;'] },
             { classSuffix: '3xl', classValue: ['font-size: 35.52px;'] },
             { classSuffix: '6xl', classValue: ['font-size: 58.56px;'] }
+        ]
+    },
+    {
+        classPrefix: 'fs-',
+        classLink: 'font-style',
+        values: [
+            { classSuffix: 'i', classValue: ['font-style: italic;'] },
+            { classSuffix: 'n', classValue: ['font-style: normal;'] }
         ]
     },
     {
@@ -1057,6 +1233,15 @@ export const utilities = [
         ]
     },
     {
+        classPrefix: 'ow-',
+        classLink: 'overflow-wrap',
+        values: [
+            { classSuffix: 'bw', classValue: ['overflow-wrap: break-word;'] },
+            { classSuffix: 'ka', classValue: ['overflow-wrap: keep-all;'] },
+            { classSuffix: 'n', classValue: ['overflow-wrap: normal;'] }
+        ]
+    },
+    {
         classPrefix: 'ta-',
         classLink: 'text-align',
         values: [
@@ -1081,34 +1266,34 @@ export const utilities = [
         ]
     },
     {
+        classPrefix: 'tds-',
+        classLink: 'text-decoration-style',
+        values: [
+            { classSuffix: 'none', classValue: ['text-decoration-style: none;'] },
+            { classSuffix: 'd', classValue: ['text-decoration-style: dashed;'] },
+            { classSuffix: 'h', classValue: ['text-decoration-style: hidden;'] },
+            { classSuffix: 's', classValue: ['text-decoration-style: solid;'] }
+        ]
+    },
+    {
+        classPrefix: 'tdt-',
+        classLink: 'text-decoration-thickness',
+        values: [
+            { classSuffix: 'auto', classValue: ['text-decoration-thickness: auto;'] },
+            { classSuffix: 'ff', classValue: ['text-decoration-thickness: from-font;'] },
+            { classSuffix: '0', classValue: ['text-decoration-thickness: 0px;'] },
+            { classSuffix: '1', classValue: ['text-decoration-thickness: 4px;'] },
+            { classSuffix: '2', classValue: ['text-decoration-thickness: 8px;'] },
+            { classSuffix: '3', classValue: ['text-decoration-thickness: 12px;'] },
+            { classSuffix: '4', classValue: ['text-decoration-thickness: 16px;'] }
+        ]
+    },
+    {
         classPrefix: 'td-',
         classLink: 'text-decoration',
         values: [
             { classSuffix: 'u', classValue: ['text-decoration: underline;'] },
             { classSuffix: 'none', classValue: ['text-decoration: none;'] }
-        ]
-    },
-    {
-        classPrefix: 'ow-',
-        classLink: 'overflow-wrap',
-        values: [
-            { classSuffix: 'bw', classValue: ['overflow-wrap: break-word;'] },
-            { classSuffix: 'ka', classValue: ['overflow-wrap: keep-all;'] },
-            { classSuffix: 'n', classValue: ['overflow-wrap: normal;'] }
-        ]
-    },
-    // {
-    //     classPrefix: 'cnt',
-    //     classLink: 'container',
-    //     values: [
-    //         { classSuffix: '', classValue: ['width: 100%;', '@media (min-width: 640px) { .cnt { max-width: 640px; } }', '@media (min-width: 768px) { .cnt { max-width: 768px; } }', '@media (min-width: 1024px) { .container { max-width: 1024px; } }', '@media (min-width: 1280px) { .container { max-width: 1280px; } }'] },
-    //     ]
-    // },
-    {
-        classPrefix: 'ins',
-        classLink: 'inset',
-        values: [
-            { classSuffix: '', classValue: ['align-items: center;', 'display: flex;', 'justify-content: center;'] },
         ]
     }
 ];
