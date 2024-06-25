@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://yummacss.com/img/favicon/favicon.ico" alt="Yumma CSS Logo">
+  <img src="https://yummacss.com/img/icon/favicon.ico" alt="Yumma CSS Logo">
 </p>
 
 <h3 align="center">Yumma CSS</h3>
@@ -35,8 +35,9 @@ Yumma CSS Intellisense is designed to make your Visual Studio Code development e
 
 ## What's in the box?
 
-- **Completions:** Helpful completions while you do your typing.
-- **Hoverings:** Inspect the CSS behind the Yumma CSS classes.
+- **Completions:** These are helpful completions that can be accessed while typing.
+- **Documentation**: This feature provides users with the opportunity to learn more about each completion.
+- **Hoverings:** This feature allows users to inspect the CSS behind the Yumma CSS classes.
 
 ## Community
 
