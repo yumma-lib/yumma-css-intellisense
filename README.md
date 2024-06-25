@@ -35,9 +35,9 @@ Yumma CSS Intellisense is designed to make your Visual Studio Code development e
 
 ## What's in the box?
 
-- **Completions:** These are helpful completions that can be accessed while typing.
-- **Documentation**: This feature provides users with the opportunity to learn more about each completion.
-- **Hoverings:** This feature allows users to inspect the CSS behind the Yumma CSS classes.
+- **Completions:** Helpful completions that can be accessed while typing.
+- **Documentation**: Provides users with the opportunity to learn more about each completion.
+- **Hoverings:** Inspect the CSS behind the Yumma CSS classes.
 
 ## Community
 
