@@ -1066,7 +1066,7 @@ export const utilities = [
         ]
     },
     {
-        classPrefix: 'pos-',
+        classPrefix: 'p-',
         classLink: 'position',
         values: [
             { classSuffix: 'a', classValue: ['position: absolute;'] },
