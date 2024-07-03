@@ -51,6 +51,7 @@
 		"typescript": "^5.4.2"
 	},
 	"dependencies": {
+		"braces": "^3.0.3",
 		"tinycolor2": "^1.6.0"
 	}
 }
