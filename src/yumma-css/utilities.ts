@@ -1282,10 +1282,10 @@ export const utilities = [
             { classSuffix: 'auto', classValue: ['text-decoration-thickness: auto;'] },
             { classSuffix: 'ff', classValue: ['text-decoration-thickness: from-font;'] },
             { classSuffix: '0', classValue: ['text-decoration-thickness: 0px;'] },
-            { classSuffix: '1', classValue: ['text-decoration-thickness: 4px;'] },
-            { classSuffix: '2', classValue: ['text-decoration-thickness: 8px;'] },
-            { classSuffix: '3', classValue: ['text-decoration-thickness: 12px;'] },
-            { classSuffix: '4', classValue: ['text-decoration-thickness: 16px;'] }
+            { classSuffix: '1', classValue: ['text-decoration-thickness: 1px;'] },
+            { classSuffix: '2', classValue: ['text-decoration-thickness: 2px;'] },
+            { classSuffix: '3', classValue: ['text-decoration-thickness: 3px;'] },
+            { classSuffix: '4', classValue: ['text-decoration-thickness: 4px;'] }
         ]
     },
     {
