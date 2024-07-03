@@ -1,24 +1,16 @@
 {
-	"name": "yumma-css-intellisense",
+	"author": "Renildo Pereira",
+	"description": "Yumma CSS Intellisense for VS Code.",
 	"displayName": "Yumma CSS Intellisense",
-	"description": "Yumma CSS Intellisense for VS Code",
+	"homepage": "https://yummacss.com",
+	"icon": "icon.png",
+	"license": "MIT",
+	"main": "./out/extension.js",
+	"name": "yumma-css-intellisense",
+	"private": true,
 	"publisher": "yumma-css",
 	"version": "0.0.1",
-	"main": "./out/extension.js",
-	"icon": "icon.png",
-	"private": true,
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/yumma-lib/yumma-css-intellisense"
-	},
-	"categories": [
-		"Other"
-	],
-	"keywords": [
-		"yumma-css",
-		"intellisense"
-	],
+
 	"activationEvents": [
 		"onLanguage:django-html",
 		"onLanguage:ejs",
@@ -32,14 +24,9 @@
 		"onLanguage:vue-html",
 		"onLanguage:vue"
 	],
-	"engines": {
-		"vscode": "^1.73.0"
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"lint": "eslint \"src/**/*.ts\"",
-		"watch": "tsc -watch -p ./"
+	"dependencies": {
+		"braces": "^3.0.3",
+		"tinycolor2": "^1.6.0"
 	},
 	"devDependencies": {
 		"@types/node": "^18",
@@ -50,8 +37,20 @@
 		"eslint": "^8.26.0",
 		"typescript": "^5.4.2"
 	},
-	"dependencies": {
-		"braces": "^3.0.3",
-		"tinycolor2": "^1.6.0"
-	}
+	"engines": {
+		"vscode": "^1.73.0"
+	},
+	"keywords": [
+		"css",
+		"intellisense",
+		"vscode",
+		"vscode-extension",
+		"yummacs"
+	],
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint \"src/**/*.ts\"",
+		"watch": "tsc -watch -p ./"
+	}	
 }
