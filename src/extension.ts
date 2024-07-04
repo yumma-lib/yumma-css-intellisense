@@ -26,7 +26,7 @@ colorUtils.forEach(colorClass => {
 });
 
 utilities.forEach(utilClass => {
-    utilClass.values.forEach(value => {
+    utilClass.additionalClasses.forEach(value => {
         const classItem = `${utilClass.classPrefix}${value.classSuffix}`;
         const item = new vscode.CompletionItem(classItem, vscode.CompletionItemKind.Value);
 
@@ -78,11 +78,11 @@ export async function activate(context: vscode.ExtensionContext) {
                 }
 
                 const utility = utilities.find(utilClass =>
-                    utilClass.values.some(value => `${utilClass.classPrefix}${value.classSuffix}` === word)
+                    utilClass.additionalClasses.some(value => `${utilClass.classPrefix}${value.classSuffix}` === word)
                 );
 
                 if (utility) {
-                    const value = utility.values.find(value => `${utility.classPrefix}${value.classSuffix}` === word);
+                    const value = utility.additionalClasses.find(value => `${utility.classPrefix}${value.classSuffix}` === word);
                     if (value) {
                         const markdownString = new vscode.MarkdownString();
                         markdownString.appendCodeblock(`.${word} {\n ${value.classValue.join(' \n ') || ''}\n}`, 'css');

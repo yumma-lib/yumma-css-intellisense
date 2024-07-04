@@ -6,7 +6,7 @@ export const utilities = [
     {
         classPrefix: 'bc-',
         classLink: 'border-collapse',
-        values: [
+        additionalClasses: [
             { classSuffix: 'c', classValue: ['border-collapse: collapse;'] },
             { classSuffix: 's', classValue: ['border-collapse: separate;'] }
         ]
@@ -14,7 +14,7 @@ export const utilities = [
     {
         classPrefix: 'rad-',
         classLink: 'border-radius',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['border-radius: 0px;'] },
             { classSuffix: '1', classValue: ['border-radius: 4px;'] },
             { classSuffix: '2', classValue: ['border-radius: 8px;'] },
@@ -31,7 +31,7 @@ export const utilities = [
     {
         classPrefix: 'rad-bl-',
         classLink: 'border-radius#bottom-left-radius',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['border-bottom-left-radius: 0px;'] },
             { classSuffix: '1', classValue: ['border-bottom-left-radius: 4px;'] },
             { classSuffix: '2', classValue: ['border-bottom-left-radius: 8px;'] },
@@ -48,7 +48,7 @@ export const utilities = [
     {
         classPrefix: 'rad-br-',
         classLink: 'border-radius#bottom-right-radius',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['border-bottom-right-radius: 0px;'] },
             { classSuffix: '1', classValue: ['border-bottom-right-radius: 4px;'] },
             { classSuffix: '2', classValue: ['border-bottom-right-radius: 8px;'] },
@@ -65,7 +65,7 @@ export const utilities = [
     {
         classPrefix: 'rad-tl-',
         classLink: 'border-radius#top-left-radius',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['border-top-left-radius: 0px;'] },
             { classSuffix: '1', classValue: ['border-top-left-radius: 4px;'] },
             { classSuffix: '2', classValue: ['border-top-left-radius: 8px;'] },
@@ -82,7 +82,7 @@ export const utilities = [
     {
         classPrefix: 'rad-tr-',
         classLink: 'border-radius#top-right-radius',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['border-top-right-radius: 0px;'] },
             { classSuffix: '1', classValue: ['border-top-right-radius: 4px;'] },
             { classSuffix: '2', classValue: ['border-top-right-radius: 8px;'] },
@@ -99,7 +99,7 @@ export const utilities = [
     {
         classPrefix: 'b-',
         classLink: 'border-style',
-        values: [
+        additionalClasses: [
             { classSuffix: 'none', classValue: ['border-style: none;'] },
             { classSuffix: 'd', classValue: ['border-style: dashed;'] },
             { classSuffix: 'h', classValue: ['border-style: hidden;'] },
@@ -109,7 +109,7 @@ export const utilities = [
     {
         classPrefix: 'b-',
         classLink: 'border-width',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['border-width: 0px;'] },
             { classSuffix: '1', classValue: ['border-width: 1px;'] },
             { classSuffix: '2', classValue: ['border-width: 2px;'] },
@@ -124,7 +124,7 @@ export const utilities = [
     {
         classPrefix: 'bb-',
         classLink: 'border-width#border-bottom-width',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['border-bottom-width: 0px;'] },
             { classSuffix: '1', classValue: ['border-bottom-width: 1px;'] },
             { classSuffix: '2', classValue: ['border-bottom-width: 2px;'] },
@@ -139,7 +139,7 @@ export const utilities = [
     {
         classPrefix: 'bl-',
         classLink: 'border-width#border-left-width',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['border-left-width: 0px;'] },
             { classSuffix: '1', classValue: ['border-left-width: 1px;'] },
             { classSuffix: '2', classValue: ['border-left-width: 2px;'] },
@@ -154,7 +154,7 @@ export const utilities = [
     {
         classPrefix: 'br-',
         classLink: 'border-width#border-right-width',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['border-right-width: 0px;'] },
             { classSuffix: '1', classValue: ['border-right-width: 1px;'] },
             { classSuffix: '2', classValue: ['border-right-width: 2px;'] },
@@ -169,7 +169,7 @@ export const utilities = [
     {
         classPrefix: 'bt-',
         classLink: 'border-width#border-top-width',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['border-top-width: 0px;'] },
             { classSuffix: '1', classValue: ['border-top-width: 1px;'] },
             { classSuffix: '2', classValue: ['border-top-width: 2px;'] },
@@ -186,7 +186,7 @@ export const utilities = [
     {
         classPrefix: 'oo-',
         classLink: 'outline-offset',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['outline-offset: 0px;'] },
             { classSuffix: '1', classValue: ['outline-offset: 4px;'] },
             { classSuffix: '2', classValue: ['outline-offset: 8px;'] },
@@ -197,7 +197,7 @@ export const utilities = [
     {
         classPrefix: 'os-',
         classLink: 'outline-style',
-        values: [
+        additionalClasses: [
             { classSuffix: 'none', classValue: ['outline-style: none;'] },
             { classSuffix: 'd', classValue: ['outline-style: dashed;'] },
             { classSuffix: 'h', classValue: ['outline-style: hidden;'] },
@@ -207,7 +207,7 @@ export const utilities = [
     {
         classPrefix: 'ow-',
         classLink: 'outline-width',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['outline-width: 0px;'] },
             { classSuffix: '1', classValue: ['outline-width: 4px;'] },
             { classSuffix: '2', classValue: ['outline-width: 8px;'] },
@@ -220,7 +220,7 @@ export const utilities = [
     {
         classPrefix: 'bs-',
         classLink: 'box-sizing',
-        values: [
+        additionalClasses: [
             { classSuffix: 'bb', classValue: ['box-sizing: border-box;'] },
             { classSuffix: 'cb', classValue: ['box-sizing: content-box;'] }
         ]
@@ -228,7 +228,7 @@ export const utilities = [
     {
         classPrefix: 'dim-',
         classLink: 'dimension',
-        values: [
+        additionalClasses: [
             ...generateClass(['height', 'width'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['height: auto;', 'width: auto;'] },
             { classSuffix: 'full', classValue: ['height: 100%;', 'width: 100%;'] },
@@ -241,7 +241,7 @@ export const utilities = [
     {
         classPrefix: 'max-dim-',
         classLink: 'dimension#max-dimension',
-        values: [
+        additionalClasses: [
             ...generateClass(['max-height', 'min-width'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['max-height: auto;', 'min-width: auto;'] },
             { classSuffix: 'full', classValue: ['max-height: 100%;', 'min-width: 100%;'] },
@@ -254,7 +254,7 @@ export const utilities = [
     {
         classPrefix: 'min-dim-',
         classLink: 'dimension#min-dimension',
-        values: [
+        additionalClasses: [
             ...generateClass(['min-height', 'min-width'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['min-height: auto;', 'min-width: auto;'] },
             { classSuffix: 'full', classValue: ['min-height: 100%;', 'min-width: 100%;'] },
@@ -267,7 +267,7 @@ export const utilities = [
     {
         classPrefix: 'h-',
         classLink: 'height',
-        values: [
+        additionalClasses: [
             ...generateClass(['height'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['height: auto;'] },
             { classSuffix: 'full', classValue: ['height: 100%;'] },
@@ -280,7 +280,7 @@ export const utilities = [
     {
         classPrefix: 'max-h-',
         classLink: 'height#max-height',
-        values: [
+        additionalClasses: [
             ...generateClass(['max-height'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['max-height: auto;'] },
             { classSuffix: 'full', classValue: ['max-height: 100%;'] },
@@ -293,7 +293,7 @@ export const utilities = [
     {
         classPrefix: 'min-h-',
         classLink: 'height#min-height',
-        values: [
+        additionalClasses: [
             ...generateClass(['min-height'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['min-height: auto;'] },
             { classSuffix: 'full', classValue: ['min-height: 100%;'] },
@@ -306,7 +306,7 @@ export const utilities = [
     {
         classPrefix: 'm-',
         classLink: 'margin',
-        values: [
+        additionalClasses: [
             ...generateClass(['margin'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['margin: auto;'] }
         ]
@@ -314,7 +314,7 @@ export const utilities = [
     {
         classPrefix: 'mb-',
         classLink: 'margin#margin-bottom',
-        values: [
+        additionalClasses: [
             ...generateClass(['margin-bottom'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['margin-bottom: auto;'] }
         ]
@@ -322,7 +322,7 @@ export const utilities = [
     {
         classPrefix: 'ml-',
         classLink: 'margin#margin-left',
-        values: [
+        additionalClasses: [
             ...generateClass(['margin-left'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['margin-left: auto;'] }
         ]
@@ -330,7 +330,7 @@ export const utilities = [
     {
         classPrefix: 'mr-',
         classLink: 'margin#margin-right',
-        values: [
+        additionalClasses: [
             ...generateClass(['margin-right'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['margin-right: auto;'] }
         ]
@@ -338,7 +338,7 @@ export const utilities = [
     {
         classPrefix: 'mt-',
         classLink: 'margin#margin-top',
-        values: [
+        additionalClasses: [
             ...generateClass(['margin-top'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['margin-top: auto;'] }
         ]
@@ -346,7 +346,7 @@ export const utilities = [
     {
         classPrefix: 'mx-',
         classLink: 'margin#margin-x',
-        values: [
+        additionalClasses: [
             ...generateClass(['margin-left', 'margin-right'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['margin-left: auto;', 'margin-right: auto;'] }
         ]
@@ -354,7 +354,7 @@ export const utilities = [
     {
         classPrefix: 'my-',
         classLink: 'margin#margin-y',
-        values: [
+        additionalClasses: [
             ...generateClass(['margin-bottom', 'margin-top'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['margin-bottom: auto;', 'margin-top: auto;'] }
         ]
@@ -362,7 +362,7 @@ export const utilities = [
     {
         classPrefix: 'p-',
         classLink: 'padding',
-        values: [
+        additionalClasses: [
             ...generateClass(['padding'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['padding: auto;'] }
         ]
@@ -370,7 +370,7 @@ export const utilities = [
     {
         classPrefix: 'pb-',
         classLink: 'padding#padding-bottom',
-        values: [
+        additionalClasses: [
             ...generateClass(['padding-bottom'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['padding-bottom: auto;'] }
         ]
@@ -378,7 +378,7 @@ export const utilities = [
     {
         classPrefix: 'pl-',
         classLink: 'padding#padding-left',
-        values: [
+        additionalClasses: [
             ...generateClass(['padding-left'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['padding-left: auto;'] }
         ]
@@ -386,7 +386,7 @@ export const utilities = [
     {
         classPrefix: 'pr-',
         classLink: 'padding#padding-right',
-        values: [
+        additionalClasses: [
             ...generateClass(['padding-right'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['padding-right: auto;'] }
         ]
@@ -394,7 +394,7 @@ export const utilities = [
     {
         classPrefix: 'pt-',
         classLink: 'padding#padding-top',
-        values: [
+        additionalClasses: [
             ...generateClass(['padding-top'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['padding-top: auto;'] }
         ]
@@ -402,7 +402,7 @@ export const utilities = [
     {
         classPrefix: 'px-',
         classLink: 'padding#padding-x',
-        values: [
+        additionalClasses: [
             ...generateClass(['padding-left', 'padding-right'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['padding-left: auto;', 'padding-right: auto;'] }
         ]
@@ -410,7 +410,7 @@ export const utilities = [
     {
         classPrefix: 'py-',
         classLink: 'padding#padding-y',
-        values: [
+        additionalClasses: [
             ...generateClass(['padding-bottom', 'padding-top'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['padding-bottom: auto;', 'padding-top: auto;'] }
         ]
@@ -418,7 +418,7 @@ export const utilities = [
     {
         classPrefix: 's-x-',
         classLink: 'spacing#spacing-x',
-        values: [
+        additionalClasses: [
             ...generateClass(['margin-left', 'margin-right'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['margin-left: auto;', 'margin-right: auto;'] }
         ]
@@ -426,7 +426,7 @@ export const utilities = [
     {
         classPrefix: 's-y-',
         classLink: 'spacing#spacing-y',
-        values: [
+        additionalClasses: [
             ...generateClass(['margin-top', 'margin-bottom'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['margin-top: auto;', 'margin-bottom: auto;'] }
         ]
@@ -434,7 +434,7 @@ export const utilities = [
     {
         classPrefix: 'w-',
         classLink: 'width',
-        values: [
+        additionalClasses: [
             ...generateClass(['width'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['width: auto;'] },
             { classSuffix: 'full', classValue: ['width: 100%;'] },
@@ -447,7 +447,7 @@ export const utilities = [
     {
         classPrefix: 'max-w-',
         classLink: 'width#max-width',
-        values: [
+        additionalClasses: [
             ...generateClass(['max-width'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['max-width: auto;'] },
             { classSuffix: 'full', classValue: ['max-width: 100%;'] },
@@ -460,7 +460,7 @@ export const utilities = [
     {
         classPrefix: 'min-w-',
         classLink: 'width#min-width',
-        values: [
+        additionalClasses: [
             ...generateClass(['min-width'], 100, 0.25, 'rem'),
             { classSuffix: 'auto', classValue: ['min-width: auto;'] },
             { classSuffix: 'full', classValue: ['min-width: 100%;'] },
@@ -475,7 +475,7 @@ export const utilities = [
     {
         classPrefix: 'bf-b-',
         classLink: 'backdrop-filter',
-        values: [
+        additionalClasses: [
             { classSuffix: 'none', classValue: ['backdrop-filter: blur(0px);'] },
             { classSuffix: 'xs', classValue: ['backdrop-filter: blur(4px);'] },
             { classSuffix: 'sm', classValue: ['backdrop-filter: blur(8px);'] },
@@ -487,7 +487,7 @@ export const utilities = [
     {
         classPrefix: 'bs-',
         classLink: 'box-shadow',
-        values: [
+        additionalClasses: [
             { classSuffix: 'none', classValue: ['box-shadow: none;'] },
             { classSuffix: 'xs', classValue: ['box-shadow: 1px 3px 5px -3px rgba(0,0,0,0.1);'] },
             { classSuffix: 'sm', classValue: ['box-shadow: 1px 3px 5px -2px rgba(0,0,0,0.1);'] },
@@ -499,7 +499,7 @@ export const utilities = [
     {
         classPrefix: 'o-',
         classLink: 'opacity',
-        values: [
+        additionalClasses: [
             { classSuffix: '10', classValue: ['opacity: 0.1;'] },
             { classSuffix: '20', classValue: ['opacity: 0.2;'] },
             { classSuffix: '30', classValue: ['opacity: 0.3;'] },
@@ -517,7 +517,7 @@ export const utilities = [
     {
         classPrefix: 'fb-',
         classLink: 'flex-basis',
-        values: [
+        additionalClasses: [
             ...generateClass(['flex-basis'], 100, 1, 'rem'),
             { classSuffix: 'auto', classValue: ['flex-basis: auto;'] }
         ]
@@ -525,7 +525,7 @@ export const utilities = [
     {
         classPrefix: 'fd-',
         classLink: 'flex-direction',
-        values: [
+        additionalClasses: [
             { classSuffix: 'c', classValue: ['flex-direction: column;'] },
             { classSuffix: 'cr', classValue: ['flex-direction: column-reverse;'] },
             { classSuffix: 'r', classValue: ['flex-direction: row;'] },
@@ -535,7 +535,7 @@ export const utilities = [
     {
         classPrefix: 'fg-',
         classLink: 'flex-grow',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['flex-grow: 0;'] },
             { classSuffix: '1', classValue: ['flex-grow: 1;'] },
             { classSuffix: '2', classValue: ['flex-grow: 2;'] },
@@ -550,7 +550,7 @@ export const utilities = [
     {
         classPrefix: 'fs-',
         classLink: 'flex-shrink',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['flex-shrink: 0;'] },
             { classSuffix: '1', classValue: ['flex-shrink: 1;'] },
             { classSuffix: '2', classValue: ['flex-shrink: 2;'] },
@@ -565,7 +565,7 @@ export const utilities = [
     {
         classPrefix: 'fw-',
         classLink: 'flex-wrap',
-        values: [
+        additionalClasses: [
             { classSuffix: 'nw', classValue: ['flex-wrap: nowrap;'] },
             { classSuffix: 'w', classValue: ['flex-wrap: wrap;'] },
             { classSuffix: 'wr', classValue: ['flex-wrap: wrap-reverse;'] }
@@ -574,7 +574,7 @@ export const utilities = [
     {
         classPrefix: 'f-',
         classLink: 'flex',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['flex: 0;'] },
             { classSuffix: '1', classValue: ['flex: 1;'] },
             { classSuffix: '2', classValue: ['flex: 2;'] },
@@ -592,7 +592,7 @@ export const utilities = [
     {
         classPrefix: 'gac-',
         classLink: 'grid-auto-columns',
-        values: [
+        additionalClasses: [
             { classSuffix: 'min', classValue: ['grid-auto-columns: min-content;'] },
             { classSuffix: 'max', classValue: ['grid-auto-columns: max-content;'] },
             { classSuffix: 'auto', classValue: ['grid-auto-columns: auto;'] }
@@ -601,7 +601,7 @@ export const utilities = [
     {
         classPrefix: 'gaf-',
         classLink: 'grid-auto-flow',
-        values: [
+        additionalClasses: [
             { classSuffix: 'r', classValue: ['grid-auto-flow: row;'] },
             { classSuffix: 'c', classValue: ['grid-auto-flow: column;'] },
             { classSuffix: 'd', classValue: ['grid-auto-flow: dense;'] }
@@ -610,7 +610,7 @@ export const utilities = [
     {
         classPrefix: 'gar-',
         classLink: 'grid-auto-rows',
-        values: [
+        additionalClasses: [
             { classSuffix: 'min', classValue: ['grid-auto-rows: min-content;'] },
             { classSuffix: 'max', classValue: ['grid-auto-rows: max-content;'] },
             { classSuffix: 'auto', classValue: ['grid-auto-rows: auto;'] }
@@ -619,7 +619,7 @@ export const utilities = [
     {
         classPrefix: 'gtc-',
         classLink: 'grid-template-columns',
-        values: [
+        additionalClasses: [
             { classSuffix: '1', classValue: ['grid-template-columns: repeat(1, minmax(0, 1fr));'] },
             { classSuffix: '2', classValue: ['grid-template-columns: repeat(2, minmax(0, 1fr));'] },
             { classSuffix: '3', classValue: ['grid-template-columns: repeat(3, minmax(0, 1fr));'] },
@@ -636,7 +636,7 @@ export const utilities = [
     {
         classPrefix: 'gtr-',
         classLink: 'grid-template-rows',
-        values: [
+        additionalClasses: [
             { classSuffix: '1', classValue: ['grid-template-rows: repeat(1, minmax(0, 1fr));'] },
             { classSuffix: '2', classValue: ['grid-template-rows: repeat(2, minmax(0, 1fr));'] },
             { classSuffix: '3', classValue: ['grid-template-rows: repeat(3, minmax(0, 1fr));'] },
@@ -658,7 +658,7 @@ export const utilities = [
     {
         classPrefix: 'ac-',
         classLink: 'align-content',
-        values: [
+        additionalClasses: [
             { classSuffix: 'c', classValue: ['align-content: center;'] },
             { classSuffix: 's', classValue: ['align-content: start;'] },
             { classSuffix: 'e', classValue: ['align-content: end;'] },
@@ -674,7 +674,7 @@ export const utilities = [
     {
         classPrefix: 'ai-',
         classLink: 'align-items',
-        values: [
+        additionalClasses: [
             { classSuffix: 'n', classValue: ['align-items: normal;'] },
             { classSuffix: 'stretch', classValue: ['align-items: stretch;'] },
             { classSuffix: 'c', classValue: ['align-items: center;'] },
@@ -687,7 +687,7 @@ export const utilities = [
     {
         classPrefix: 'as-',
         classLink: 'align-self',
-        values: [
+        additionalClasses: [
             { classSuffix: 'auto', classValue: ['align-self: auto;'] },
             { classSuffix: 'n', classValue: ['align-self: normal;'] },
             { classSuffix: 'c', classValue: ['align-self: center;'] },
@@ -701,7 +701,7 @@ export const utilities = [
     {
         classPrefix: 'cg-',
         classLink: 'column-gap',
-        values: [
+        additionalClasses: [
             { classSuffix: '1', classValue: ['column-gap: 0.25rem;'] },
             { classSuffix: '2', classValue: ['column-gap: 0.5rem;'] },
             { classSuffix: '3', classValue: ['column-gap: 0.75rem;'] },
@@ -723,7 +723,7 @@ export const utilities = [
     {
         classPrefix: 'g-',
         classLink: 'gap',
-        values: [
+        additionalClasses: [
             { classSuffix: '1', classValue: ['gap: 0.25rem;'] },
             { classSuffix: '2', classValue: ['gap: 0.5rem;'] },
             { classSuffix: '3', classValue: ['gap: 0.75rem;'] },
@@ -745,7 +745,7 @@ export const utilities = [
     {
         classPrefix: 'jc-',
         classLink: 'justify-content',
-        values: [
+        additionalClasses: [
             { classSuffix: 'c', classValue: ['justify-content: center;'] },
             { classSuffix: 's', classValue: ['justify-content: start;'] },
             { classSuffix: 'e', classValue: ['justify-content: end;'] },
@@ -763,7 +763,7 @@ export const utilities = [
     {
         classPrefix: 'ji-',
         classLink: 'justify-items',
-        values: [
+        additionalClasses: [
             { classSuffix: 'c', classValue: ['justify-items: center;'] },
             { classSuffix: 's', classValue: ['justify-items: start;'] },
             { classSuffix: 'e', classValue: ['justify-items: end;'] },
@@ -781,7 +781,7 @@ export const utilities = [
     {
         classPrefix: 'js-',
         classLink: 'justify-self',
-        values: [
+        additionalClasses: [
             { classSuffix: 'auto', classValue: ['justify-self: auto;'] },
             { classSuffix: 'n', classValue: ['justify-self: normal;'] },
             { classSuffix: 'stretch', classValue: ['justify-self: stretch;'] },
@@ -797,7 +797,7 @@ export const utilities = [
     {
         classPrefix: 'rg-',
         classLink: 'row-gap',
-        values: [
+        additionalClasses: [
             { classSuffix: '1', classValue: ['row-gap: 0.25rem;'] },
             { classSuffix: '2', classValue: ['row-gap: 0.5rem;'] },
             { classSuffix: '3', classValue: ['row-gap: 0.75rem;'] },
@@ -821,7 +821,7 @@ export const utilities = [
     {
         classPrefix: 'ar-',
         classLink: 'aspect-ratio',
-        values: [
+        additionalClasses: [
             { classSuffix: 's', classValue: ['aspect-ratio: 1/1;'] },
             { classSuffix: 'l', classValue: ['aspect-ratio: 16/9;'] },
             { classSuffix: 'auto', classValue: ['aspect-ratio: auto;'] }
@@ -830,7 +830,7 @@ export const utilities = [
     {
         classPrefix: 'cols-',
         classLink: 'columns',
-        values: [
+        additionalClasses: [
             { classSuffix: '1', classValue: ['columns: 1;'] },
             { classSuffix: '2', classValue: ['columns: 2;'] },
             { classSuffix: '3', classValue: ['columns: 3;'] },
@@ -852,14 +852,14 @@ export const utilities = [
     {
         classPrefix: 'cnt',
         classLink: 'container',
-        values: [
+        additionalClasses: [
             { classSuffix: '', classValue: ['width: 100%;'] }
         ]
     },
     {
         classPrefix: 'dir-b-',
         classLink: 'direction',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['bottom: 0rem;'] },
             { classSuffix: '1', classValue: ['bottom: 1rem;'] },
             { classSuffix: '2', classValue: ['bottom: 2rem;'] },
@@ -883,7 +883,7 @@ export const utilities = [
     {
         classPrefix: 'dir-i-',
         classLink: 'direction#inset',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['inset: 0rem;'] },
             { classSuffix: '1', classValue: ['inset: 1rem;'] },
             { classSuffix: '2', classValue: ['inset: 2rem;'] },
@@ -907,7 +907,7 @@ export const utilities = [
     {
         classPrefix: 'dir-l-',
         classLink: 'direction#left',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['left: 0rem;'] },
             { classSuffix: '1', classValue: ['left: 1rem;'] },
             { classSuffix: '2', classValue: ['left: 2rem;'] },
@@ -931,7 +931,7 @@ export const utilities = [
     {
         classPrefix: 'dir-r-',
         classLink: 'direction#right',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['right: 0rem;'] },
             { classSuffix: '1', classValue: ['right: 1rem;'] },
             { classSuffix: '2', classValue: ['right: 2rem;'] },
@@ -955,7 +955,7 @@ export const utilities = [
     {
         classPrefix: 'dir-t-',
         classLink: 'direction#top',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['top: 0rem;'] },
             { classSuffix: '1', classValue: ['top: 1rem;'] },
             { classSuffix: '2', classValue: ['top: 2rem;'] },
@@ -979,7 +979,7 @@ export const utilities = [
     {
         classPrefix: 'd-',
         classLink: 'display',
-        values: [
+        additionalClasses: [
             { classSuffix: 'b', classValue: ['display: block;'] },
             { classSuffix: 'i', classValue: ['display: inline;'] },
             { classSuffix: 'ib', classValue: ['display: inline-block;'] },
@@ -993,7 +993,7 @@ export const utilities = [
     {
         classPrefix: 'f-',
         classLink: 'float',
-        values: [
+        additionalClasses: [
             { classSuffix: 'none', classValue: ['float: none;'] },
             { classSuffix: 'l', classValue: ['float: left;'] },
             { classSuffix: 'r', classValue: ['float: right;'] },
@@ -1004,14 +1004,14 @@ export const utilities = [
     {
         classPrefix: 'ins',
         classLink: 'inset',
-        values: [
+        additionalClasses: [
             { classSuffix: '', classValue: ['align-items: center;', 'display: flex;', 'justify-content: center;'] }
         ]
     },
     {
         classPrefix: 'of-',
         classLink: 'object-fit',
-        values: [
+        additionalClasses: [
             { classSuffix: 'c', classValue: ['object-fit: cover;'] },
             { classSuffix: 'f', classValue: ['object-fit: fill;'] },
             { classSuffix: 'none', classValue: ['object-fit: none;'] },
@@ -1021,7 +1021,7 @@ export const utilities = [
     {
         classPrefix: 'op-',
         classLink: 'object-position',
-        values: [
+        additionalClasses: [
             { classSuffix: 'b', classValue: ['object-position: bottom;'] },
             { classSuffix: 'c', classValue: ['object-position: center;'] },
             { classSuffix: 'lb', classValue: ['object-position: left bottom;'] },
@@ -1035,7 +1035,7 @@ export const utilities = [
     {
         classPrefix: 'ovf-',
         classLink: 'overflow',
-        values: [
+        additionalClasses: [
             { classSuffix: 'auto', classValue: ['overflow: auto;'] },
             { classSuffix: 'c', classValue: ['overflow: clip;'] },
             { classSuffix: 'h', classValue: ['overflow: hidden;'] },
@@ -1046,7 +1046,7 @@ export const utilities = [
     {
         classPrefix: 'ovf-x-',
         classLink: 'overflow',
-        values: [
+        additionalClasses: [
             { classSuffix: 'auto', classValue: ['overflow-x: auto;'] },
             { classSuffix: 'c', classValue: ['overflow-x: clip;'] },
             { classSuffix: 'h', classValue: ['overflow-x: hidden;'] },
@@ -1057,7 +1057,7 @@ export const utilities = [
     {
         classPrefix: 'ovf-y-',
         classLink: 'overflow',
-        values: [
+        additionalClasses: [
             { classSuffix: 'auto', classValue: ['overflow-y: auto;'] },
             { classSuffix: 'c', classValue: ['overflow-y: clip;'] },
             { classSuffix: 'h', classValue: ['overflow-y: hidden;'] },
@@ -1068,7 +1068,7 @@ export const utilities = [
     {
         classPrefix: 'p-',
         classLink: 'position',
-        values: [
+        additionalClasses: [
             { classSuffix: 'a', classValue: ['position: absolute;'] },
             { classSuffix: 'f', classValue: ['position: fixed;'] },
             { classSuffix: 'r', classValue: ['position: relative;'] },
@@ -1079,7 +1079,7 @@ export const utilities = [
     {
         classPrefix: 'zi-',
         classLink: 'z-index',
-        values: [
+        additionalClasses: [
             { classSuffix: '0', classValue: ['z-index: 0;'] },
             { classSuffix: '10', classValue: ['z-index: 10;'] },
             { classSuffix: '20', classValue: ['z-index: 20;'] },
@@ -1098,7 +1098,7 @@ export const utilities = [
     {
         classPrefix: 'a-',
         classLink: 'appearance',
-        values: [
+        additionalClasses: [
             { classSuffix: 'none', classValue: ['appearance: none;'] },
             { classSuffix: 'auto', classValue: ['appearance: auto;'] }
         ]
@@ -1106,7 +1106,7 @@ export const utilities = [
     {
         classPrefix: 'c-',
         classLink: 'cursor',
-        values: [
+        additionalClasses: [
             { classSuffix: 'auto', classValue: ['cursor: auto;'] },
             { classSuffix: 'p', classValue: ['cursor: pointer;'] },
             { classSuffix: 't', classValue: ['cursor: text;'] },
@@ -1122,7 +1122,7 @@ export const utilities = [
     {
         classPrefix: 'pe-',
         classLink: 'pointer-events',
-        values: [
+        additionalClasses: [
             { classSuffix: 'auto', classValue: ['pointer-events: auto;'] },
             { classSuffix: 'none', classValue: ['pointer-events: none;'] }
         ]
@@ -1130,7 +1130,7 @@ export const utilities = [
     {
         classPrefix: 'r-',
         classLink: 'resize',
-        values: [
+        additionalClasses: [
             { classSuffix: 'b', classValue: ['resize: both;'] },
             { classSuffix: 'h', classValue: ['resize: horizontal;'] },
             { classSuffix: 'none', classValue: ['resize: none;'] },
@@ -1140,7 +1140,7 @@ export const utilities = [
     {
         classPrefix: 'us-',
         classLink: 'user-select',
-        values: [
+        additionalClasses: [
             { classSuffix: 'auto', classValue: ['user-select: auto;'] },
             { classSuffix: 'none', classValue: ['user-select: none;'] }
         ]
@@ -1150,7 +1150,7 @@ export const utilities = [
     {
         classPrefix: 'cs-',
         classLink: 'caption-side',
-        values: [
+        additionalClasses: [
             { classSuffix: 'bottom', classValue: ['caption-side: bottom'] },
             { classSuffix: 'top', classValue: ['caption-side: top;'] }
         ]
@@ -1158,7 +1158,7 @@ export const utilities = [
     {
         classPrefix: 'tl-',
         classLink: 'table-layout',
-        values: [
+        additionalClasses: [
             { classSuffix: 'auto', classValue: ['table-layout: auto;'] },
             { classSuffix: 'f', classValue: ['table-layout: fixed;'] }
         ]
@@ -1168,7 +1168,7 @@ export const utilities = [
     {
         classPrefix: 'ff-',
         classLink: 'font-family',
-        values: [
+        additionalClasses: [
             { classSuffix: 'c', classValue: ['font-family: Charter, Cambria, serif;'] },
             { classSuffix: 'm', classValue: ['font-family: ui-monospace, Consolas, monospace;'] },
             { classSuffix: 's', classValue: ['font-family: system-ui, sans-serif;'] }
@@ -1177,7 +1177,7 @@ export const utilities = [
     {
         classPrefix: 'fs-',
         classLink: 'font-size',
-        values: [
+        additionalClasses: [
             { classSuffix: 'xs', classValue: ['font-size: 12px;'] },
             { classSuffix: 'sm', classValue: ['font-size: 14.4px;'] },
             { classSuffix: 'md', classValue: ['font-size: 16px;'] },
@@ -1191,7 +1191,7 @@ export const utilities = [
     {
         classPrefix: 'fs-',
         classLink: 'font-style',
-        values: [
+        additionalClasses: [
             { classSuffix: 'i', classValue: ['font-style: italic;'] },
             { classSuffix: 'n', classValue: ['font-style: normal;'] }
         ]
@@ -1199,7 +1199,7 @@ export const utilities = [
     {
         classPrefix: 'fw-',
         classLink: 'font-weight',
-        values: [
+        additionalClasses: [
             { classSuffix: '100', classValue: ['font-weight: 100;'] },
             { classSuffix: '200', classValue: ['font-weight: 200;'] },
             { classSuffix: '300', classValue: ['font-weight: 300;'] },
@@ -1214,7 +1214,7 @@ export const utilities = [
     {
         classPrefix: 'lh-',
         classLink: 'line-height',
-        values: [
+        additionalClasses: [
             { classSuffix: '1', classValue: ['line-height: 1;'] },
             { classSuffix: '2', classValue: ['line-height: 1.25;'] },
             { classSuffix: '3', classValue: ['line-height: 1.375;'] },
@@ -1226,7 +1226,7 @@ export const utilities = [
     {
         classPrefix: 'lst-',
         classLink: 'list-style-type',
-        values: [
+        additionalClasses: [
             { classSuffix: 'd', classValue: ['list-style-type: disc;'] },
             { classSuffix: 'c', classValue: ['list-style-type: circle;'] },
             { classSuffix: 's', classValue: ['list-style-type: square;'] }
@@ -1235,7 +1235,7 @@ export const utilities = [
     {
         classPrefix: 'ow-',
         classLink: 'overflow-wrap',
-        values: [
+        additionalClasses: [
             { classSuffix: 'bw', classValue: ['overflow-wrap: break-word;'] },
             { classSuffix: 'ka', classValue: ['overflow-wrap: keep-all;'] },
             { classSuffix: 'n', classValue: ['overflow-wrap: normal;'] }
@@ -1244,7 +1244,7 @@ export const utilities = [
     {
         classPrefix: 'ta-',
         classLink: 'text-align',
-        values: [
+        additionalClasses: [
             { classSuffix: 's', classValue: ['text-align: start;'] },
             { classSuffix: 'e', classValue: ['text-align: end;'] },
             { classSuffix: 'l', classValue: ['text-align: left;'] },
@@ -1258,7 +1258,7 @@ export const utilities = [
     {
         classPrefix: 'tdl-',
         classLink: 'text-decoration-line',
-        values: [
+        additionalClasses: [
             { classSuffix: 'none', classValue: ['text-decoration-line: none;'] },
             { classSuffix: 'u', classValue: ['text-decoration-line: underline;'] },
             { classSuffix: 'o', classValue: ['text-decoration-line: overline;'] },
@@ -1268,7 +1268,7 @@ export const utilities = [
     {
         classPrefix: 'tds-',
         classLink: 'text-decoration-style',
-        values: [
+        additionalClasses: [
             { classSuffix: 'none', classValue: ['text-decoration-style: none;'] },
             { classSuffix: 'd', classValue: ['text-decoration-style: dashed;'] },
             { classSuffix: 'h', classValue: ['text-decoration-style: hidden;'] },
@@ -1278,7 +1278,7 @@ export const utilities = [
     {
         classPrefix: 'tdt-',
         classLink: 'text-decoration-thickness',
-        values: [
+        additionalClasses: [
             { classSuffix: 'auto', classValue: ['text-decoration-thickness: auto;'] },
             { classSuffix: 'ff', classValue: ['text-decoration-thickness: from-font;'] },
             { classSuffix: '0', classValue: ['text-decoration-thickness: 0px;'] },
@@ -1291,7 +1291,7 @@ export const utilities = [
     {
         classPrefix: 'td-',
         classLink: 'text-decoration',
-        values: [
+        additionalClasses: [
             { classSuffix: 'u', classValue: ['text-decoration: underline;'] },
             { classSuffix: 'none', classValue: ['text-decoration: none;'] }
         ]

@@ -1,9 +1,9 @@
-export function generateClass(properties: string[], amount: number, base: number, unit: string): { classSuffix: string, classValue: string[] }[] {
+export function generateClass(properties: string[], range: number, increment: number, unit: string): { classSuffix: string, classValue: string[] }[] {
 	const classes = [];
 
-	for (let i = 0; i <= amount; i++) {
+	for (let i = 0; i <= range; i++) {
 		const classSuffix = i.toString();
-		const classValue = properties.map(property => `${property}: ${base * i}${unit};`);
+		const classValue = properties.map(property => `${property}: ${increment * i}${unit};`);
 		classes.push({ classSuffix, classValue });
 	}
 
