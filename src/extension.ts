@@ -30,7 +30,7 @@ utilities.forEach(utilClass => {
         const classItem = `${utilClass.classPrefix}${value.classSuffix}`;
         const item = new vscode.CompletionItem(classItem, vscode.CompletionItemKind.Value);
 
-        item.detail = `${value.classValue.join(' \n ') || ''}`;
+        item.detail = `${value.classValues.join(' \n ') || ''}`;
         item.documentation = new vscode.MarkdownString();
         item.documentation.appendMarkdown(`\n\nThe ['${classItem}'](${baseUrl}${utilClass.classLink}) utility is covered in the documentation.`);
         item.documentation.isTrusted = true;
@@ -85,7 +85,7 @@ export async function activate(context: vscode.ExtensionContext) {
                     const value = utility.additionalClasses.find(value => `${utility.classPrefix}${value.classSuffix}` === word);
                     if (value) {
                         const markdownString = new vscode.MarkdownString();
-                        markdownString.appendCodeblock(`.${word} {\n ${value.classValue.join(' \n ') || ''}\n}`, 'css');
+                        markdownString.appendCodeblock(`.${word} {\n ${value.classValues.join(' \n ') || ''}\n}`, 'css');
                         markdownString.appendMarkdown(`\n\nThe [${word}](${baseUrl}${utility.classLink}) utility is covered in the documentation.`);
                         markdownString.isTrusted = true;
                         return new vscode.Hover(markdownString);
