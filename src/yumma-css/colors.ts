@@ -1,20 +1,21 @@
 import { generateShades } from '../utils/shadeUtil';
 
 export const colors = [
-    { name: 'red', baseColor: 'rgba(215, 61, 61, 1)' },
-    { name: 'orange', baseColor: 'rgba(224, 104, 20, 1)' },
-    { name: 'yellow', baseColor: 'rgba(211, 161, 7, 1)' },
-    { name: 'green', baseColor: 'rgba(31, 177, 85, 1)' },
-    { name: 'teal', baseColor: 'rgba(18, 166, 149, 1)' },
-    { name: 'cyan', baseColor: 'rgba(5, 164, 191, 1)' },
-    { name: 'blue', baseColor: 'rgba(53, 117, 221, 1)' },
-    { name: 'indigo', baseColor: 'rgba(89, 92, 217, 1)' },
-    { name: 'violet', baseColor: 'rgba(125, 83, 221, 1)' },
-    { name: 'pink', baseColor: 'rgba(212, 65, 138, 1)' },
-    { name: 'gray', baseColor: 'rgba(96, 103, 115, 1)' },
-    { name: 'lead', baseColor: 'rgba(63, 63, 78, 1)' },
-    { name: 'black', baseColor: 'rgba(0, 0, 0, 1)' },
-    { name: 'white', baseColor: 'rgba(255, 255, 255, 1)' },
+    { name: 'red', baseColor: '#d73d3d' },
+    { name: 'orange', baseColor: '#e06814' },
+    { name: 'yellow', baseColor: '#d3a107' },
+    { name: 'green', baseColor: '#1fb155' },
+    { name: 'teal', baseColor: '#12a695' },
+    { name: 'cyan', baseColor: '#05a4bf' },
+    { name: 'blue', baseColor: '#3575dd' },
+    { name: 'indigo', baseColor: '#595cd9' },
+    { name: 'violet', baseColor: '#7d53dd' },
+    { name: 'pink', baseColor: '#d4418a' },
+    { name: 'silver', baseColor: '#bfc2c7' },
+    { name: 'gray', baseColor: '#606773' },
+    { name: 'lead', baseColor: '#3f3f4e' },
+    { name: 'white', baseColor: '#000000' },
+    { name: 'black', baseColor: '#ffffff' },
     { name: 'transparent', baseColor: 'transparent' }
 ].flatMap(color => {
     if (['black', 'white', 'transparent'].includes(color.name.toLowerCase())) {
