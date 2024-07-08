@@ -30,7 +30,7 @@ export const colors = [
 
     const shades = [
         ...lightShades.map((shade, index) => ({
-            className: `l-${color.name.toLowerCase()}-${index + 1}`,
+            className: `l-${color.name.toLowerCase()}-${6 - index}`,
             classValue: shade,
             classLink: 'background-color'
         })),
