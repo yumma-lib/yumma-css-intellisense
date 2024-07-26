@@ -41,7 +41,7 @@ Yumma CSS Intellisense is designed to make your Visual Studio Code development e
 - **Documentation**: Provides users with the opportunity to learn more about each completion.
 - **Hoverings:** Inspect the CSS behind the Yumma CSS classes.
 
-### Color Info
+### Defaults
 
 |                                     Code                                     | Name        |
 | :--------------------------------------------------------------------------: | ----------- |
