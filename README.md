@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://yummacss.com/img/icon/favicon.ico" alt="Yumma CSS Logo">
-</p>
-
 <h3 align="center">Yumma CSS Intellisense</h3>
 
 <p align="center">
@@ -33,7 +29,9 @@
 
 ## Get started
 
-Yumma CSS Intellisense is designed to make your Visual Studio Code development experience more enjoyable. Get [Yumma CSS Intellisense from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=yumma-css.yumma-css-intellisense).
+Yumma CSS Intellisense is designed to make your Visual Studio Code development experience more enjoyable. 
+
+Get [Yumma CSS Intellisense from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=yumma-css.yumma-css-intellisense).
 
 ## What's in the box?
 
