@@ -1,9 +1,9 @@
+# build
+out
+.vscode-test
+
 # dependencies
 node_modules
-
-# build
-.vscode-test
-out
 
 # vs code
 .vscode/
