@@ -1,6 +1,9 @@
-# Dependencies
+# dependencies
 node_modules
 
-# Build
+# build
 .vscode-test
 out
+
+# vs code
+.vscode/
