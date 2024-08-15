@@ -1,5 +1,19 @@
 import { generateShades } from "../utils/shadeUtil";
 
+export const colorUtils = [
+  { classPrefix: "ac-", classValue: "accent-color" },
+  { classPrefix: "bc-", classValue: "border-color" },
+  { classPrefix: "bc-b-", classValue: "border-bottom-color" },
+  { classPrefix: "bc-l-", classValue: "border-left-color" },
+  { classPrefix: "bc-r-", classValue: "border-right-color" },
+  { classPrefix: "bc-t-", classValue: "border-top-color" },
+  { classPrefix: "bg-", classValue: "background-color" },
+  { classPrefix: "cc-", classValue: "caret-color" },
+  { classPrefix: "oc-", classValue: "outline-color" },
+  { classPrefix: "t-", classValue: "color" },
+  { classPrefix: "tdc-", classValue: "text-decoration-color" },
+];
+
 export const colors = [
   { name: "red", baseColor: "#d73d3d" },
   { name: "orange", baseColor: "#e06814" },
@@ -14,8 +28,8 @@ export const colors = [
   { name: "silver", baseColor: "#bfc2c7" },
   { name: "gray", baseColor: "#606773" },
   { name: "lead", baseColor: "#3f3f4e" },
-  { name: "white", baseColor: "#000000" },
-  { name: "black", baseColor: "#ffffff" },
+  { name: "white", baseColor: "#ffffff" },
+  { name: "black", baseColor: "#000000" },
   { name: "transparent", baseColor: "transparent" },
 ].flatMap((color) => {
   if (["black", "white", "transparent"].includes(color.name.toLowerCase())) {
