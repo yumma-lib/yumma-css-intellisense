@@ -21,8 +21,6 @@ colorUtils.forEach((colorClass) => {
     item.documentation = new vscode.MarkdownString(
       `${colorClass.classValue}: ${color.classValue}`
     );
-    // item.documentation.appendMarkdown(`\n\nThe [${classItem}](${baseUrl}${color.classLink}) utility is covered in the documentation.`);
-    // item.documentation.isTrusted = true;
     item.insertText = classItem;
 
     (item as any).color = { id: "yumma-color", color: color.classValue };

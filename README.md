@@ -39,25 +39,6 @@ Get [Yumma CSS Intellisense from the Visual Studio Marketplace](https://marketpl
 - **Documentation**: Provides users with the opportunity to learn more about each completion.
 - **Hoverings:** Inspect the CSS behind the Yumma CSS classes.
 
-### Defaults
-
-|                                     Code                                     | Name        |
-| :--------------------------------------------------------------------------: | ----------- |
-|      ![#d73d3d](https://via.placeholder.com/10/d73d3d?text=+) `#d73d3d`      | Red         |
-|      ![#e06814](https://via.placeholder.com/10/e06814?text=+) `#e06814`      | Orange      |
-|      ![#d3a107](https://via.placeholder.com/10/d3a107?text=+) `#d3a107`      | Yellow      |
-|      ![#1fb155](https://via.placeholder.com/10/1fb155?text=+) `#1fb155`      | Green       |
-|      ![#12a695](https://via.placeholder.com/10/12a695?text=+) `#12a695`      | Teal        |
-|      ![#05a4bf](https://via.placeholder.com/10/05a4bf?text=+) `#05a4bf`      | Cyan        |
-|      ![#3575dd](https://via.placeholder.com/10/3575dd?text=+) `#3575dd`      | Blue        |
-|      ![#595cd9](https://via.placeholder.com/10/595cd9?text=+) `#595cd9`      | Indigo      |
-|      ![#7d53dd](https://via.placeholder.com/10/7d53dd?text=+) `#7d53dd`      | Violet      |
-|      ![#d4418a](https://via.placeholder.com/10/d4418a?text=+) `#d4418a`      | Pink        |
-|      ![#bfc2c7](https://via.placeholder.com/10/bfc2c7?text=+) `#bfc2c7`      | Silver      |
-|      ![#606773](https://via.placeholder.com/10/606773?text=+) `#606773`      | Gray        |
-|      ![#3f3f4e](https://via.placeholder.com/10/3f3f4e?text=+) `#3f3f4e`      | Lead        |
-
-
 ## Community
 
 Here are some ways you can get in touch with us:

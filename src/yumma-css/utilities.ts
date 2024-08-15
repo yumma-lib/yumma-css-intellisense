@@ -700,6 +700,426 @@ export const utilities = [
     ],
   },
   {
+    classPrefix: "gc-s-",
+    classLink: "grid-column",
+    additionalClasses: [
+      {
+        classSuffix: "1",
+        classValues: ["span 1 / span 1"],
+      },
+      {
+        classSuffix: "2",
+        classValues: ["span 2 / span 2"],
+      },
+      {
+        classSuffix: "3",
+        classValues: ["span 3 / span 3"],
+      },
+      {
+        classSuffix: "4",
+        classValues: ["span 4 / span 4"],
+      },
+      {
+        classSuffix: "5",
+        classValues: ["span 5 / span 5"],
+      },
+      {
+        classSuffix: "6",
+        classValues: ["span 6 / span 6"],
+      },
+      {
+        classSuffix: "7",
+        classValues: ["span 7 / span 7"],
+      },
+      {
+        classSuffix: "8",
+        classValues: ["span 8 / span 8"],
+      },
+      {
+        classSuffix: "9",
+        classValues: ["span 9 / span 9"],
+      },
+      {
+        classSuffix: "10",
+        classValues: ["span 10 / span 10"],
+      },
+      {
+        classSuffix: "11",
+        classValues: ["span 11 / span 11"],
+      },
+      {
+        classSuffix: "12",
+        classValues: ["span 12 / span 12"],
+      },
+      {
+        classSuffix: "13",
+        classValues: ["span 13 / span 13"],
+      },
+      {
+        classSuffix: "14",
+        classValues: ["span 14 / span 14"],
+      },
+      {
+        classSuffix: "15",
+        classValues: ["span 15 / span 15"],
+      },
+      {
+        classSuffix: "16",
+        classValues: ["span 16 / span 16"],
+      },
+    ],
+  },
+  {
+    classPrefix: "gcs-",
+    classLink: "grid-column-start",
+    additionalClasses: [
+      {
+        classSuffix: "1",
+        classValues: ["grid-column-start: 1;"],
+      },
+      {
+        classSuffix: "2",
+        classValues: ["grid-column-start: 2;"],
+      },
+      {
+        classSuffix: "3",
+        classValues: ["grid-column-start: 3;"],
+      },
+      {
+        classSuffix: "4",
+        classValues: ["grid-column-start: 4;"],
+      },
+      {
+        classSuffix: "5",
+        classValues: ["grid-column-start: 5;"],
+      },
+      {
+        classSuffix: "6",
+        classValues: ["grid-column-start: 6;"],
+      },
+      {
+        classSuffix: "7",
+        classValues: ["grid-column-start: 7;"],
+      },
+      {
+        classSuffix: "8",
+        classValues: ["grid-column-start: 8;"],
+      },
+      {
+        classSuffix: "9",
+        classValues: ["grid-column-start: 9;"],
+      },
+      {
+        classSuffix: "10",
+        classValues: ["grid-column-start: 10"],
+      },
+      {
+        classSuffix: "11",
+        classValues: ["grid-column-start: 11"],
+      },
+      {
+        classSuffix: "12",
+        classValues: ["grid-column-start: 12"],
+      },
+      {
+        classSuffix: "13",
+        classValues: ["grid-column-start: 13"],
+      },
+      {
+        classSuffix: "14",
+        classValues: ["grid-column-start: 14"],
+      },
+      {
+        classSuffix: "15",
+        classValues: ["grid-column-start: 15"],
+      },
+      {
+        classSuffix: "16",
+        classValues: ["grid-column-start: 16"],
+      },
+    ],
+  },
+  {
+    classPrefix: "gce-",
+    classLink: "grid-column-end",
+    additionalClasses: [
+      {
+        classSuffix: "1",
+        classValues: ["grid-column-end: 1;"],
+      },
+      {
+        classSuffix: "2",
+        classValues: ["grid-column-end: 2;"],
+      },
+      {
+        classSuffix: "3",
+        classValues: ["grid-column-end: 3;"],
+      },
+      {
+        classSuffix: "4",
+        classValues: ["grid-column-end: 4;"],
+      },
+      {
+        classSuffix: "5",
+        classValues: ["grid-column-end: 5;"],
+      },
+      {
+        classSuffix: "6",
+        classValues: ["grid-column-end: 6;"],
+      },
+      {
+        classSuffix: "7",
+        classValues: ["grid-column-end: 7;"],
+      },
+      {
+        classSuffix: "8",
+        classValues: ["grid-column-end: 8;"],
+      },
+      {
+        classSuffix: "9",
+        classValues: ["grid-column-end: 9;"],
+      },
+      {
+        classSuffix: "10",
+        classValues: ["grid-column-end: 10"],
+      },
+      {
+        classSuffix: "11",
+        classValues: ["grid-column-end: 11"],
+      },
+      {
+        classSuffix: "12",
+        classValues: ["grid-column-end: 12"],
+      },
+      {
+        classSuffix: "13",
+        classValues: ["grid-column-end: 13"],
+      },
+      {
+        classSuffix: "14",
+        classValues: ["grid-column-end: 14"],
+      },
+      {
+        classSuffix: "15",
+        classValues: ["grid-column-end: 15"],
+      },
+      {
+        classSuffix: "16",
+        classValues: ["grid-column-end: 16"],
+      },
+    ],
+  },
+  {
+    classPrefix: "gr-s-",
+    classLink: "grid-row",
+    additionalClasses: [
+      {
+        classSuffix: "1",
+        classValues: ["span 1 / span 1"],
+      },
+      {
+        classSuffix: "2",
+        classValues: ["span 2 / span 2"],
+      },
+      {
+        classSuffix: "3",
+        classValues: ["span 3 / span 3"],
+      },
+      {
+        classSuffix: "4",
+        classValues: ["span 4 / span 4"],
+      },
+      {
+        classSuffix: "5",
+        classValues: ["span 5 / span 5"],
+      },
+      {
+        classSuffix: "6",
+        classValues: ["span 6 / span 6"],
+      },
+      {
+        classSuffix: "7",
+        classValues: ["span 7 / span 7"],
+      },
+      {
+        classSuffix: "8",
+        classValues: ["span 8 / span 8"],
+      },
+      {
+        classSuffix: "9",
+        classValues: ["span 9 / span 9"],
+      },
+      {
+        classSuffix: "10",
+        classValues: ["span 10 / span 10"],
+      },
+      {
+        classSuffix: "11",
+        classValues: ["span 11 / span 11"],
+      },
+      {
+        classSuffix: "12",
+        classValues: ["span 12 / span 12"],
+      },
+      {
+        classSuffix: "13",
+        classValues: ["span 13 / span 13"],
+      },
+      {
+        classSuffix: "14",
+        classValues: ["span 14 / span 14"],
+      },
+      {
+        classSuffix: "15",
+        classValues: ["span 15 / span 15"],
+      },
+      {
+        classSuffix: "16",
+        classValues: ["span 16 / span 16"],
+      },
+    ],
+  },
+  {
+    classPrefix: "grs-",
+    classLink: "grid-row-start",
+    additionalClasses: [
+      {
+        classSuffix: "1",
+        classValues: ["grid-row-start: 1;"],
+      },
+      {
+        classSuffix: "2",
+        classValues: ["grid-row-start: 2;"],
+      },
+      {
+        classSuffix: "3",
+        classValues: ["grid-row-start: 3;"],
+      },
+      {
+        classSuffix: "4",
+        classValues: ["grid-row-start: 4;"],
+      },
+      {
+        classSuffix: "5",
+        classValues: ["grid-row-start: 5;"],
+      },
+      {
+        classSuffix: "6",
+        classValues: ["grid-row-start: 6;"],
+      },
+      {
+        classSuffix: "7",
+        classValues: ["grid-row-start: 7;"],
+      },
+      {
+        classSuffix: "8",
+        classValues: ["grid-row-start: 8;"],
+      },
+      {
+        classSuffix: "9",
+        classValues: ["grid-row-start: 9;"],
+      },
+      {
+        classSuffix: "10",
+        classValues: ["grid-row-start: 10"],
+      },
+      {
+        classSuffix: "11",
+        classValues: ["grid-row-start: 11"],
+      },
+      {
+        classSuffix: "12",
+        classValues: ["grid-row-start: 12"],
+      },
+      {
+        classSuffix: "13",
+        classValues: ["grid-row-start: 13"],
+      },
+      {
+        classSuffix: "14",
+        classValues: ["grid-row-start: 14"],
+      },
+      {
+        classSuffix: "15",
+        classValues: ["grid-row-start: 15"],
+      },
+      {
+        classSuffix: "16",
+        classValues: ["grid-row-start: 16"],
+      },
+    ],
+  },
+  {
+    classPrefix: "gre-",
+    classLink: "grid-row-end",
+    additionalClasses: [
+      {
+        classSuffix: "1",
+        classValues: ["grid-row-end: 1;"],
+      },
+      {
+        classSuffix: "2",
+        classValues: ["grid-row-end: 2;"],
+      },
+      {
+        classSuffix: "3",
+        classValues: ["grid-row-end: 3;"],
+      },
+      {
+        classSuffix: "4",
+        classValues: ["grid-row-end: 4;"],
+      },
+      {
+        classSuffix: "5",
+        classValues: ["grid-row-end: 5;"],
+      },
+      {
+        classSuffix: "6",
+        classValues: ["grid-row-end: 6;"],
+      },
+      {
+        classSuffix: "7",
+        classValues: ["grid-row-end: 7;"],
+      },
+      {
+        classSuffix: "8",
+        classValues: ["grid-row-end: 8;"],
+      },
+      {
+        classSuffix: "9",
+        classValues: ["grid-row-end: 9;"],
+      },
+      {
+        classSuffix: "10",
+        classValues: ["grid-row-end: 10"],
+      },
+      {
+        classSuffix: "11",
+        classValues: ["grid-row-end: 11"],
+      },
+      {
+        classSuffix: "12",
+        classValues: ["grid-row-end: 12"],
+      },
+      {
+        classSuffix: "13",
+        classValues: ["grid-row-end: 13"],
+      },
+      {
+        classSuffix: "14",
+        classValues: ["grid-row-end: 14"],
+      },
+      {
+        classSuffix: "15",
+        classValues: ["grid-row-end: 15"],
+      },
+      {
+        classSuffix: "16",
+        classValues: ["grid-row-end: 16"],
+      },
+    ],
+  },
+  {
     classPrefix: "gtc-",
     classLink: "grid-template-columns",
     additionalClasses: [
