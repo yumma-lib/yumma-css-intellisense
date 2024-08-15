@@ -1,8 +1,8 @@
 import * as vscode from "vscode";
 
-import { isYummaInstalled } from "./utils/workspaceUtil";
-import { hoverProvider } from "./utils/hoverUtil";
-import { completionProvider } from "./utils/completionUtil";
+import { isYummaInstalled } from "./utilities/workspaceUtil";
+import { hoverProvider } from "./providers/hoverProvider";
+import { completionProvider } from "./providers/completionProvider";
 
 export async function activate(context: vscode.ExtensionContext) {
   try {

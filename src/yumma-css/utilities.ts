@@ -1,4 +1,4 @@
-import { generateClass } from "../utils/classUtil";
+import { generateClass } from "../utilities/classUtil";
 
 export const utilities = [
   // borders & outlines

@@ -1,4 +1,4 @@
-import { generateShades } from "../utils/shadeUtil";
+import { generateShades } from "../utilities/shadeUtil";
 
 export const colorUtils = [
   { classPrefix: "ac-", classValue: "accent-color" },
@@ -10,7 +10,7 @@ export const colorUtils = [
   { classPrefix: "bg-", classValue: "background-color" },
   { classPrefix: "cc-", classValue: "caret-color" },
   { classPrefix: "oc-", classValue: "outline-color" },
-  { classPrefix: "t-", classValue: "color" },
+  { classPrefix: "tc-", classValue: "color" },
   { classPrefix: "tdc-", classValue: "text-decoration-color" },
 ];
 
