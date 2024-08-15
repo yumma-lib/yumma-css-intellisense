@@ -134,8 +134,8 @@ export async function activate(context: vscode.ExtensionContext) {
     );
 
     context.subscriptions.push(provider, hoverProvider);
-  } catch (error) {
-    console.error("Could not activate extension due to:", error);
+  } catch (e) {
+    console.error("Could not activate extension due to:", e);
     vscode.window.showErrorMessage(
       "An error occurred while activating the extension."
     );
