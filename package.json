@@ -9,7 +9,10 @@
 	"name": "yumma-css-intellisense",
 	"private": true,
 	"publisher": "yumma-css",
-	"repository": "https://github.com/yumma-lib/yumma-css-intellisense",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yumma-lib/yumma-css-intellisense"
+	},
 	"version": "0.0.2",
 	"activationEvents": [
 		"onLanguage:django-html",
@@ -52,5 +55,5 @@
 		"compile": "tsc -p ./",
 		"lint": "eslint \"src/**/*.ts\"",
 		"watch": "tsc -watch -p ./"
-	}	
+	}
 }
