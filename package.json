@@ -9,7 +9,7 @@
 	"name": "yumma-css-intellisense",
 	"private": true,
 	"publisher": "yumma-css",
-	"version": "0.0.1",
+	"version": "0.0.2",
 
 	"activationEvents": [
 		"onLanguage:django-html",

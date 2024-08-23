@@ -2,13 +2,13 @@
 
 All notable changes to the Yumma CSS Intellisense will be documented in this file.
 
-## v0.0.1
+## v0.0.2
 
 ### Added
-- Initial release of Yumma CSS Intellisense.
+- None
 
 ### Changed
-- None
+- Update `extension.ts`
 
 ### Removed
-- None
+- `workspaceUtil.ts`
