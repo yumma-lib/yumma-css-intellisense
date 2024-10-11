@@ -1,20 +1,9 @@
 import tinycolor = require("tinycolor2");
 
-/**
- * @param color1 - First color
- * @param color2 - Second color.
- * @param weight - Mix weight (0-100).
- * @returns Mixed color as a hex string.
- */
 const mixColors = (color1: string, color2: string, weight: number): string => {
   return tinycolor.mix(color1, color2, weight).toHexString();
 };
 
-/**
- * Creates shades for a given hue.
- * @param color - Base color
- * @returns An object with arrays of light, base, and dark shades.
- */
 export const generateShades = (
   color: string
 ): { lightShades: string[]; baseColor: string; darkShades: string[] } => {

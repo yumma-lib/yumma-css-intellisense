@@ -7,7 +7,7 @@ export async function activate(context: vscode.ExtensionContext) {
   try {
     context.subscriptions.push(completionProvider, hoverProvider);
   } catch (ex) {
-    console.error("Could not activate extension due to:", ex);
+    console.error("Yumma CSS Intellisense failed to run due to:", ex);
     vscode.window.showErrorMessage(
       "An error occurred while activating the extension."
     );

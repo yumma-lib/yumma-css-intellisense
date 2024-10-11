@@ -1,6 +1,7 @@
+import { baseColors } from "../theme";
+import { colorUtils } from "../utilities/colors";
+import * as utilities from "../yummacss";
 import * as vscode from "vscode";
-import { colorUtils, colors } from "../yumma-css/colors";
-import { utilities } from "../yumma-css/utilities";
 
 const baseUrl = "https://yummacss.com/docs/";
 
@@ -19,7 +20,7 @@ export const hoverProvider = vscode.languages.registerHoverProvider(
       );
 
       if (colorUtil) {
-        const color = colors.find(
+        const color = baseColors.find(
           (color) => `${colorUtil.classPrefix}${color.className}` === word
         );
         if (color) {
@@ -29,34 +30,54 @@ export const hoverProvider = vscode.languages.registerHoverProvider(
             "css"
           );
           markdownString.appendMarkdown(
-            `\n\nThe [${word}](${baseUrl}${color.classLink}) utility is covered in the documentation.`
+            `\n\nThe [${word}](${baseUrl}${colorUtil.classLink}) utility is covered in the documentation.`
           );
           markdownString.isTrusted = true;
           return new vscode.Hover(markdownString);
         }
       }
 
-      const utility = utilities.find((utilClass) =>
-        utilClass.additionalClasses.some(
-          (value) => `${utilClass.classPrefix}${value.classSuffix}` === word
-        )
-      );
+      const allUtilities = [
+        utilities.borderUtils,
+        utilities.boxModelUtils,
+        utilities.effectUtils,
+        utilities.filterUtils,
+        utilities.flexboxUtils,
+        utilities.gridUtils,
+        utilities.interactionsUtils,
+        utilities.layoutUtils,
+        utilities.outlineUtils,
+        utilities.tableUtils,
+        utilities.typographyUtils,
+      ];
 
-      if (utility) {
-        const value = utility.additionalClasses.find(
-          (value) => `${utility.classPrefix}${value.classSuffix}` === word
-        );
-        if (value) {
-          const markdownString = new vscode.MarkdownString();
-          markdownString.appendCodeblock(
-            `.${word} {\n ${value.classValues.join(" \n ") || ""}\n}`,
-            "css"
+      for (const utilClassArray of allUtilities) {
+        for (const utilClass of utilClassArray) {
+          const utility = utilClass.utilityClasses.find(
+            (value) =>
+              `${utilClass.classPrefix}${
+                (value as { classSuffix?: string }).classSuffix
+              }` === word
           );
-          markdownString.appendMarkdown(
-            `\n\nThe [${word}](${baseUrl}${utility.classLink}) utility is covered in the documentation.`
-          );
-          markdownString.isTrusted = true;
-          return new vscode.Hover(markdownString);
+          if (utility) {
+            const typedUtility = utility as {
+              classSuffix: string;
+              classValues?: string[]; // Make classValues optional
+            };
+
+            const markdownString = new vscode.MarkdownString();
+            markdownString.appendCodeblock(
+              `.${word} {\n ${
+                typedUtility.classValues?.join(" \n ") || "No values available"
+              }\n}`,
+              "css"
+            );
+            markdownString.appendMarkdown(
+              `\n\nThe [${word}](${baseUrl}${utilClass.classLink}) utility is covered in the documentation.`
+            );
+            markdownString.isTrusted = true;
+            return new vscode.Hover(markdownString);
+          }
         }
       }
 

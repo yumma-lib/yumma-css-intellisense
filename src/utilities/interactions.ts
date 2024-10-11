@@ -1,0 +1,68 @@
+export const interactionsUtils = [
+  {
+    classPrefix: "a-",
+    classLink: "appearance",
+    utilityClasses: [
+      { classSuffix: "none", classValues: ["appearance: none;"] },
+      { classSuffix: "auto", classValues: ["appearance: auto;"] },
+    ],
+  },
+  {
+    classPrefix: "c-",
+    classLink: "cursor",
+    utilityClasses: [
+      { classSuffix: "auto", classValues: ["auto"] },
+      { classSuffix: "cr", classValues: ["col-resize"] },
+      { classSuffix: "ch", classValues: ["crosshair"] },
+      { classSuffix: "d", classValues: ["default"] },
+      { classSuffix: "h", classValues: ["help"] },
+      { classSuffix: "m", classValues: ["move"] },
+      { classSuffix: "na", classValues: ["not-allowed"] },
+      { classSuffix: "ner", classValues: ["ne-resize"] },
+      { classSuffix: "neswr", classValues: ["nesw-resize"] },
+      { classSuffix: "none", classValues: ["none"] },
+      { classSuffix: "nr", classValues: ["n-resize"] },
+      { classSuffix: "nwr", classValues: ["nw-resize"] },
+      { classSuffix: "nwser", classValues: ["nwse-resize"] },
+      { classSuffix: "p", classValues: ["pointer"] },
+      { classSuffix: "pr", classValues: ["progress"] },
+      { classSuffix: "rs", classValues: ["row-resize"] },
+      { classSuffix: "ser", classValues: ["se-resize"] },
+      { classSuffix: "sr", classValues: ["s-resize"] },
+      { classSuffix: "swr", classValues: ["sw-resize"] },
+      { classSuffix: "t", classValues: ["text"] },
+      { classSuffix: "w", classValues: ["wait"] },
+      { classSuffix: "wr", classValues: ["w-resize"] },
+      { classSuffix: "zi", classValues: ["zoom-in"] },
+      { classSuffix: "zo", classValues: ["zoom-out"] },
+    ],
+  },
+  {
+    classPrefix: "pe-",
+    classLink: "pointer-events",
+    utilityClasses: [
+      { classSuffix: "auto", classValues: ["pointer-events: auto;"] },
+      { classSuffix: "none", classValues: ["pointer-events: none;"] },
+    ],
+  },
+  {
+    classPrefix: "r-",
+    classLink: "resize",
+    utilityClasses: [
+      { classSuffix: "b", classValues: ["resize: both;"] },
+      { classSuffix: "h", classValues: ["resize: horizontal;"] },
+      { classSuffix: "none", classValues: ["resize: none;"] },
+      { classSuffix: "v", classValues: ["resize: vertical;"] },
+    ],
+  },
+  {
+    classPrefix: "us-",
+    classLink: "user-select",
+    utilityClasses: [
+      { classSuffix: "all", classValues: ["user-select: all;"] },
+      { classSuffix: "auto", classValues: ["user-select: auto;"] },
+      { classSuffix: "none", classValues: ["user-select: none;"] },
+      { classSuffix: "text", classValues: ["user-select: text;"] },
+    ],
+  },
+];
