@@ -3,7 +3,7 @@
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://www.yummacss.com/assets/vectors/dark-logo.svg">
       <source media="(prefers-color-scheme: light)" srcset="https://www.yummacss.com/assets/vectors/light-logo.svg">
-      <img alt="Yumma CSS" src="https://www.yummacss.com/assets/vectors/light-logo.svg" width="220" style="max-width: 100%;">
+      <img alt="Yumma CSS" src="https://www.yummacss.com/assets/vectors/light-logo.png" width="220" style="max-width: 100%;">
     </picture>
   </a>
 </div>
