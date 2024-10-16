@@ -6,11 +6,25 @@ All notable changes to the Yumma CSS Intellisense will be documented in this fil
 
 ### Added
 
-- none
+- None
 
 ### Changed
 
-- fix missing cursor property in completions and hover providers
+- Fix missing cursor property in completions and hover providers
 
 ### Removed
-- none
+- None
+
+## [Unreleased]
+
+### Added
+
+- None
+
+### Changed
+
+- Merge **Filters** and **Effects** subcategories into a **FX** category
+
+### Removed
+
+- None
